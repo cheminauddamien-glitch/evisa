@@ -1,0 +1,98 @@
+Options +FollowSymLinks -Indexes
+RewriteEngine On
+RewriteBase /
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Clean URLs: /visa/france/ → /en/visa-france.html
+RewriteRule ^visa/([a-z0-9-]+)/?$ /en/visa-$1.html [L,R=301]
+RewriteRule ^fr/visa/([a-z0-9-]+)/?$ /fr/visa-$1.html [L,R=301]
+RewriteRule ^es/visa/([a-z0-9-]+)/?$ /es/visa-$1.html [L,R=301]
+RewriteRule ^pt/visa/([a-z0-9-]+)/?$ /pt/visa-$1.html [L,R=301]
+
+# Remove .html extension — root pages
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
+
+# Remove .html extension — en/ fr/ es/ pt/ subdirs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(en|fr|es|pt)/(.+?)/?$ /$1/$2.html [L]
+
+# 301 Redirects — old URLs / restructuration
+# Si tu renommes une page, ajoute ici : Redirect 301 /old-url /new-url
+
+# Anciens slugs racine → nouvelles URLs en/
+Redirect 301 /visa-thailand.html /en/visa-thailand.html
+Redirect 301 /visa-india.html /en/visa-india.html
+Redirect 301 /visa-france.html /en/visa-france.html
+Redirect 301 /visa-germany.html /en/visa-germany.html
+Redirect 301 /visa-japan.html /en/visa-japan.html
+Redirect 301 /visa-usa.html /en/visa-usa.html
+Redirect 301 /visa-canada.html /en/visa-canada.html
+Redirect 301 /visa-australia.html /en/visa-australia.html
+Redirect 301 /visa-spain.html /en/visa-spain.html
+Redirect 301 /visa-italy.html /en/visa-italy.html
+Redirect 301 /visa-netherlands.html /en/visa-netherlands.html
+Redirect 301 /visa-belgium.html /en/visa-belgium.html
+Redirect 301 /visa-portugal.html /en/visa-portugal.html
+Redirect 301 /visa-greece.html /en/visa-greece.html
+Redirect 301 /visa-switzerland.html /en/visa-switzerland.html
+Redirect 301 /visa-austria.html /en/visa-austria.html
+Redirect 301 /visa-vietnam.html /en/visa-vietnam.html
+Redirect 301 /visa-indonesia.html /en/visa-indonesia.html
+Redirect 301 /visa-malaysia.html /en/visa-malaysia.html
+Redirect 301 /visa-singapore.html /en/visa-singapore.html
+Redirect 301 /visa-philippines.html /en/visa-philippines.html
+Redirect 301 /visa-cambodia.html /en/visa-cambodia.html
+Redirect 301 /visa-china.html /en/visa-china.html
+Redirect 301 /visa-turkey.html /en/visa-turkey.html
+Redirect 301 /visa-uae.html /en/visa-uae.html
+Redirect 301 /visa-jordan.html /en/visa-jordan.html
+Redirect 301 /visa-qatar.html /en/visa-qatar.html
+Redirect 301 /visa-brazil.html /en/visa-brazil.html
+Redirect 301 /visa-mexico.html /en/visa-mexico.html
+Redirect 301 /visa-argentina.html /en/visa-argentina.html
+Redirect 301 /visa-colombia.html /en/visa-colombia.html
+Redirect 301 /visa-costa-rica.html /en/visa-costa-rica.html
+Redirect 301 /visa-croatia.html /en/visa-croatia.html
+Redirect 301 /visa-czech-republic.html /en/visa-czech-republic.html
+Redirect 301 /visa-poland.html /en/visa-poland.html
+Redirect 301 /visa-hungary.html /en/visa-hungary.html
+Redirect 301 /visa-sweden.html /en/visa-sweden.html
+Redirect 301 /visa-norway.html /en/visa-norway.html
+Redirect 301 /visa-denmark.html /en/visa-denmark.html
+Redirect 301 /visa-ireland.html /en/visa-ireland.html
+Redirect 301 /visa-united-kingdom.html /en/visa-united-kingdom.html
+Redirect 301 /visa-romania.html /en/visa-romania.html
+Redirect 301 /visa-new-zealand.html /en/visa-new-zealand.html
+Redirect 301 /visa-hong-kong.html /en/visa-hong-kong.html
+Redirect 301 /visa-taiwan.html /en/visa-taiwan.html
+Redirect 301 /visa-sri-lanka.html /en/visa-sri-lanka.html
+Redirect 301 /visa-nepal.html /en/visa-nepal.html
+Redirect 301 /visa-maldives.html /en/visa-maldives.html
+
+# Error pages
+ErrorDocument 404 /404.html
+ErrorDocument 403 /404.html
+
+# Cache control for static assets
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/html "access plus 1 day"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 6 months"
+    ExpiresByType image/png "access plus 6 months"
+    ExpiresByType image/webp "access plus 6 months"
+</IfModule>
+
+# Gzip compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json
+</IfModule>

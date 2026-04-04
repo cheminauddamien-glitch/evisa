@@ -1,0 +1,47 @@
+RewriteEngine On
+
+# Force HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Clean URLs: /visa/france/ → /en/visa-france.html
+RewriteRule ^visa/([a-z0-9-]+)/?$ /en/visa-$1.html [L,R=301]
+RewriteRule ^fr/visa/([a-z0-9-]+)/?$ /fr/visa-$1.html [L,R=301]
+RewriteRule ^es/visa/([a-z0-9-]+)/?$ /es/visa-$1.html [L,R=301]
+RewriteRule ^pt/visa/([a-z0-9-]+)/?$ /pt/visa-$1.html [L,R=301]
+
+# Remove .html extension (clean URLs)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^([^/]+)/?$ $1.html [L]
+
+# Remove .html from en/ fr/ es/ pt/ subdirs
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} ^/(en|fr|es|pt)/
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}.html -f
+RewriteRule ^(en|fr|es|pt)/(.+?)/?$ /$1/$2.html [L]
+
+# Default language redirect: / → /en/
+RewriteRule ^en/?$ /en/index.html [L]
+
+# Error pages
+ErrorDocument 404 /404.html
+ErrorDocument 403 /403.html
+
+# Cache control for static assets
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/html "access plus 1 day"
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType image/jpeg "access plus 6 months"
+    ExpiresByType image/png "access plus 6 months"
+    ExpiresByType image/webp "access plus 6 months"
+</IfModule>
+
+# Gzip compression
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json
+</IfModule>

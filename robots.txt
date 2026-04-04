@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /js/
+Disallow: /cgi-bin/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /images/
+
+Sitemap: https://www.evisa-card.com/sitemap.xml

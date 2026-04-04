@@ -1,0 +1,6 @@
+.gitnexus
+.DS_Store
+__pycache__/
+.vs/
+.claude/
+*.pyc
