@@ -18,11 +18,11 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^([^/]+)/?$ $1.html [L]
 
-# Remove .html extension — en/ fr/ es/ pt/ subdirs
+# Remove .html extension — all language subdirs
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME}.html -f
-RewriteRule ^(en|fr|es|pt)/(.+?)/?$ /$1/$2.html [L]
+RewriteRule ^(en|fr|es|pt|ar|ja|ko|ru|th|zh)/(.+?)/?$ /$1/$2.html [L]
 
 # 301 Redirects — old URLs / restructuration
 # Si tu renommes une page, ajoute ici : Redirect 301 /old-url /new-url

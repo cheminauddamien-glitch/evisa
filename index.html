@@ -57,12 +57,31 @@
           "name": "eVisa-Card.com",
           "url": "https://www.evisa-card.com",
           "logo": "https://www.evisa-card.com/images/logo.png",
+          "foundingDate": "2024",
+          "areaServed": "Worldwide",
           "sameAs": [
             "https://facebook.com/evisacard",
             "https://twitter.com/evisacard",
             "https://instagram.com/evisacard"
           ],
           "description": "eVisa-Card.com provides global eVisa information and online travel authorization guides for tourists and business travelers."
+        }
+    </script>
+    <!-- WebSite schema with SearchAction for sitelinks search box -->
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "eVisa-Card.com",
+          "url": "https://www.evisa-card.com",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://www.evisa-card.com/destination.html?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
         }
     </script>
     <!-- Fonts & CSS (unchanged) -->
