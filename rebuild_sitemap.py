@@ -1,9 +1,12 @@
-"""Rebuild sitemap.xml from filesystem — covers all 13K+ HTML pages.
+"""Rebuild www/sitemap.xml from filesystem — covers all 13K+ HTML pages.
+
+The deployed sitemap is www/sitemap.xml (served at evisa-card.com/sitemap.xml).
+URLs are written WITHOUT the .html extension to match the .htaccess clean-URL rewrites.
 
 Priority strategy:
 - 1.0 root index
 - 0.9 destination/about/contact + lang index pages
-- 0.85 hub country (visa-{country}.html)
+- 0.85 hub country (visa-{country})
 - 0.8 EN -visa-requirements / fees / processing / extension
 - 0.75 FR/ES/PT same
 - 0.7 EN nationality pages
@@ -62,7 +65,7 @@ def main():
     for lang in LANGS:
         files = sorted(glob.glob(f'www/{lang}/*.html'))
         for f in files:
-            bn = os.path.basename(f)
+            bn = os.path.basename(f).replace('.html', '')
             url = f'{BASE}/{lang}/{bn}'
             if url in seen: continue
             seen.add(url)
@@ -80,10 +83,11 @@ def main():
         out.append('  </url>')
     out.append('</urlset>')
 
-    with open('sitemap.xml', 'w', encoding='utf-8', newline='\n') as f:
-        f.write('\n'.join(out) + '\n')
-
-    print(f'Wrote sitemap.xml: {len(urls)} URLs')
+    # Write to BOTH locations: root (legacy) and www/ (the one actually deployed)
+    for path in ('sitemap.xml', 'www/sitemap.xml'):
+        with open(path, 'w', encoding='utf-8', newline='\n') as f:
+            f.write('\n'.join(out) + '\n')
+        print(f'Wrote {path}: {len(urls)} URLs')
 
 
 if __name__ == '__main__':
