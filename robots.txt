@@ -1,8 +1,8 @@
 User-agent: *
-Disallow: /js/
 Disallow: /cgi-bin/
-Disallow: /css/
-Disallow: /fonts/
-Disallow: /images/
+Allow: /css/
+Allow: /js/
+Allow: /fonts/
+Allow: /images/
 
 Sitemap: https://www.evisa-card.com/sitemap.xml
