@@ -6,6 +6,12 @@ RewriteBase /
 RewriteCond %{HTTPS} off
 RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
+# 301 redirect *.html → clean URL (prevents duplicate-content indexation)
+# Uses %{THE_REQUEST} so it matches the original request line and does not
+# loop with the internal rewrite below that adds .html when serving files.
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\s/([^?\s]+)\.html(\?[^\s]*)?\s [NC]
+RewriteRule ^ /%1 [R=301,L]
+
 # Clean URLs: /visa/france/ → /en/visa-france.html
 RewriteRule ^visa/([a-z0-9-]+)/?$ /en/visa-$1.html [L,R=301]
 RewriteRule ^fr/visa/([a-z0-9-]+)/?$ /fr/visa-$1.html [L,R=301]
