@@ -4,3 +4,5 @@ __pycache__/
 .vs/
 .claude/
 *.pyc
+.translation_progress/
+.translation_cache/
