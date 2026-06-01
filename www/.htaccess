@@ -2,9 +2,11 @@ Options +FollowSymLinks -Indexes
 RewriteEngine On
 RewriteBase /
 
-# Force HTTPS
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# Force HTTPS + www (single canonical host) — fixes duplicate non-www host
+# and hreflang self-reference conflicts (hreflang tags all use www).
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteRule ^ https://www.evisa-card.com%{REQUEST_URI} [L,R=301]
 
 # 301 redirect *.html → clean URL (prevents duplicate-content indexation)
 # Uses %{THE_REQUEST} so it matches the original request line and does not
