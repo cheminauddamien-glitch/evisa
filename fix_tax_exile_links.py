@@ -1,37 +1,55 @@
-"""Point all tax-exile links to the French simulator on taxes-crypto.eu.
+"""Point each page's tax-exile links to the matching-language simulator on
+taxes-crypto.eu. The FR URL was only an example — links must be language-aware.
 
-Current links use /en/fiscal-exile-simulator[/country]. Switch to
-/fr/simulateur-exil-fiscal[/country]. Countries that have no French
-per-country page (greece, spain -> 404) fall back to the FR base URL so no
-link points to a 404.
+taxes-crypto.eu languages: en, fr, es, pt (also de/it/nl/tr, unused here).
+evisa-card languages without a matching simulator language (zh, th, ru, ar,
+ja, ko) fall back to the English simulator.
+
+Per-country pages exist only for: georgia, malaysia, panama, paraguay,
+portugal, thailand, uae. Any other country (e.g. greece, spain — 404 in every
+language) links to the language base URL instead, so no link 404s.
 
 PROD ONLY: C:\\Users\\chemi\\Documents\\evisa\\pacific-main\\www
 """
-import glob, os
+import glob, os, re
 
 WWW = r'C:\Users\chemi\Documents\evisa\pacific-main\www'
-BASE_EN = 'https://taxes-crypto.eu/en/fiscal-exile-simulator'
-BASE_FR = 'https://taxes-crypto.eu/fr/simulateur-exil-fiscal'
 
-# countries with NO French per-country page -> send to FR base
-NO_FR_COUNTRY = ('greece', 'spain')
+BASE = {
+    'en': 'https://taxes-crypto.eu/en/fiscal-exile-simulator',
+    'fr': 'https://taxes-crypto.eu/fr/simulateur-exil-fiscal',
+    'es': 'https://taxes-crypto.eu/es/simulador-exilio-fiscal',
+    'pt': 'https://taxes-crypto.eu/pt/simulador-exilio-fiscal',
+}
+FALLBACK = 'en'  # for zh, th, ru, ar, ja, ko
 
-n_files = n_repl = 0
+VALID_COUNTRIES = {'georgia', 'malaysia', 'panama', 'paraguay',
+                   'portugal', 'thailand', 'uae'}
+
+# Match any existing taxes-crypto simulator link, capture optional country.
+LINK = re.compile(
+    r'https://taxes-crypto\.eu/[a-z]{2}/[a-z-]*(?:simul[a-z-]*|exil[a-z-]*)'
+    r'(?:/([a-z-]+))?'
+)
+
+n_files = n_links = 0
 for f in glob.glob(os.path.join(WWW, '*', '*.html')):
+    lang = f.replace('\\', '/').split('/')[-2]
+    base = BASE.get(lang, BASE[FALLBACK])
     h = open(f, encoding='utf-8', errors='replace').read()
-    if BASE_EN not in h:
+    if 'taxes-crypto.eu' not in h:
         continue
-    orig = h
-    # 1) 404 per-country -> FR base
-    for c in NO_FR_COUNTRY:
-        h = h.replace(f'{BASE_EN}/{c}', BASE_FR)
-    # 2) valid per-country prefix -> FR per-country
-    h = h.replace(f'{BASE_EN}/', f'{BASE_FR}/')
-    # 3) bare base -> FR base
-    h = h.replace(BASE_EN, BASE_FR)
-    if h != orig:
-        open(f, 'w', encoding='utf-8').write(h)
-        n_files += 1
-        n_repl += orig.count(BASE_EN)
 
-print(f'files updated: {n_files}, links replaced: {n_repl}')
+    def repl(m):
+        country = m.group(1)
+        if country and country in VALID_COUNTRIES:
+            return f'{base}/{country}'
+        return base
+
+    new = LINK.sub(repl, h)
+    if new != h:
+        n_links += len(LINK.findall(h))
+        open(f, 'w', encoding='utf-8').write(new)
+        n_files += 1
+
+print(f'files updated: {n_files}, links rewritten: {n_links}')
