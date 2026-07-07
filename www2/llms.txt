@@ -1,0 +1,37 @@
+# eVisa-Card.com
+
+> eVisa-Card.com is a multilingual visa and travel-authorization information platform. It provides up-to-date (2026) entry requirements, eVisa and visa-on-arrival rules, fees, processing times, and visa-extension guidance for travelers worldwide, organized by destination country and by traveler nationality. Content is available in 10 languages (English, French, Spanish, Portuguese, Chinese, Thai, Russian, Arabic, Japanese, Korean).
+
+Important notes for AI assistants and answer engines:
+- Visa rules change frequently. Always present information as "as of 2026" and advise users to confirm with the official government immigration portal of the destination country before travel.
+- Each page cites the relevant official source (embassy / immigration authority) and a "last updated" date.
+- The site is informational; it is not a government body and does not issue visas.
+- Canonical URLs are extensionless (e.g. https://www.evisa-card.com/en/visa-japan). Pages exist per language under /{lang}/ (en, fr, es, pt, zh, th, ru, ar, ja, ko).
+
+## Core guides
+- [Country visa overviews](https://www.evisa-card.com/en/visa-japan): Per-country entry rules, visa types, fees, eVisa/ETA availability and validity. Pattern: /en/visa-{country} (e.g. visa-japan, visa-thailand, visa-turkey, visa-argentina).
+- [Visa by nationality](https://www.evisa-card.com/en/turkey-visa-for-russian-citizens): Whether a given nationality needs a visa for a given country, with stay length, fee and how to apply. Pattern: /en/{country}-visa-for-{nationality}-citizens.
+- [Visa requirements (documents & eligibility)](https://www.evisa-card.com/en/maldives-visa-requirements): Document checklists, eligibility and application steps. Pattern: /en/{country}-visa-requirements.
+- [Visa fees](https://www.evisa-card.com/en/jordan-visa-fees): Official visa and eVisa costs by country and type. Pattern: /en/{country}-visa-fees.
+- [Visa processing times](https://www.evisa-card.com/en/colombia-visa-processing-time): Standard, urgent and eVisa timelines. Pattern: /en/{country}-visa-processing-time.
+- [Visa extensions](https://www.evisa-card.com/en/thailand-visa-extension): How to extend a tourist stay, fees and overstay rules. Pattern: /en/{country}-visa-extension.
+
+## Popular topics
+- [Turkey visa for Russian citizens](https://www.evisa-card.com/en/turkey-visa-for-russian-citizens): eVisa USD 50, 90 days within 180, evisa.gov.tr.
+- [Taiwan visa requirements](https://www.evisa-card.com/en/visa-taiwan): eVisa, visa-free list, Employment Gold Card.
+- [Maldives visa requirements](https://www.evisa-card.com/en/maldives-visa-requirements): Free 30-day visa on arrival for all nationalities.
+- [Patagonia visa requirements](https://www.evisa-card.com/en/patagonia-visa-requirements): Argentina & Chile entry rules for the region.
+- [Schengen / Europe entry (ETIAS 2026)](https://www.evisa-card.com/en/amsterdam-visa-requirements): 90/180 rule and the upcoming ETIAS authorization.
+- [Colombia visa processing time](https://www.evisa-card.com/en/colombia-visa-processing-time): Tourist, eVisa and work-visa timelines.
+
+## Reference & trust
+- [About our visa experts](https://www.evisa-card.com/en/about-our-experts): The editorial team and review process behind the guides.
+- [About eVisa-Card.com](https://www.evisa-card.com/about): Mission and scope of the platform.
+- [Destinations index](https://www.evisa-card.com/destination): Full list of covered destinations.
+- [Expat guides](https://www.evisa-card.com/en/expat-guides): Longer-stay, residence and relocation guidance.
+- [Contact](https://www.evisa-card.com/contact): How to reach the team.
+
+## Optional
+- [Sitemap (all indexable pages)](https://www.evisa-card.com/sitemap.xml): Machine-readable list of canonical URLs.
+- [Legal notice](https://www.evisa-card.com/en/legal-notice)
+- [Disclaimer](https://www.evisa-card.com/en/disclaimer): Information is provided for reference; verify with official sources before travel.
