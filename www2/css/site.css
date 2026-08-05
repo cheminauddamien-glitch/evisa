@@ -1652,6 +1652,14 @@ h2:focus-within .anchor-link { opacity: 1; }
   color: var(--ink-400);
   padding-inline: 0;
 }
+.dest-card__desc {
+  margin-block-start: 8px;
+  font-size: var(--fs-xs);
+  line-height: 1.55;
+  color: var(--ink-500);
+  padding-inline: 0;
+  font-weight: 400;
+}
 
 /* Dest grid â€” auto responsive */
 .dest-grid {

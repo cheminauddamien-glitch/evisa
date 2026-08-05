@@ -8,6 +8,20 @@ RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} !^www\. [NC]
 RewriteRule ^ https://www.evisa-card.com%{REQUEST_URI} [L,R=301]
 
+# 301 /index(.html) → / and /<lang>/index(.html) → /<lang>/ — kills the
+# duplicate homepages GSC flags as "Alternate page with proper canonical tag"
+# (/zh/index, /ru/index, /ja/index, /ar/index served 200 instead of redirecting).
+# Placed BEFORE the generic .html rule so /zh/index.html → /zh/ in ONE hop.
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\s/((?:en|fr|es|pt|zh|th|ru|ar|ja|ko)/)?index(?:\.html)?(?:\?[^\s]*)?\s [NC]
+RewriteRule ^ https://www.evisa-card.com/%1 [R=301,L]
+
+# /en/ has no index.html — the English home IS the site root (was returning 403)
+RewriteRule ^en/?$ https://www.evisa-card.com/ [R=301,L]
+
+# visa-uk was a meta-refresh stub duplicating visa-united-kingdom — real 301 instead
+# (exact match so visa-ukraine is untouched; single hop to the clean URL)
+RewriteRule ^(en|fr|es|pt|zh|th|ru|ar|ja|ko)/visa-uk(?:\.html)?/?$ https://www.evisa-card.com/$1/visa-united-kingdom [R=301,L]
+
 # 301 redirect *.html → clean URL (prevents duplicate-content indexation)
 # Uses %{THE_REQUEST} so it matches the original request line and does not
 # loop with the internal rewrite below that adds .html when serving files.
