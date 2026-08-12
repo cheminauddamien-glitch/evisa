@@ -8,6 +8,10 @@ RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} !^www\. [NC]
 RewriteRule ^ https://www.evisa-card.com%{REQUEST_URI} [L,R=301]
 
+# /en/index would need two hops via the generic index rule (→ /en/ → /) —
+# short-circuit it to the root in ONE hop.
+RewriteRule ^en/index(?:\.html)?/?$ https://www.evisa-card.com/ [R=301,L]
+
 # 301 /index(.html) → / and /<lang>/index(.html) → /<lang>/ — kills the
 # duplicate homepages GSC flags as "Alternate page with proper canonical tag"
 # (/zh/index, /ru/index, /ja/index, /ar/index served 200 instead of redirecting).
@@ -22,6 +26,17 @@ RewriteRule ^en/?$ https://www.evisa-card.com/ [R=301,L]
 # (exact match so visa-ukraine is untouched; single hop to the clean URL)
 RewriteRule ^(en|fr|es|pt|zh|th|ru|ar|ja|ko)/visa-uk(?:\.html)?/?$ https://www.evisa-card.com/$1/visa-united-kingdom [R=301,L]
 
+# Legacy root slugs /visa-<pays>(.html) → /en/visa-<pays> in ONE hop.
+# Replaces the old mod_alias "Redirect 301" block: mod_rewrite's .html-strip
+# rule fired first and sent /visa-france.html to /visa-france (404, no root
+# file), so the mod_alias rules never matched. This rule runs BEFORE the strip.
+RewriteRule ^visa-([a-z0-9-]+?)(?:\.html)?/?$ https://www.evisa-card.com/en/visa-$1 [R=301,L]
+
+# Duplicate legal slugs → canonical localized URLs (Règle #2 : 301 obligatoire)
+RewriteRule ^fr/disclaimer(?:\.html)?/?$ https://www.evisa-card.com/fr/mentions-legales [R=301,L]
+RewriteRule ^es/disclaimer(?:\.html)?/?$ https://www.evisa-card.com/es/aviso-legal [R=301,L]
+RewriteRule ^pt/disclaimer(?:\.html)?/?$ https://www.evisa-card.com/pt/aviso-legal [R=301,L]
+
 # 301 redirect *.html → clean URL (prevents duplicate-content indexation)
 # Uses %{THE_REQUEST} so it matches the original request line and does not
 # loop with the internal rewrite below that adds .html when serving files.
@@ -29,11 +44,17 @@ RewriteRule ^(en|fr|es|pt|zh|th|ru|ar|ja|ko)/visa-uk(?:\.html)?/?$ https://www.e
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\s/([^?\s]+)\.html(\?[^\s]*)?\s [NC]
 RewriteRule ^ https://www.evisa-card.com/%1 [R=301,L]
 
-# Clean URLs: /visa/france/ → /en/visa-france.html
-RewriteRule ^visa/([a-z0-9-]+)/?$ /en/visa-$1.html [L,R=301]
-RewriteRule ^fr/visa/([a-z0-9-]+)/?$ /fr/visa-$1.html [L,R=301]
-RewriteRule ^es/visa/([a-z0-9-]+)/?$ /es/visa-$1.html [L,R=301]
-RewriteRule ^pt/visa/([a-z0-9-]+)/?$ /pt/visa-$1.html [L,R=301]
+# Clean URLs: /visa/france/ → /en/visa-france — absolute clean target so the
+# legacy path resolves in ONE hop (the old .html target added a second 301).
+RewriteRule ^visa/([a-z0-9-]+)/?$ https://www.evisa-card.com/en/visa-$1 [L,R=301]
+RewriteRule ^fr/visa/([a-z0-9-]+)/?$ https://www.evisa-card.com/fr/visa-$1 [L,R=301]
+RewriteRule ^es/visa/([a-z0-9-]+)/?$ https://www.evisa-card.com/es/visa-$1 [L,R=301]
+RewriteRule ^pt/visa/([a-z0-9-]+)/?$ https://www.evisa-card.com/pt/visa-$1 [L,R=301]
+
+# Trailing slash on clean URLs (/en/visa-india/ was a 404) → 301 without slash.
+# Directories (/fr/, /es/…) are excluded by the !-d condition.
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.+)/$ https://www.evisa-card.com/$1 [R=301,L]
 
 # Remove .html extension — root pages
 RewriteCond %{REQUEST_FILENAME} !-d
@@ -50,55 +71,8 @@ RewriteRule ^(en|fr|es|pt|zh|th|ru|ar|ja|ko)/(.+?)/?$ /$1/$2.html [L]
 # 301 Redirects — old URLs / restructuration
 # Si tu renommes une page, ajoute ici : Redirect 301 /old-url /new-url
 
-# Anciens slugs racine → nouvelles URLs en/
-Redirect 301 /visa-thailand.html /en/visa-thailand.html
-Redirect 301 /visa-india.html /en/visa-india.html
-Redirect 301 /visa-france.html /en/visa-france.html
-Redirect 301 /visa-germany.html /en/visa-germany.html
-Redirect 301 /visa-japan.html /en/visa-japan.html
-Redirect 301 /visa-usa.html /en/visa-usa.html
-Redirect 301 /visa-canada.html /en/visa-canada.html
-Redirect 301 /visa-australia.html /en/visa-australia.html
-Redirect 301 /visa-spain.html /en/visa-spain.html
-Redirect 301 /visa-italy.html /en/visa-italy.html
-Redirect 301 /visa-netherlands.html /en/visa-netherlands.html
-Redirect 301 /visa-belgium.html /en/visa-belgium.html
-Redirect 301 /visa-portugal.html /en/visa-portugal.html
-Redirect 301 /visa-greece.html /en/visa-greece.html
-Redirect 301 /visa-switzerland.html /en/visa-switzerland.html
-Redirect 301 /visa-austria.html /en/visa-austria.html
-Redirect 301 /visa-vietnam.html /en/visa-vietnam.html
-Redirect 301 /visa-indonesia.html /en/visa-indonesia.html
-Redirect 301 /visa-malaysia.html /en/visa-malaysia.html
-Redirect 301 /visa-singapore.html /en/visa-singapore.html
-Redirect 301 /visa-philippines.html /en/visa-philippines.html
-Redirect 301 /visa-cambodia.html /en/visa-cambodia.html
-Redirect 301 /visa-china.html /en/visa-china.html
-Redirect 301 /visa-turkey.html /en/visa-turkey.html
-Redirect 301 /visa-uae.html /en/visa-uae.html
-Redirect 301 /visa-jordan.html /en/visa-jordan.html
-Redirect 301 /visa-qatar.html /en/visa-qatar.html
-Redirect 301 /visa-brazil.html /en/visa-brazil.html
-Redirect 301 /visa-mexico.html /en/visa-mexico.html
-Redirect 301 /visa-argentina.html /en/visa-argentina.html
-Redirect 301 /visa-colombia.html /en/visa-colombia.html
-Redirect 301 /visa-costa-rica.html /en/visa-costa-rica.html
-Redirect 301 /visa-croatia.html /en/visa-croatia.html
-Redirect 301 /visa-czech-republic.html /en/visa-czech-republic.html
-Redirect 301 /visa-poland.html /en/visa-poland.html
-Redirect 301 /visa-hungary.html /en/visa-hungary.html
-Redirect 301 /visa-sweden.html /en/visa-sweden.html
-Redirect 301 /visa-norway.html /en/visa-norway.html
-Redirect 301 /visa-denmark.html /en/visa-denmark.html
-Redirect 301 /visa-ireland.html /en/visa-ireland.html
-Redirect 301 /visa-united-kingdom.html /en/visa-united-kingdom.html
-Redirect 301 /visa-romania.html /en/visa-romania.html
-Redirect 301 /visa-new-zealand.html /en/visa-new-zealand.html
-Redirect 301 /visa-hong-kong.html /en/visa-hong-kong.html
-Redirect 301 /visa-taiwan.html /en/visa-taiwan.html
-Redirect 301 /visa-sri-lanka.html /en/visa-sri-lanka.html
-Redirect 301 /visa-nepal.html /en/visa-nepal.html
-Redirect 301 /visa-maldives.html /en/visa-maldives.html
+# Anciens slugs racine : couverts par la RewriteRule ^visa-([a-z0-9-]+?) ci-dessus
+# (l ancien bloc mod_alias ne matchait jamais — la regle .html-strip passait avant).
 
 # Error pages
 ErrorDocument 404 /404.html

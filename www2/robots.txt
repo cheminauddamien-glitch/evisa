@@ -1,4 +1,5 @@
 User-agent: *
+Disallow: /fonts/
 Disallow: /cgi-bin/
 Disallow: /admin/
 Disallow: /tmp/
