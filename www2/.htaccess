@@ -6,7 +6,8 @@ RewriteBase /
 # and hreflang self-reference conflicts (hreflang tags all use www).
 RewriteCond %{HTTPS} off [OR]
 RewriteCond %{HTTP_HOST} !^www\. [NC]
-RewriteRule ^ https://www.evisa-card.com%{REQUEST_URI} [L,R=301]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\s([^?\s]+)
+RewriteRule ^ https://www.evisa-card.com%1 [L,R=301]
 
 # /en/index would need two hops via the generic index rule (→ /en/ → /) —
 # short-circuit it to the root in ONE hop.
@@ -54,7 +55,8 @@ RewriteRule ^pt/visa/([a-z0-9-]+)/?$ https://www.evisa-card.com/pt/visa-$1 [L,R=
 # Trailing slash on clean URLs (/en/visa-india/ was a 404) → 301 without slash.
 # Directories (/fr/, /es/…) are excluded by the !-d condition.
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.+)/$ https://www.evisa-card.com/$1 [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\s/([^?\s]+?)/(\?[^\s]*)?\s
+RewriteRule ^(.+)/$ https://www.evisa-card.com/%1 [R=301,L]
 
 # Remove .html extension — root pages
 RewriteCond %{REQUEST_FILENAME} !-d

@@ -2,40 +2,52 @@
 <!--  RÈGLE ABSOLUE — DOSSIER DE PRODUCTION (NE JAMAIS IGNORER)  -->
 <!-- ============================================================ -->
 
-# ⛔ RÈGLE #1 — TOUJOURS ÉDITER LE DOSSIER PROD `www/`
+# ⛔ RÈGLE #1 — TOUJOURS ÉDITER LE DOSSIER PROD `www2/`
+
+**Depuis le 8 juillet 2026, le dossier de travail/prod est `www2/` (nouveau design,
+migration multilingue complète). `www/` est l'ANCIEN dossier de prod, conservé pour
+référence/historique mais n'est PLUS le dossier à éditer pour les nouvelles demandes.**
 
 **Le site mis en ligne par FTP manuel est UNIQUEMENT :**
 
 ```
-C:\Users\chemi\Documents\evisa\pacific-main\www\
+C:\Users\chemi\Documents\evisa\pacific-main\www2\
 ```
 
 ## OBLIGATIONS (chaque modification de contenu du site)
 
 1. **TOUTE** édition de page / robots.txt / sitemap.xml / .htaccess / asset
-   DOIT être faite dans `C:\Users\chemi\Documents\evisa\pacific-main\www\`
+   DOIT être faite dans `C:\Users\chemi\Documents\evisa\pacific-main\www2\`
    — avec le **chemin ABSOLU complet**, jamais en relatif.
 
 2. **NE JAMAIS éditer** les copies suivantes (elles ne sont PAS uploadées) :
-   - `…\pacific-main\.claude\worktrees\…\www\`  ← worktree, souvent PÉRIMÉ
+   - `…\pacific-main\.claude\worktrees\…\www2\`  ← worktree, souvent PÉRIMÉ
+   - `C:\Users\chemi\Documents\evisa\pacific-main\www\` ← ANCIEN dossier de prod (avant le 8 juillet 2026), ne plus éditer sauf demande explicite de l'utilisateur pour du contenu legacy
    - les dossiers `en/ fr/ es/ pt/` à la **racine** de `pacific-main\` (ancienne structure 4 langues, NON déployée)
 
 3. **Le CWD du shell se réinitialise souvent sur le worktree** :
    `…\.claude\worktrees\great-chatterjee-b70d97`.
    → AVANT toute commande, faire `cd "C:\Users\chemi\Documents\evisa\pacific-main"`
-   et utiliser des chemins absolus `www\...`. Ne jamais se fier au CWD.
+   et utiliser des chemins absolus `www2\...`. Ne jamais se fier au CWD.
 
 4. **AVANT de dire « c'est fait »** : vérifier que la modif est bien dans
-   `C:\Users\chemi\Documents\evisa\pacific-main\www\<fichier>` (pas le worktree)
+   `C:\Users\chemi\Documents\evisa\pacific-main\www2\<fichier>` (pas le worktree, pas `www\`)
    via un `grep`/`Read` sur le chemin absolu de prod.
 
-5. **robots.txt et sitemap.xml de prod** = `www\robots.txt` et `www\sitemap.xml`.
-   Le `robots.txt` / `sitemap.xml` à la racine de `pacific-main\` est IGNORÉ par le serveur — ne pas l'éditer seul.
+5. **robots.txt et sitemap.xml de prod** = `www2\robots.txt` et `www2\sitemap.xml`.
+   Le `robots.txt` / `sitemap.xml` à la racine de `pacific-main\` ou dans `www\` est IGNORÉ par le serveur.
 
-6. L'utilisateur uploade le **contenu de `www\`** à la racine web par FTP
+6. L'utilisateur uploade le **contenu de `www2\`** à la racine web par FTP
    (FileZilla, fichiers cachés `.htaccess` inclus). Rien d'autre n'est déployé.
 
-> Si une modif n'est pas dans `pacific-main\www`, elle N'EXISTE PAS pour le site en ligne.
+7. `www2\` couvre les mêmes 10 langues que l'ancien `www\` (en, fr, es, pt, zh, th, ru, ar, ja, ko)
+   avec le même inventaire de pages `visa-<pays>.html` — mais un habillage/design différent
+   (nav, hero, CSS) autour d'un contenu structurellement très proche. Un correctif déjà fait
+   dans `www\` peut généralement être rejoué tel quel dans `www2\` (même balises de bannière
+   `<!-- visa-2026-update -->`, mêmes styles inline), mais TOUJOURS vérifier avec `git diff`/`Read`
+   avant de supposer une correspondance exacte.
+
+> Si une modif n'est pas dans `pacific-main\www2`, elle N'EXISTE PAS pour le site en ligne.
 
 <!-- ============================================================ -->
 
@@ -46,7 +58,7 @@ suppression, fusion de pages, changement de dossier/langue), tu DOIS ajouter une
 redirection **301** (permanente) de l'ANCIENNE URL vers la NOUVELLE dans :
 
 ```
-C:\Users\chemi\Documents\evisa\pacific-main\www\.htaccess
+C:\Users\chemi\Documents\evisa\pacific-main\www2\.htaccess
 ```
 
 ## OBLIGATIONS (chaque changement d'URL)
@@ -58,7 +70,7 @@ C:\Users\chemi\Documents\evisa\pacific-main\www\.htaccess
    ```
 2. **Une redirection par langue concernée** (en, fr, es, pt, zh, th, ru, ar, ja, ko)
    si le slug change dans plusieurs dossiers.
-3. Mettre à jour EN MÊME TEMPS : `www\sitemap.xml`, les balises `canonical` + `hreflang`
+3. Mettre à jour EN MÊME TEMPS : `www2\sitemap.xml`, les balises `canonical` + `hreflang`
    de la page, et tout lien interne (nav, footer, autres pages) pointant vers l'ancienne URL.
 4. **NE JAMAIS** laisser une ancienne URL déjà indexée renvoyer un 404 : c'est une perte
    de trafic SEO directe. Pas de 301 = changement d'URL interdit.

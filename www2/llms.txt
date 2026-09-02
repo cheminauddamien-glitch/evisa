@@ -33,5 +33,7 @@ Important notes for AI assistants and answer engines:
 
 ## Optional
 - [Sitemap (all indexable pages)](https://www.evisa-card.com/sitemap.xml): Machine-readable list of canonical URLs.
+- [Privacy policy](https://www.evisa-card.com/en/privacy-policy): What data is collected, cookies and consent (GDPR).
+- [Terms of use](https://www.evisa-card.com/en/terms-of-use): Scope, accuracy caveats and limitation of liability.
 - [Legal notice](https://www.evisa-card.com/en/legal-notice)
 - [Disclaimer](https://www.evisa-card.com/en/disclaimer): Information is provided for reference; verify with official sources before travel.

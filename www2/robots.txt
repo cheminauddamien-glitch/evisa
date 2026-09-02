@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /fonts/
 Disallow: /cgi-bin/
 Disallow: /admin/
 Disallow: /tmp/
@@ -8,45 +7,19 @@ Disallow: /*.log$
 Disallow: /*.sql$
 Disallow: /*.bak$
 Disallow: /*.zip$
+Disallow: /*.md$
 
-# Allow assets for proper crawling and rendering
+# Ressources necessaires au rendu : Google doit pouvoir les explorer
 Allow: /css/
 Allow: /js/
 Allow: /fonts/
 Allow: /images/
 
-# Crawl delay to avoid server overload
 Crawl-delay: 1
 
-# Sitemap location
 Sitemap: https://www.evisa-card.com/sitemap.xml
 
-# Googlebot - full access
-User-agent: Googlebot
-Allow: /
-Crawl-delay: 0
-
-# Googlebot-Image - allow images
-User-agent: Googlebot-Image
-Allow: /images/
-Allow: /
-
-# Bingbot - full access
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 1
-
-# Yandex
-User-agent: Yandex
-Allow: /
-Crawl-delay: 2
-
-# Baidu (Chinese SEO)
-User-agent: Baiduspider
-Allow: /
-Crawl-delay: 2
-
-# Block bad bots
+# Robots indesirables (aspiration de contenu / backlinks)
 User-agent: AhrefsBot
 Disallow: /
 

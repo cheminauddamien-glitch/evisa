@@ -589,11 +589,11 @@
           '<div class="vr-fee-item"><div class="vr-fee-label">' + L.processing + '</div><div class="vr-fee-value">' + extra.processing + '</div></div>' +
           '<div class="vr-fee-item"><div class="vr-fee-label">' + L.fee + '</div><div class="vr-fee-value">' + extra.fee + '</div></div>' +
         '</div></div>' : '') +
-        (stepsHtml ? '<div class="vr-section"><div class="vr-section-title"><span class="vr-section-icon">&#9989;</span> ' + L.steps_title + '</div>' + stepsHtml + '</div>' : '') +
-        (docsHtml ? '<div class="vr-section"><div class="vr-section-title"><span class="vr-section-icon">&#128203;</span> ' + L.docs_title + '</div>' + docsHtml + '</div>' : '') +
-        '<div class="vr-section vr-warning"><div class="vr-section-title"><span class="vr-section-icon">&#9888;&#65039;</span> ' + L.penalty_title + '</div><p>' + info[2] + '</p></div>' +
-        '<div class="vr-section vr-info"><div class="vr-section-title"><span class="vr-section-icon">&#128260;</span> ' + L.strategy_title + '</div><p>' + info[3] + '</p></div>' +
-        '<div class="vr-section"><div class="vr-section-title"><span class="vr-section-icon">&#128196;</span> ' + L.requirements + '</div><p style="color:#374151;font-size:14px;line-height:1.6;margin:0;">' + info[4] + '</p></div>' +
+        (stepsHtml ? '<div class="vr-section"><div class="vr-section-title">' + L.steps_title + '</div>' + stepsHtml + '</div>' : '') +
+        (docsHtml ? '<div class="vr-section"><div class="vr-section-title">' + L.docs_title + '</div>' + docsHtml + '</div>' : '') +
+        '<div class="vr-section vr-warning"><div class="vr-section-title">' + L.penalty_title + '</div><p>' + info[2] + '</p></div>' +
+        '<div class="vr-section vr-info"><div class="vr-section-title">' + L.strategy_title + '</div><p>' + info[3] + '</p></div>' +
+        '<div class="vr-section"><div class="vr-section-title">' + L.requirements + '</div><p style="color:#374151;font-size:14px;line-height:1.6;margin:0;">' + info[4] + '</p></div>' +
         '<div class="vr-actions">' +
           '<a href="' + visaLink + '" class="btn btn-primary">' + L.details + ' &rarr;</a>' +
           (hasGuide ? '<a href="' + guideLink + '" class="btn btn-secondary">' + L.guide + ' &rarr;</a>' : '') +
