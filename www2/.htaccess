@@ -58,6 +58,10 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\s/([^?\s]+?)/(\?[^\s]*)?\s
 RewriteRule ^(.+)/$ https://www.evisa-card.com/%1 [R=301,L]
 
+# Slugs "visa-free-countries-*" traduits par erreur dans les liens (sans visa-, sin visado-,
+# sem visto-, 免签-, ไม่ต้องใช้วีซ่า-, без визы-, ビザ免除-, 무비자-, بدون تأشيرة-) -> vrai fichier.
+RewriteRule ^(en|fr|es|pt|zh|th|ru|ar|ja|ko)/(?!visa-free-)[^/]+-countries-([a-z-]+-passport)/?$ https://www.evisa-card.com/$1/visa-free-countries-$2 [R=301,L,NE]
+
 # Remove .html extension — root pages
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
