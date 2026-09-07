@@ -75,6 +75,7 @@ RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^(en|fr|es|pt|zh|th|ru|ar|ja|ko)/(.+?)/?$ /$1/$2.html [L]
 
 # 301 Redirects — old URLs / restructuration
+Redirect 301 /retirement-visa-guide /en/retirement-visa-guide
 # Si tu renommes une page, ajoute ici : Redirect 301 /old-url /new-url
 
 # Anciens slugs racine : couverts par la RewriteRule ^visa-([a-z0-9-]+?) ci-dessus
