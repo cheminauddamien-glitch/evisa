@@ -1,0 +1,3 @@
+old_url,new_url,status_code,reason,source_intent,target_intent
+/blog,,410,"Page demo Colorlib, aucun equivalent",demo,none
+/blog-single,,410,"Page demo Colorlib, aucun equivalent",demo,none

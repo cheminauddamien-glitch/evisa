@@ -77,6 +77,13 @@ RewriteRule ^(en|fr|es|pt|zh|th|ru|ar|ja|ko)/(.+?)/?$ /$1/$2.html [L]
 # 301 Redirects — old URLs / restructuration
 Redirect 301 /retirement-visa-guide /en/retirement-visa-guide
 # Si tu renommes une page, ajoute ici : Redirect 301 /old-url /new-url
+# 410 Gone — pages de demonstration supprimees (lot A recovery, 07/09/2026)
+# Template Colorlib residuel, noindex, hors sitemap, aucun lien interne entrant.
+Redirect 410 /blog
+Redirect 410 /blog.html
+Redirect 410 /blog-single
+Redirect 410 /blog-single.html
+
 
 # Anciens slugs racine : couverts par la RewriteRule ^visa-([a-z0-9-]+?) ci-dessus
 # (l ancien bloc mod_alias ne matchait jamais — la regle .html-strip passait avant).
