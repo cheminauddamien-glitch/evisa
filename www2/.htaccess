@@ -14,7 +14,12 @@ RewriteRule ^ https://www.evisa-card.com%1 [L,R=301]
 # elle aussi du mod_rewrite et s executerait avant un Redirect mod_alias,
 # transformant /blog.html en 301 vers /blog puis 404. Le flag [G] renvoie
 # directement 410 sur les deux formes, sans chaine de redirection.
-RewriteRule ^blog(?:-single)?(?:\.html)?/?$ - [G,L]
+RewriteRule ^blog/?$ - [G,L]
+RewriteRule ^blog\.html$ - [G,L]
+RewriteRule ^blog-single/?$ - [G,L]
+RewriteRule ^blog-single\.html$ - [G,L]
+# Sonde de deploiement : permet de verifier quelle version du .htaccess est en ligne.
+RewriteRule ^lot-a-probe-20260908$ - [G,L]
 
 # /en/index would need two hops via the generic index rule (→ /en/ → /) —
 # short-circuit it to the root in ONE hop.
