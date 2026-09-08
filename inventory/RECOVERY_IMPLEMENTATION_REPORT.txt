@@ -163,3 +163,34 @@ PROCHAINES ÉTAPES
 5. Trancher le point de blocage ci-dessus avant d'engager le lot B.
 6. Si le lot B est validé, produire d'abord l'analyse des régimes de visa,
    puis la carte de redirection, puis exécuter par sous-lots de 10 à 20 %.
+
+===========================================================================
+CORRECTION DU 08/09/2026 — LE 410 NE FONCTIONNAIT PAS
+===========================================================================
+Vérification en ligne après upload :
+  /blog              404 au lieu de 410
+  /blog.html         301 vers /blog, qui renvoie ensuite 404
+  /blog-single       404 au lieu de 410
+  /blog-single.html  301 vers /blog-single, qui renvoie ensuite 404
+
+Cause : les directives "Redirect" appartiennent au module mod_alias, alors
+que la règle générique qui retire l'extension .html est une RewriteRule du
+module mod_rewrite. Dans un .htaccess, mod_rewrite s'exécute avant mod_alias.
+La règle .html-strip capturait donc /blog.html et émettait sa 301 avant que
+le Redirect 410 ne soit seulement évalué.
+
+Conséquence : une chaîne de redirection se terminant sur une erreur, ce que
+la QA checklist du pack interdit explicitement. Le point "0 chaîne de
+redirection" du rapport initial était donc faux en production.
+
+Correctif appliqué : le 410 est réécrit en mod_rewrite avec le flag [G] et
+placé en tête de fichier, avant toute autre règle de chemin.
+
+  RewriteRule ^blog(?:-single)?(?:\.html)?/?$ - [G,L]
+
+Les quatre directives Redirect 410 de mod_alias ont été retirées.
+Attendu après upload : 410 direct sur les quatre formes, aucune chaîne.
+
+Note : il est également possible que le .htaccess n'ait pas été transmis lors
+de l'upload, FileZilla masquant les fichiers commençant par un point. À
+vérifier lors du prochain envoi.

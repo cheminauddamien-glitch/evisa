@@ -9,6 +9,13 @@ RewriteCond %{HTTP_HOST} !^www\. [NC]
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\s([^?\s]+)
 RewriteRule ^ https://www.evisa-card.com%1 [L,R=301]
 
+# 410 Gone — pages de demonstration Colorlib supprimees (lot A recovery, 07/09/2026)
+# En mod_rewrite et place ICI : la regle generique .html-strip plus bas est
+# elle aussi du mod_rewrite et s executerait avant un Redirect mod_alias,
+# transformant /blog.html en 301 vers /blog puis 404. Le flag [G] renvoie
+# directement 410 sur les deux formes, sans chaine de redirection.
+RewriteRule ^blog(?:-single)?(?:\.html)?/?$ - [G,L]
+
 # /en/index would need two hops via the generic index rule (→ /en/ → /) —
 # short-circuit it to the root in ONE hop.
 RewriteRule ^en/index(?:\.html)?/?$ https://www.evisa-card.com/ [R=301,L]
@@ -77,12 +84,6 @@ RewriteRule ^(en|fr|es|pt|zh|th|ru|ar|ja|ko)/(.+?)/?$ /$1/$2.html [L]
 # 301 Redirects — old URLs / restructuration
 Redirect 301 /retirement-visa-guide /en/retirement-visa-guide
 # Si tu renommes une page, ajoute ici : Redirect 301 /old-url /new-url
-# 410 Gone — pages de demonstration supprimees (lot A recovery, 07/09/2026)
-# Template Colorlib residuel, noindex, hors sitemap, aucun lien interne entrant.
-Redirect 410 /blog
-Redirect 410 /blog.html
-Redirect 410 /blog-single
-Redirect 410 /blog-single.html
 
 
 # Anciens slugs racine : couverts par la RewriteRule ^visa-([a-z0-9-]+?) ci-dessus
