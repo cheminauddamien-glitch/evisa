@@ -21,8 +21,10 @@ RewriteRule ^blog$ - [G,L]
 RewriteRule ^blog\.html$ - [G,L]
 RewriteRule ^blog-single$ - [G,L]
 RewriteRule ^blog-single\.html$ - [G,L]
-# Sonde de deploiement : permet de verifier quelle version du .htaccess est en ligne.
-RewriteRule ^lot-a-probe-20260908$ - [G,L]
+# Sonde de deploiement, v2 : la chaine change a chaque version pour rester
+# discriminante. Ancienne sonde lot-a-probe-20260908 retiree volontairement :
+# si elle repond encore 410, le fichier en ligne est perime.
+RewriteRule ^lot-a-probe-v2-exact$ - [G,L]
 
 # /en/index would need two hops via the generic index rule (→ /en/ → /) —
 # short-circuit it to the root in ONE hop.
