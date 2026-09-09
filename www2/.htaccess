@@ -26,6 +26,15 @@ RewriteRule ^blog-single\.html$ - [G,L]
 # si elle repond encore 410, le fichier en ligne est perime.
 RewriteRule ^lot-a-probe-v2-exact$ - [G,L]
 
+# Lot B — consolidation fees / requirements / processing-time vers le hub
+# destination (1 308 pages, 09/09/2026). Regle unique et conditionnelle plutot
+# que 1 308 lignes : la 301 ne se declenche QUE si le fichier n existe plus.
+# Les 167 pages de la meme famille conservees pour leur trafic existent
+# toujours sur disque et continuent donc d etre servies normalement.
+# Pas de quantificateur /? : ce serveur ne les applique pas (cf. lot A).
+RewriteCond %{REQUEST_FILENAME}.html !-f
+RewriteRule ^(en|fr|es|pt|zh|th|ru|ar|ja|ko)/([a-z0-9-]+)-visa-(fees|requirements|processing-time)$ https://www.evisa-card.com/$1/visa-$2 [R=301,L]
+
 # /en/index would need two hops via the generic index rule (→ /en/ → /) —
 # short-circuit it to the root in ONE hop.
 RewriteRule ^en/index(?:\.html)?/?$ https://www.evisa-card.com/ [R=301,L]
