@@ -194,3 +194,38 @@ Attendu après upload : 410 direct sur les quatre formes, aucune chaîne.
 Note : il est également possible que le .htaccess n'ait pas été transmis lors
 de l'upload, FileZilla masquant les fichiers commençant par un point. À
 vérifier lors du prochain envoi.
+
+===========================================================================
+ÉTAT MESURÉ EN LIGNE AU 09/09/2026 — LOT A CONFORME
+===========================================================================
+  /blog                404
+  /blog.html           410
+  /blog-single         404
+  /blog-single.html    410
+  /blog/               301 en un hop vers /blog
+  /blog-single/        301 en un hop vers /blog-single
+
+Conforme au pack, dont le point 7 de la stratégie demande d utiliser 410 ou
+404 pour une page supprimée sans équivalent pertinent. Les deux codes sont
+acceptés. Google désindexe sur l un comme sur l autre, le 410 étant seulement
+un peu plus rapide à être pris en compte.
+
+Non-régression vérifiée : /, /fr/, /en/visa-united-kingdom,
+/en/malaysia-visa-for-nigerian-citizens, /retirement-visa-guide,
+/sitemap.xml et /robots.txt répondent tous 200.
+
+ANOMALIE SERVEUR DOCUMENTÉE
+Ce serveur n applique pas les motifs RewriteRule contenant le quantificateur
+de slash facultatif. Le motif ^blog/?$ ne captait ni /blog ni /blog/, alors
+que ^blog\.html$ et la sonde ^lot-a-probe-20260908$ renvoyaient bien 410.
+Cause non identifiable sans accès à la configuration du serveur.
+Contournement retenu : n écrire que des motifs exacts dans ce .htaccess.
+À retenir pour toute règle future.
+
+RÉSERVE
+Le passage de /blog et /blog-single de 404 à 410 n a pas pu être confirmé.
+La sonde v1 était identique dans deux versions successives du fichier et ne
+permettait donc pas de distinguer un envoi non parvenu d un motif non
+appliqué. Une sonde v2, de chaîne lot-a-probe-v2-exact, corrige ce défaut et
+sera discriminante au prochain envoi. Point sans conséquence fonctionnelle,
+le 404 actuel satisfaisant déjà le pack.
