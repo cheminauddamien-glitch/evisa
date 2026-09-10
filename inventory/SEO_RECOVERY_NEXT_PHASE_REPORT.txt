@@ -170,3 +170,52 @@ DEUX PAGES RATTACHÉES
 SEULES LES DEUX LIGNES NON COCHÉES RESTENT OUVERTES
   Le résidu anglais relève de la traduction, pas de cette phase.
   Le contrôle des statuts HTTP se fera après l envoi FTP, avec la sonde.
+
+===========================================================================
+CONTRÔLE DE DÉPLOIEMENT — 10/09/2026, APRÈS ENVOI FTP
+===========================================================================
+SONDES
+  /lot-c1-probe-20260910      410   le .htaccess du lot C1 est bien en ligne
+  /lot-a-probe-v2-exact       410
+  /lot-a-probe-20260908       404   ancienne sonde correctement disparue
+
+RÉSERVE DU LOT A LEVÉE
+  /blog              410   était 404 au contrôle du 09/09
+  /blog.html         410
+  /blog-single.html  410
+  Les motifs exacts fonctionnent donc bien. Le 410 est désormais servi sur les
+  deux formes, ce qui accélère la désindexation par rapport au 404 observé
+  précédemment. L anomalie du serveur reste vraie : seuls les motifs sans
+  quantificateur de slash facultatif sont appliqués.
+
+LOT C1
+  40 URL tirées au hasard du lot : 40 redirections 301 conformes, 0 écart.
+  Chaque cible testée répond 200 directement, aucune chaîne.
+
+PAGES CONSERVÉES, TOUTES EN 200
+  /en/india-visa-for-german-citizens      page visa-for conservée
+  /ko/jordan-visa-for-german-citizens     page visa-for conservée
+  /en/cappadocia-visa-requirements        exclusion du lot B
+  /es/china-visa-processing-time          conservée pour son trafic
+  /en/bermuda-visa-requirements           page rattachée à son hub
+
+LOT B TOUJOURS ACTIF
+  /en/argentina-visa-fees        301 vers /en/visa-argentina
+  /fr/denmark-visa-requirements  301 vers /fr/visa-denmark
+  /en/denmark-visa-requirements  301 vers /en/visa-denmark
+
+NON-RÉGRESSION, TOUT EN 200
+  /   /fr/   /en/visa-united-kingdom   /en/schengen-visa-guide-2026
+  /sitemap.xml   /robots.txt   /en/expat-guide-portugal
+
+SITEMAP EN LIGNE
+  10 940 URL, conforme au fichier local.
+
+CONTENU ETIAS EN LIGNE
+  Contrôle sur /fr/austria-visa-for-argentinian-citizens : les cellules
+  affichent « ETIAS pas encore en service », le bloc officiel est présent,
+  aucune date de lancement n apparaît.
+
+CONCLUSION
+  Déploiement conforme. Reste à soumettre le sitemap dans Search Console puis
+  à attendre la mesure hebdomadaire avant tout nouveau lot.
