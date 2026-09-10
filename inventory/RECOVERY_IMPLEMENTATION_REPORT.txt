@@ -229,3 +229,77 @@ permettait donc pas de distinguer un envoi non parvenu d un motif non
 appliqué. Une sonde v2, de chaîne lot-a-probe-v2-exact, corrige ce défaut et
 sera discriminante au prochain envoi. Point sans conséquence fonctionnelle,
 le 404 actuel satisfaisant déjà le pack.
+
+===========================================================================
+LOT B — EXÉCUTÉ LE 09/09/2026
+===========================================================================
+Décision utilisateur du 09/09 : fusion demandée explicitement, en connaissance
+de l annulation du 04/08 rappelée plus haut. Le point de blocage ci-dessus est
+donc levé.
+
+PÉRIMÈTRE RÉELLEMENT TRAITÉ
+  1 308 pages supprimées et redirigées en 301 vers /xx/visa-<destination>
+     48 pages EXCLUES de la fusion, voir plus bas
+  1 356 candidates au départ
+
+ÉQUIVALENCE D INTENTION VÉRIFIÉE AVANT REDIRECTION
+Le hub de destination porte des sections dédiées aux documents requis et aux
+frais, et traite les délais. Contrôle sur en/visa-argentina : 40 896 octets
+contre 22 512 pour la page de frais, sections Required Documents et Visa Fees
+présentes. La 301 pointe donc vers une page réellement équivalente, comme
+l exige le pack.
+
+TRAVAUX ASSOCIÉS
+  28 825 ancres internes retirées dans 10 818 fichiers
+   1 271 balises hreflang retirées
+   1 190 entrées de sélecteur de langue repointées vers /xx/ sur 162 pages
+         (seconde passe : les ancres contenant un drapeau échappaient au
+         premier motif, qui n acceptait pas de balise imbriquée)
+  sitemap 13 355 -> 12 047 URL
+  pages HTML 13 370 -> 12 062
+
+RÈGLE .HTACCESS
+Une seule règle conditionnelle plutôt que 1 308 lignes :
+
+  RewriteCond %{REQUEST_FILENAME}.html !-f
+  RewriteRule ^(en|fr|es|pt|zh|th|ru|ar|ja|ko)/([a-z0-9-]+)-visa-(fees|requirements|processing-time)$ https://www.evisa-card.com/$1/visa-$2 [R=301,L]
+
+La redirection ne se déclenche que si le fichier n existe plus. Les 167 pages
+de la même famille conservées pour leur trafic existent toujours sur disque et
+continuent d être servies normalement, sans exception à maintenir. Aucun
+quantificateur de slash facultatif, ce serveur ne les applique pas.
+
+48 PAGES EXCLUES — DÉCISION MOTIVÉE
+Ces pages n avaient pas de hub, non par oubli, mais parce qu elles couvrent une
+région ou un site et non un pays :
+  amsterdam-visa-requirements      10 langues
+  patagonia-visa-requirements      10
+  taipei-visa-requirements          9
+  cappadocia-visa-requirements      8
+  machu-picchu-visa-requirements    8
+  california, galapagos, santorini  1 chacune
+
+Leurs versions anglaises sont les plus gros générateurs d impressions du site :
+cappadocia 52 227, machu-picchu 17 163, taipei 8 912, patagonia 2 576.
+California, santorini et galapagos ont été créées le 05/08 pour combler des
+trous de contenu mesurés. Intention distincte, aucun doublon.
+
+Le pack interdit de supprimer une URL à intention distincte, et rappelle qu une
+URL sans trafic n est pas automatiquement inutile. Ces 48 pages sont donc
+conservées et listées dans HUMAN_REVIEW_LOTB.csv.
+
+QA LOT B
+[x] Chaque 301 pointe vers une cible équivalente et existante
+[x] 0 référence interne vers une page supprimée
+[x] 0 canonical vers une page supprimée
+[x] 0 URL supprimée présente au sitemap
+[x] 0 hub devenu orphelin
+[x] 0 chaîne de redirection
+[x] Identifiant de lot : LOT_B_2026-09-09
+[x] REDIRECT_MAP_FINAL.csv : 1 308 lignes
+[x] HUMAN_REVIEW_LOTB.csv : 48 lignes
+
+RESTE À FAIRE
+Envoi FTP complet de www2/, .htaccess inclus. La sonde lot-a-probe-v2-exact
+validera d un coup le déploiement, les redirections du lot B et le reliquat
+du lot A. Puis mesure hebdomadaire avant tout nouveau lot.
