@@ -1,0 +1,1301 @@
+url,locale,regles
+/ar/austria-visa-for-mexican-citizens,ar,reg_ar x3
+/ar/belgium-visa-for-argentinian-citizens,ar,tarif_eur7 x1
+/ar/belgium-visa-for-australian-citizens,ar,tarif_eur7 x1
+/ar/belgium-visa-for-brazilian-citizens,ar,tarif_eur7 x1
+/ar/belgium-visa-for-canadian-citizens,ar,tarif_eur7 x1
+/ar/belgium-visa-for-japanese-citizens,ar,tarif_eur7 x1
+/ar/belgium-visa-for-korean-citizens,ar,tarif_eur7 x1
+/ar/belgium-visa-for-mexican-citizens,ar,tarif_eur7 x1
+/ar/belgium-visa-for-singaporean-citizens,ar,tarif_eur7 x1
+/ar/belgium-visa-for-uk-citizens,ar,tarif_eur7 x1
+/ar/belgium-visa-for-us-citizens,ar,tarif_eur7 x1
+/ar/greece-visa-for-australian-citizens,ar,tarif_eur7 x1
+/ar/greece-visa-for-brazilian-citizens,ar,tarif_eur7 x1
+/ar/greece-visa-for-japanese-citizens,ar,tarif_eur7 x1
+/ar/greece-visa-for-korean-citizens,ar,tarif_eur7 x1
+/ar/greece-visa-for-mexican-citizens,ar,tarif_eur7 x1
+/ar/greece-visa-for-singaporean-citizens,ar,tarif_eur7 x1
+/ar/netherlands-visa-for-argentinian-citizens,ar,tarif_eur7 x1
+/ar/netherlands-visa-for-australian-citizens,ar,tarif_eur7 x1
+/ar/netherlands-visa-for-brazilian-citizens,ar,tarif_eur7 x1
+/ar/netherlands-visa-for-canadian-citizens,ar,tarif_eur7 x1
+/ar/netherlands-visa-for-japanese-citizens,ar,tarif_eur7 x1
+/ar/netherlands-visa-for-korean-citizens,ar,tarif_eur7 x1
+/ar/netherlands-visa-for-mexican-citizens,ar,tarif_eur7 x1
+/ar/netherlands-visa-for-singaporean-citizens,ar,tarif_eur7 x1
+/ar/netherlands-visa-for-uk-citizens,ar,tarif_eur7 x1
+/ar/netherlands-visa-for-us-citizens,ar,tarif_eur7 x1
+/ar/norway-visa-for-argentinian-citizens,ar,tarif_eur7 x1
+/ar/norway-visa-for-australian-citizens,ar,tarif_eur7 x1
+/ar/norway-visa-for-brazilian-citizens,ar,tarif_eur7 x1
+/ar/norway-visa-for-canadian-citizens,ar,tarif_eur7 x1
+/ar/norway-visa-for-japanese-citizens,ar,tarif_eur7 x1
+/ar/norway-visa-for-korean-citizens,ar,tarif_eur7 x1
+/ar/norway-visa-for-mexican-citizens,ar,tarif_eur7 x1
+/ar/norway-visa-for-singaporean-citizens,ar,tarif_eur7 x1
+/ar/norway-visa-for-uk-citizens,ar,tarif_eur7 x1
+/ar/norway-visa-for-us-citizens,ar,tarif_eur7 x1
+/ar/portugal-visa-for-brazilian-citizens,ar,tarif_eur7 x1
+/ar/portugal-visa-for-japanese-citizens,ar,tarif_eur7 x1
+/ar/portugal-visa-for-mexican-citizens,ar,tarif_eur7 x1
+/ar/portugal-visa-for-singaporean-citizens,ar,tarif_eur7 x1
+/ar/sweden-visa-for-argentinian-citizens,ar,tarif_eur7 x1
+/ar/sweden-visa-for-australian-citizens,ar,tarif_eur7 x1
+/ar/sweden-visa-for-brazilian-citizens,ar,tarif_eur7 x1
+/ar/sweden-visa-for-canadian-citizens,ar,tarif_eur7 x1
+/ar/sweden-visa-for-japanese-citizens,ar,tarif_eur7 x1
+/ar/sweden-visa-for-korean-citizens,ar,tarif_eur7 x1
+/ar/sweden-visa-for-mexican-citizens,ar,tarif_eur7 x1
+/ar/sweden-visa-for-singaporean-citizens,ar,tarif_eur7 x1
+/ar/sweden-visa-for-uk-citizens,ar,tarif_eur7 x1
+/ar/sweden-visa-for-us-citizens,ar,tarif_eur7 x1
+/ar/visa-austria,ar,date_ar1 x1; date_ar2 x1; date_ar3 x1
+/ar/visa-belgium,ar,date_ar1 x1; date_ar2 x1; date_ar3 x1
+/ar/visa-bulgaria,ar,date_ar1 x1; date_ar2 x1; date_ar3 x1
+/ar/visa-croatia,ar,date_ar1 x1; date_ar2 x1; date_ar3 x1
+/ar/visa-cyprus,ar,date_ar1 x1; date_ar2 x1; date_ar3 x1
+/ar/visa-czech-republic,ar,date_ar1 x1; date_ar2 x1; date_ar3 x1
+/ar/visa-denmark,ar,date_ar1 x1; date_ar2 x1; date_ar3 x1
+/ar/visa-finland,ar,date_ar1 x1; date_ar2 x1; date_ar3 x1
+/ar/visa-france,ar,date_ar1 x1; date_ar2 x1; date_ar3 x1
+/ar/visa-free-countries-australia-passport,ar,reg_en x3
+/ar/visa-free-countries-brazil-passport,ar,reg_en x5
+/ar/visa-free-countries-canada-passport,ar,reg_en x3
+/ar/visa-free-countries-japan-passport,ar,reg_en x4
+/ar/visa-free-countries-uae-passport,ar,reg_en x4
+/ar/visa-free-countries-uk-passport,ar,reg_en x5
+/ar/visa-free-countries-us-passport,ar,reg_en x5
+/ar/visa-germany,ar,date_ar1 x1; date_ar2 x1; date_ar3 x1
+/ar/visa-greece,ar,date_ar1 x1; date_ar2 x1; date_ar3 x1
+/ar/visa-hungary,ar,date_ar2 x1
+/ar/visa-iceland,ar,date_ar1 x1; date_ar2 x1; date_ar3 x1
+/ar/visa-italy,ar,date_ar1 x1; date_ar2 x1; date_ar3 x1
+/ar/visa-liechtenstein,ar,date_ar1 x1; date_ar2 x1; date_ar3 x1
+/ar/visa-luxembourg,ar,date_ar1 x1; date_ar2 x1; date_ar3 x1
+/ar/visa-netherlands,ar,date_ar1 x1; date_ar2 x1; date_ar3 x1
+/ar/visa-norway,ar,date_ar1 x1; date_ar2 x1; date_ar3 x1
+/ar/visa-poland,ar,date_ar1 x1; date_ar2 x1; date_ar3 x1
+/ar/visa-portugal,ar,date_ar1 x1; date_ar2 x1; date_ar3 x1
+/ar/visa-romania,ar,date_ar1 x1; date_ar2 x1; date_ar3 x1
+/ar/visa-slovakia,ar,date_ar1 x1; date_ar2 x1; date_ar3 x1
+/ar/visa-slovenia,ar,date_ar1 x1; date_ar2 x1; date_ar3 x1
+/ar/visa-spain,ar,date_ar1 x1; date_ar2 x1; date_ar3 x1
+/ar/visa-sweden,ar,date_ar1 x1; date_ar2 x1; date_ar3 x1
+/ar/visa-switzerland,ar,date_ar1 x1; date_ar2 x1; date_ar3 x1
+/en/denmark-visa-for-argentinian-citizens,en,tarif_e7 x1
+/en/denmark-visa-for-australian-citizens,en,tarif_e7 x1
+/en/denmark-visa-for-brazilian-citizens,en,tarif_e7 x1
+/en/denmark-visa-for-canadian-citizens,en,tarif_e7 x1
+/en/denmark-visa-for-japanese-citizens,en,tarif_e7 x1
+/en/denmark-visa-for-korean-citizens,en,tarif_e7 x1
+/en/denmark-visa-for-mexican-citizens,en,tarif_e7 x1
+/en/denmark-visa-for-singaporean-citizens,en,tarif_e7 x1
+/en/denmark-visa-for-uk-citizens,en,tarif_e7 x1
+/en/denmark-visa-for-us-citizens,en,tarif_e7 x1
+/en/expat-guide-france,en,reg_en x2
+/en/expat-guide-malta,en,reg_en x2
+/en/france-visa-requirements,en,tarif_eur7 x1
+/en/germany-visa-for-australian-citizens,en,dom3 x2
+/en/germany-visa-for-brazilian-citizens,en,dom3 x2
+/en/germany-visa-for-canadian-citizens,en,dom3 x2
+/en/germany-visa-for-japanese-citizens,en,dom3 x2
+/en/germany-visa-for-korean-citizens,en,dom3 x2
+/en/germany-visa-for-singaporean-citizens,en,dom3 x2
+/en/germany-visa-for-uk-citizens,en,dom3 x2
+/en/germany-visa-for-us-citizens,en,dom3 x2
+/en/hungary-visa-for-argentinian-citizens,en,tarif_eur7 x2
+/en/hungary-visa-for-australian-citizens,en,tarif_eur7 x2
+/en/hungary-visa-for-brazilian-citizens,en,tarif_eur7 x2
+/en/hungary-visa-for-canadian-citizens,en,tarif_eur7 x2
+/en/hungary-visa-for-japanese-citizens,en,tarif_eur7 x2
+/en/hungary-visa-for-korean-citizens,en,tarif_eur7 x2
+/en/hungary-visa-for-mexican-citizens,en,tarif_eur7 x2
+/en/hungary-visa-for-singaporean-citizens,en,tarif_eur7 x2
+/en/hungary-visa-for-uk-citizens,en,tarif_eur7 x2
+/en/hungary-visa-for-us-citizens,en,tarif_eur7 x2
+/en/italy-visa-for-argentinian-citizens,en,dom3 x2
+/en/italy-visa-for-australian-citizens,en,dom3 x2
+/en/italy-visa-for-brazilian-citizens,en,dom3 x2
+/en/italy-visa-for-canadian-citizens,en,dom3 x2
+/en/italy-visa-for-japanese-citizens,en,dom3 x2
+/en/italy-visa-for-korean-citizens,en,dom3 x2
+/en/italy-visa-for-mexican-citizens,en,dom3 x2
+/en/italy-visa-for-singaporean-citizens,en,dom3 x2
+/en/italy-visa-for-uk-citizens,en,dom3 x2
+/en/italy-visa-for-us-citizens,en,dom3 x2
+/en/norway-visa-for-argentinian-citizens,en,dom1 x1
+/en/norway-visa-for-australian-citizens,en,dom1 x1
+/en/norway-visa-for-brazilian-citizens,en,dom1 x1
+/en/norway-visa-for-canadian-citizens,en,dom1 x1
+/en/norway-visa-for-japanese-citizens,en,dom1 x1
+/en/norway-visa-for-korean-citizens,en,dom1 x1
+/en/norway-visa-for-mexican-citizens,en,dom1 x1
+/en/norway-visa-for-singaporean-citizens,en,dom1 x1
+/en/norway-visa-for-uk-citizens,en,dom1 x1
+/en/norway-visa-for-us-citizens,en,dom1 x1
+/en/poland-visa-for-argentinian-citizens,en,tarif_eur7 x2
+/en/poland-visa-for-australian-citizens,en,tarif_eur7 x2
+/en/poland-visa-for-brazilian-citizens,en,tarif_eur7 x2
+/en/poland-visa-for-canadian-citizens,en,tarif_eur7 x2
+/en/poland-visa-for-japanese-citizens,en,tarif_eur7 x2
+/en/poland-visa-for-korean-citizens,en,tarif_eur7 x2
+/en/poland-visa-for-mexican-citizens,en,tarif_eur7 x2
+/en/poland-visa-for-singaporean-citizens,en,tarif_eur7 x2
+/en/poland-visa-for-uk-citizens,en,tarif_eur7 x2
+/en/poland-visa-for-us-citizens,en,tarif_eur7 x2
+/en/spain-visa-for-argentinian-citizens,en,dom3 x2
+/en/spain-visa-for-australian-citizens,en,dom3 x2
+/en/spain-visa-for-brazilian-citizens,en,dom3 x2
+/en/spain-visa-for-canadian-citizens,en,dom3 x2
+/en/spain-visa-for-japanese-citizens,en,dom3 x2
+/en/spain-visa-for-korean-citizens,en,dom3 x2
+/en/spain-visa-for-mexican-citizens,en,dom3 x2
+/en/spain-visa-for-singaporean-citizens,en,dom3 x2
+/en/spain-visa-for-uk-citizens,en,dom3 x2
+/en/spain-visa-for-us-citizens,en,dom3 x2
+/en/sweden-visa-for-argentinian-citizens,en,dom1 x1
+/en/sweden-visa-for-australian-citizens,en,dom1 x1
+/en/sweden-visa-for-brazilian-citizens,en,dom1 x1
+/en/sweden-visa-for-canadian-citizens,en,dom1 x1
+/en/sweden-visa-for-japanese-citizens,en,dom1 x1
+/en/sweden-visa-for-korean-citizens,en,dom1 x1
+/en/sweden-visa-for-mexican-citizens,en,dom1 x1
+/en/sweden-visa-for-singaporean-citizens,en,dom1 x1
+/en/sweden-visa-for-uk-citizens,en,dom1 x1
+/en/sweden-visa-for-us-citizens,en,dom1 x1
+/en/visa-austria,en,date_en1 x1; date_en2 x1; date_en3 x1
+/en/visa-belgium,en,date_en1 x1; date_en2 x1; date_en3 x1
+/en/visa-bulgaria,en,date_en1 x1
+/en/visa-croatia,en,date_en1 x1; date_en2 x1
+/en/visa-czech-republic,en,date_en1 x1; date_en2 x1
+/en/visa-denmark,en,date_en1 x1; date_en2 x1
+/en/visa-finland,en,date_en1 x1
+/en/visa-france,en,date_en1 x1; date_en2 x1; date_en3 x1
+/en/visa-free-countries-australia-passport,en,reg_en x3
+/en/visa-free-countries-brazil-passport,en,reg_en x5
+/en/visa-free-countries-canada-passport,en,reg_en x3
+/en/visa-free-countries-japan-passport,en,reg_en x4
+/en/visa-free-countries-uae-passport,en,reg_en x4
+/en/visa-free-countries-uk-passport,en,reg_en x5
+/en/visa-free-countries-us-passport,en,reg_en x5
+/en/visa-germany,en,date_en1 x1; date_en2 x1; date_en3 x1
+/en/visa-greece,en,date_en1 x1; date_en2 x1; date_en3 x1
+/en/visa-hungary,en,date_en1 x1; date_en2 x1
+/en/visa-iceland,en,date_en1 x1
+/en/visa-ireland,en,tarif_e7 x1
+/en/visa-italy,en,date_en1 x1; date_en2 x1; date_en3 x1
+/en/visa-liechtenstein,en,date_en1 x1
+/en/visa-luxembourg,en,date_en1 x1
+/en/visa-netherlands,en,date_en1 x1; date_en2 x1; date_en3 x1
+/en/visa-norway,en,date_en1 x1; date_en2 x1
+/en/visa-poland,en,date_en1 x1; date_en2 x1
+/en/visa-portugal,en,date_en1 x1; date_en2 x1; date_en3 x1
+/en/visa-romania,en,date_en1 x1; date_en2 x1
+/en/visa-slovakia,en,date_en1 x1
+/en/visa-slovenia,en,date_en1 x1
+/en/visa-spain,en,date_en1 x1; date_en2 x1; date_en3 x1
+/en/visa-sweden,en,date_en1 x1; date_en2 x1
+/en/visa-switzerland,en,date_en1 x1; date_en2 x1; date_en3 x1
+/es/austria-visa-for-argentinian-citizens,es,tarif_e7 x1
+/es/austria-visa-for-australian-citizens,es,tarif_e7 x1
+/es/austria-visa-for-brazilian-citizens,es,tarif_e7 x1
+/es/austria-visa-for-canadian-citizens,es,tarif_e7 x1
+/es/austria-visa-for-japanese-citizens,es,tarif_e7 x1
+/es/austria-visa-for-korean-citizens,es,tarif_e7 x1
+/es/austria-visa-for-mexican-citizens,es,tarif_e7 x1
+/es/austria-visa-for-singaporean-citizens,es,tarif_e7 x1
+/es/austria-visa-for-uk-citizens,es,tarif_e7 x1
+/es/austria-visa-for-us-citizens,es,tarif_e7 x1
+/es/croatia-visa-for-argentinian-citizens,es,tarif_e7 x1
+/es/croatia-visa-for-australian-citizens,es,tarif_e7 x1
+/es/croatia-visa-for-brazilian-citizens,es,tarif_e7 x1
+/es/croatia-visa-for-canadian-citizens,es,tarif_e7 x1
+/es/croatia-visa-for-japanese-citizens,es,tarif_e7 x1
+/es/croatia-visa-for-korean-citizens,es,tarif_e7 x1
+/es/croatia-visa-for-mexican-citizens,es,tarif_e7 x1
+/es/croatia-visa-for-singaporean-citizens,es,tarif_e7 x1
+/es/croatia-visa-for-uk-citizens,es,tarif_e7 x1
+/es/croatia-visa-for-us-citizens,es,tarif_e7 x1
+/es/czech-republic-visa-for-argentinian-citizens,es,tarif_e7 x1
+/es/czech-republic-visa-for-australian-citizens,es,tarif_e7 x1
+/es/czech-republic-visa-for-brazilian-citizens,es,tarif_e7 x1
+/es/czech-republic-visa-for-canadian-citizens,es,tarif_e7 x1
+/es/czech-republic-visa-for-japanese-citizens,es,tarif_e7 x1
+/es/czech-republic-visa-for-korean-citizens,es,tarif_e7 x1
+/es/czech-republic-visa-for-mexican-citizens,es,tarif_e7 x1
+/es/czech-republic-visa-for-singaporean-citizens,es,tarif_e7 x1
+/es/czech-republic-visa-for-uk-citizens,es,tarif_e7 x1
+/es/czech-republic-visa-for-us-citizens,es,tarif_e7 x1
+/es/denmark-visa-for-argentinian-citizens,es,tarif_e7 x1
+/es/denmark-visa-for-australian-citizens,es,tarif_e7 x1
+/es/denmark-visa-for-brazilian-citizens,es,tarif_e7 x1
+/es/denmark-visa-for-canadian-citizens,es,tarif_e7 x1
+/es/denmark-visa-for-japanese-citizens,es,tarif_e7 x1
+/es/denmark-visa-for-korean-citizens,es,tarif_e7 x1
+/es/denmark-visa-for-mexican-citizens,es,tarif_e7 x1
+/es/denmark-visa-for-singaporean-citizens,es,tarif_e7 x1
+/es/denmark-visa-for-uk-citizens,es,tarif_e7 x1
+/es/denmark-visa-for-us-citizens,es,tarif_e7 x1
+/es/germany-visa-for-australian-citizens,es,dom3 x5
+/es/germany-visa-for-brazilian-citizens,es,dom3 x5
+/es/germany-visa-for-canadian-citizens,es,dom3 x5
+/es/germany-visa-for-japanese-citizens,es,dom3 x5
+/es/germany-visa-for-korean-citizens,es,dom3 x5
+/es/germany-visa-for-singaporean-citizens,es,dom3 x5
+/es/germany-visa-for-uk-citizens,es,dom3 x5
+/es/germany-visa-for-us-citizens,es,dom3 x5
+/es/greece-visa-for-argentinian-citizens,es,tarif_eur7 x1
+/es/greece-visa-for-australian-citizens,es,tarif_eur7 x1
+/es/greece-visa-for-brazilian-citizens,es,tarif_eur7 x1
+/es/greece-visa-for-canadian-citizens,es,tarif_eur7 x1
+/es/greece-visa-for-japanese-citizens,es,tarif_eur7 x1
+/es/greece-visa-for-korean-citizens,es,tarif_eur7 x1
+/es/greece-visa-for-mexican-citizens,es,tarif_eur7 x1
+/es/greece-visa-for-singaporean-citizens,es,tarif_eur7 x1
+/es/greece-visa-for-uk-citizens,es,tarif_eur7 x1
+/es/greece-visa-for-us-citizens,es,tarif_eur7 x1
+/es/hungary-visa-for-argentinian-citizens,es,tarif_eur7 x2
+/es/hungary-visa-for-australian-citizens,es,tarif_eur7 x2
+/es/hungary-visa-for-brazilian-citizens,es,tarif_eur7 x2
+/es/hungary-visa-for-canadian-citizens,es,tarif_eur7 x2
+/es/hungary-visa-for-japanese-citizens,es,tarif_eur7 x2
+/es/hungary-visa-for-korean-citizens,es,tarif_eur7 x2
+/es/hungary-visa-for-mexican-citizens,es,tarif_eur7 x2
+/es/hungary-visa-for-singaporean-citizens,es,tarif_eur7 x2
+/es/hungary-visa-for-uk-citizens,es,tarif_eur7 x2
+/es/hungary-visa-for-us-citizens,es,tarif_eur7 x2
+/es/italy-visa-for-argentinian-citizens,es,dom3 x1
+/es/italy-visa-for-australian-citizens,es,dom3 x1
+/es/italy-visa-for-brazilian-citizens,es,dom3 x1
+/es/italy-visa-for-canadian-citizens,es,dom3 x1
+/es/italy-visa-for-japanese-citizens,es,dom3 x1
+/es/italy-visa-for-korean-citizens,es,dom3 x1
+/es/italy-visa-for-mexican-citizens,es,dom3 x1
+/es/italy-visa-for-singaporean-citizens,es,dom3 x1
+/es/italy-visa-for-uk-citizens,es,dom3 x1
+/es/italy-visa-for-us-citizens,es,dom3 x1
+/es/norway-visa-for-argentinian-citizens,es,dom1 x3
+/es/norway-visa-for-australian-citizens,es,dom1 x3
+/es/norway-visa-for-brazilian-citizens,es,dom1 x3
+/es/norway-visa-for-canadian-citizens,es,dom1 x3
+/es/norway-visa-for-japanese-citizens,es,dom1 x3
+/es/norway-visa-for-korean-citizens,es,dom1 x3
+/es/norway-visa-for-mexican-citizens,es,dom1 x3
+/es/norway-visa-for-singaporean-citizens,es,dom1 x3
+/es/norway-visa-for-uk-citizens,es,dom1 x3
+/es/norway-visa-for-us-citizens,es,dom1 x3
+/es/poland-visa-for-argentinian-citizens,es,tarif_eur7 x2
+/es/poland-visa-for-australian-citizens,es,tarif_eur7 x2
+/es/poland-visa-for-brazilian-citizens,es,tarif_eur7 x2
+/es/poland-visa-for-canadian-citizens,es,tarif_eur7 x2
+/es/poland-visa-for-japanese-citizens,es,tarif_eur7 x2
+/es/poland-visa-for-korean-citizens,es,tarif_eur7 x2
+/es/poland-visa-for-mexican-citizens,es,tarif_eur7 x2
+/es/poland-visa-for-singaporean-citizens,es,tarif_eur7 x2
+/es/poland-visa-for-uk-citizens,es,tarif_eur7 x2
+/es/poland-visa-for-us-citizens,es,tarif_eur7 x2
+/es/portugal-visa-for-argentinian-citizens,es,tarif_eur7 x1
+/es/portugal-visa-for-australian-citizens,es,tarif_eur7 x1
+/es/portugal-visa-for-brazilian-citizens,es,tarif_eur7 x1
+/es/portugal-visa-for-canadian-citizens,es,tarif_eur7 x1
+/es/portugal-visa-for-japanese-citizens,es,tarif_eur7 x1
+/es/portugal-visa-for-korean-citizens,es,tarif_eur7 x1
+/es/portugal-visa-for-mexican-citizens,es,tarif_eur7 x1
+/es/portugal-visa-for-singaporean-citizens,es,tarif_eur7 x1
+/es/portugal-visa-for-uk-citizens,es,tarif_eur7 x1
+/es/portugal-visa-for-us-citizens,es,tarif_eur7 x1
+/es/spain-visa-for-argentinian-citizens,es,dom3 x1
+/es/spain-visa-for-australian-citizens,es,dom3 x1
+/es/spain-visa-for-brazilian-citizens,es,dom3 x1
+/es/spain-visa-for-canadian-citizens,es,dom3 x1
+/es/spain-visa-for-japanese-citizens,es,dom3 x1
+/es/spain-visa-for-korean-citizens,es,dom3 x1
+/es/spain-visa-for-mexican-citizens,es,dom3 x1
+/es/spain-visa-for-singaporean-citizens,es,dom3 x1
+/es/spain-visa-for-uk-citizens,es,dom3 x1
+/es/spain-visa-for-us-citizens,es,dom3 x1
+/es/sweden-visa-for-argentinian-citizens,es,dom1 x3
+/es/sweden-visa-for-australian-citizens,es,dom1 x3
+/es/sweden-visa-for-brazilian-citizens,es,dom1 x3
+/es/sweden-visa-for-canadian-citizens,es,dom1 x3
+/es/sweden-visa-for-japanese-citizens,es,dom1 x3
+/es/sweden-visa-for-korean-citizens,es,dom1 x3
+/es/sweden-visa-for-mexican-citizens,es,dom1 x3
+/es/sweden-visa-for-singaporean-citizens,es,dom1 x3
+/es/sweden-visa-for-uk-citizens,es,dom1 x3
+/es/sweden-visa-for-us-citizens,es,dom1 x3
+/es/switzerland-visa-for-argentinian-citizens,es,tarif_e7 x1
+/es/switzerland-visa-for-australian-citizens,es,tarif_e7 x1
+/es/switzerland-visa-for-brazilian-citizens,es,tarif_e7 x1
+/es/switzerland-visa-for-canadian-citizens,es,tarif_e7 x1
+/es/switzerland-visa-for-japanese-citizens,es,tarif_e7 x1
+/es/switzerland-visa-for-korean-citizens,es,tarif_e7 x1
+/es/switzerland-visa-for-mexican-citizens,es,tarif_e7 x1
+/es/switzerland-visa-for-singaporean-citizens,es,tarif_e7 x1
+/es/switzerland-visa-for-uk-citizens,es,tarif_e7 x1
+/es/switzerland-visa-for-us-citizens,es,tarif_e7 x1
+/es/visa-austria,es,date_es1 x1; date_es2 x1; date_es3 x1; date_es4 x1
+/es/visa-belgium,es,date_es1 x1; date_es2 x1; date_es3 x1; date_es4 x1
+/es/visa-bulgaria,es,date_es1 x1; date_es2 x1
+/es/visa-croatia,es,date_es1 x1; date_es2 x1; date_es3 x1; date_es4 x1
+/es/visa-cyprus,es,date_es2 x1
+/es/visa-czech-republic,es,date_es1 x1; date_es2 x1; date_es3 x1; date_es4 x1
+/es/visa-denmark,es,date_es1 x1; date_es2 x1; date_es3 x1; date_es4 x1
+/es/visa-finland,es,date_es1 x1; date_es2 x1; date_es4 x1
+/es/visa-france,es,date_es1 x1; date_es2 x1; date_es3 x1; date_es4 x1
+/es/visa-free-countries-australia-passport,es,reg_es x3
+/es/visa-free-countries-brazil-passport,es,reg_es x5
+/es/visa-free-countries-canada-passport,es,reg_es x3
+/es/visa-free-countries-japan-passport,es,reg_es x4
+/es/visa-free-countries-uae-passport,es,reg_es x4
+/es/visa-free-countries-uk-passport,es,reg_es x5
+/es/visa-free-countries-us-passport,es,reg_es x5
+/es/visa-germany,es,date_es1 x1; date_es2 x1; date_es3 x1; date_es4 x1
+/es/visa-greece,es,date_es1 x1; date_es2 x1; date_es3 x1; date_es4 x1
+/es/visa-hungary,es,date_es1 x1; date_es2 x1; date_es3 x1
+/es/visa-iceland,es,date_es1 x1; date_es2 x1
+/es/visa-ireland,es,tarif_e7 x1
+/es/visa-italy,es,date_es1 x1; date_es2 x1; date_es3 x1; date_es4 x1
+/es/visa-liechtenstein,es,date_es1 x1; date_es2 x1
+/es/visa-luxembourg,es,date_es1 x1; date_es2 x1
+/es/visa-netherlands,es,date_es1 x1; date_es2 x1; date_es3 x1; date_es4 x1
+/es/visa-norway,es,date_es1 x1; date_es2 x1; date_es3 x1
+/es/visa-poland,es,date_es1 x1; date_es2 x1; date_es3 x1
+/es/visa-portugal,es,date_es1 x1; date_es2 x1; date_es3 x1
+/es/visa-romania,es,date_es1 x1; date_es2 x1; date_es3 x1
+/es/visa-slovakia,es,date_es1 x1; date_es2 x1
+/es/visa-slovenia,es,date_es1 x1; date_es2 x1
+/es/visa-spain,es,date_es1 x1; date_es2 x1; date_es3 x1; date_es4 x1
+/es/visa-sweden,es,date_es1 x1; date_es2 x1; date_es3 x1
+/es/visa-switzerland,es,date_es1 x1; date_es2 x1; date_es3 x1
+/fr/austria-visa-for-argentinian-citizens,fr,reg_fr2 x1
+/fr/austria-visa-for-australian-citizens,fr,reg_fr2 x1
+/fr/austria-visa-for-brazilian-citizens,fr,reg_fr2 x1
+/fr/austria-visa-for-canadian-citizens,fr,reg_fr2 x1
+/fr/austria-visa-for-japanese-citizens,fr,reg_fr2 x1
+/fr/austria-visa-for-korean-citizens,fr,reg_fr2 x1
+/fr/austria-visa-for-mexican-citizens,fr,reg_fr2 x1
+/fr/austria-visa-for-singaporean-citizens,fr,reg_fr2 x1
+/fr/austria-visa-for-uk-citizens,fr,reg_fr2 x1
+/fr/austria-visa-for-us-citizens,fr,reg_fr2 x1
+/fr/croatia-visa-for-argentinian-citizens,fr,reg_fr2 x1
+/fr/croatia-visa-for-australian-citizens,fr,reg_fr2 x1
+/fr/croatia-visa-for-brazilian-citizens,fr,reg_fr2 x1
+/fr/croatia-visa-for-canadian-citizens,fr,reg_fr2 x1
+/fr/croatia-visa-for-french-citizens,fr,reg_fr x1
+/fr/croatia-visa-for-german-citizens,fr,reg_fr x1
+/fr/croatia-visa-for-japanese-citizens,fr,reg_fr2 x1
+/fr/croatia-visa-for-korean-citizens,fr,reg_fr2 x1
+/fr/croatia-visa-for-mexican-citizens,fr,reg_fr2 x1
+/fr/croatia-visa-for-singaporean-citizens,fr,reg_fr2 x1
+/fr/croatia-visa-for-uk-citizens,fr,reg_fr2 x1
+/fr/croatia-visa-for-us-citizens,fr,reg_fr2 x1
+/fr/czech-republic-visa-for-argentinian-citizens,fr,reg_fr2 x1
+/fr/czech-republic-visa-for-australian-citizens,fr,reg_fr2 x1
+/fr/czech-republic-visa-for-brazilian-citizens,fr,reg_fr2 x1
+/fr/czech-republic-visa-for-canadian-citizens,fr,reg_fr2 x1
+/fr/czech-republic-visa-for-french-citizens,fr,reg_fr x1
+/fr/czech-republic-visa-for-german-citizens,fr,reg_fr x1
+/fr/czech-republic-visa-for-japanese-citizens,fr,reg_fr2 x1
+/fr/czech-republic-visa-for-korean-citizens,fr,reg_fr2 x1
+/fr/czech-republic-visa-for-mexican-citizens,fr,reg_fr2 x1
+/fr/czech-republic-visa-for-singaporean-citizens,fr,reg_fr2 x1
+/fr/czech-republic-visa-for-uk-citizens,fr,reg_fr2 x1
+/fr/czech-republic-visa-for-us-citizens,fr,reg_fr2 x1
+/fr/denmark-visa-for-argentinian-citizens,fr,tarif_7e x1
+/fr/denmark-visa-for-australian-citizens,fr,tarif_7e x1
+/fr/denmark-visa-for-brazilian-citizens,fr,tarif_7e x1
+/fr/denmark-visa-for-canadian-citizens,fr,tarif_7e x1
+/fr/denmark-visa-for-japanese-citizens,fr,tarif_7e x1
+/fr/denmark-visa-for-korean-citizens,fr,tarif_7e x1
+/fr/denmark-visa-for-mexican-citizens,fr,tarif_7e x1
+/fr/denmark-visa-for-singaporean-citizens,fr,tarif_7e x1
+/fr/denmark-visa-for-uk-citizens,fr,tarif_7e x1
+/fr/denmark-visa-for-us-citizens,fr,tarif_7e x1
+/fr/france-visa-for-argentinian-citizens,fr,reg_fr2 x1
+/fr/france-visa-for-australian-citizens,fr,reg_fr2 x1
+/fr/france-visa-for-brazilian-citizens,fr,reg_fr2 x1
+/fr/france-visa-for-canadian-citizens,fr,reg_fr2 x1
+/fr/france-visa-for-japanese-citizens,fr,reg_fr2 x1
+/fr/france-visa-for-korean-citizens,fr,reg_fr2 x1
+/fr/france-visa-for-mexican-citizens,fr,reg_fr2 x1
+/fr/france-visa-for-singaporean-citizens,fr,reg_fr2 x1
+/fr/france-visa-for-uk-citizens,fr,reg_fr2 x1
+/fr/france-visa-for-us-citizens,fr,reg_fr2 x1
+/fr/germany-visa-for-australian-citizens,fr,dom3 x1; dom4 x1
+/fr/germany-visa-for-brazilian-citizens,fr,dom3 x1; dom4 x1
+/fr/germany-visa-for-canadian-citizens,fr,dom3 x1; dom4 x1
+/fr/germany-visa-for-japanese-citizens,fr,dom3 x1; dom4 x1
+/fr/germany-visa-for-korean-citizens,fr,dom3 x1; dom4 x1
+/fr/germany-visa-for-singaporean-citizens,fr,dom3 x1; dom4 x1
+/fr/germany-visa-for-uk-citizens,fr,dom3 x1; dom4 x1
+/fr/germany-visa-for-us-citizens,fr,dom3 x1; dom4 x1
+/fr/ireland-visa-for-argentinian-citizens,fr,reg_fr x1
+/fr/ireland-visa-for-australian-citizens,fr,reg_fr x1
+/fr/ireland-visa-for-brazilian-citizens,fr,reg_fr x1
+/fr/ireland-visa-for-canadian-citizens,fr,reg_fr x1
+/fr/ireland-visa-for-japanese-citizens,fr,reg_fr x1
+/fr/ireland-visa-for-korean-citizens,fr,reg_fr x1
+/fr/ireland-visa-for-mexican-citizens,fr,reg_fr x1
+/fr/ireland-visa-for-singaporean-citizens,fr,reg_fr x1
+/fr/ireland-visa-for-uk-citizens,fr,reg_fr x1
+/fr/ireland-visa-for-us-citizens,fr,reg_fr x1
+/fr/italy-visa-for-argentinian-citizens,fr,dom2 x1; dom3 x1; dom4 x1
+/fr/italy-visa-for-australian-citizens,fr,dom2 x1; dom3 x1; dom4 x1
+/fr/italy-visa-for-brazilian-citizens,fr,dom2 x1; dom3 x1; dom4 x1
+/fr/italy-visa-for-canadian-citizens,fr,dom2 x1; dom3 x1; dom4 x1
+/fr/italy-visa-for-japanese-citizens,fr,dom2 x1; dom3 x1; dom4 x1
+/fr/italy-visa-for-korean-citizens,fr,dom2 x1; dom3 x1; dom4 x1
+/fr/italy-visa-for-mexican-citizens,fr,dom2 x1; dom3 x1; dom4 x1
+/fr/italy-visa-for-singaporean-citizens,fr,dom2 x1; dom3 x1; dom4 x1
+/fr/italy-visa-for-uk-citizens,fr,dom2 x1; dom3 x1; dom4 x1
+/fr/italy-visa-for-us-citizens,fr,dom2 x1; dom3 x1; dom4 x1
+/fr/spain-visa-for-argentinian-citizens,fr,dom2 x1; dom3 x1; dom4 x1
+/fr/spain-visa-for-australian-citizens,fr,dom2 x1; dom3 x1; dom4 x1
+/fr/spain-visa-for-brazilian-citizens,fr,dom2 x1; dom3 x1; dom4 x1
+/fr/spain-visa-for-canadian-citizens,fr,dom2 x1; dom3 x1; dom4 x1
+/fr/spain-visa-for-japanese-citizens,fr,dom2 x1; dom3 x1; dom4 x1
+/fr/spain-visa-for-korean-citizens,fr,dom2 x1; dom3 x1; dom4 x1
+/fr/spain-visa-for-mexican-citizens,fr,dom2 x1; dom3 x1; dom4 x1
+/fr/spain-visa-for-singaporean-citizens,fr,dom2 x1; dom3 x1; dom4 x1
+/fr/spain-visa-for-uk-citizens,fr,dom2 x1; dom3 x1; dom4 x1
+/fr/spain-visa-for-us-citizens,fr,dom2 x1; dom3 x1; dom4 x1
+/fr/switzerland-visa-for-argentinian-citizens,fr,reg_fr2 x1
+/fr/switzerland-visa-for-australian-citizens,fr,reg_fr2 x1
+/fr/switzerland-visa-for-brazilian-citizens,fr,reg_fr2 x1
+/fr/switzerland-visa-for-canadian-citizens,fr,reg_fr2 x1
+/fr/switzerland-visa-for-french-citizens,fr,reg_fr x3
+/fr/switzerland-visa-for-japanese-citizens,fr,reg_fr2 x1
+/fr/switzerland-visa-for-korean-citizens,fr,reg_fr2 x1
+/fr/switzerland-visa-for-mexican-citizens,fr,reg_fr2 x1
+/fr/switzerland-visa-for-singaporean-citizens,fr,reg_fr2 x1
+/fr/switzerland-visa-for-uk-citizens,fr,reg_fr2 x1
+/fr/switzerland-visa-for-us-citizens,fr,reg_fr2 x1
+/fr/visa-austria,fr,date_fr2 x1; date_fr3 x1; date_fr4 x1
+/fr/visa-belgium,fr,date_fr1 x1; date_fr3 x1
+/fr/visa-bulgaria,fr,date_fr1 x1; date_fr3 x1
+/fr/visa-croatia,fr,date_fr1 x1; date_fr3 x1
+/fr/visa-cyprus,fr,date_fr3 x1
+/fr/visa-czech-republic,fr,date_fr1 x1; date_fr3 x1
+/fr/visa-denmark,fr,date_fr1 x1; date_fr3 x1
+/fr/visa-finland,fr,date_fr1 x1; date_fr3 x1
+/fr/visa-france,fr,date_fr1 x1; date_fr3 x1
+/fr/visa-free-countries-australia-passport,fr,reg_fr x3
+/fr/visa-free-countries-brazil-passport,fr,reg_fr x5
+/fr/visa-free-countries-canada-passport,fr,reg_fr x3
+/fr/visa-free-countries-japan-passport,fr,reg_fr x4
+/fr/visa-free-countries-uae-passport,fr,reg_fr x4
+/fr/visa-free-countries-uk-passport,fr,reg_fr x5
+/fr/visa-free-countries-us-passport,fr,reg_fr x5
+/fr/visa-germany,fr,date_fr1 x1; date_fr3 x1
+/fr/visa-greece,fr,date_fr1 x1; date_fr3 x1
+/fr/visa-hungary,fr,date_fr1 x1; date_fr3 x1
+/fr/visa-iceland,fr,date_fr1 x1; date_fr3 x1
+/fr/visa-italy,fr,date_fr1 x1; date_fr3 x1
+/fr/visa-liechtenstein,fr,date_fr1 x1; date_fr3 x1
+/fr/visa-luxembourg,fr,date_fr2 x1; date_fr3 x1
+/fr/visa-netherlands,fr,date_fr2 x1; date_fr3 x1; date_fr4 x1
+/fr/visa-norway,fr,date_fr2 x1; date_fr3 x1; date_fr4 x1
+/fr/visa-poland,fr,date_fr2 x1; date_fr3 x1; date_fr4 x1
+/fr/visa-portugal,fr,date_fr2 x1; date_fr3 x1; date_fr4 x1
+/fr/visa-romania,fr,date_fr2 x1; date_fr3 x1; date_fr4 x1
+/fr/visa-slovakia,fr,date_fr2 x1; date_fr3 x1
+/fr/visa-slovenia,fr,date_fr2 x1; date_fr3 x1
+/fr/visa-spain,fr,date_fr2 x1; date_fr3 x1; date_fr4 x1
+/fr/visa-sweden,fr,date_fr2 x1; date_fr3 x1; date_fr4 x1
+/fr/visa-switzerland,fr,date_fr2 x1; date_fr3 x1; date_fr4 x1
+/ja/amsterdam-visa-requirements,ja,tarif_e7 x1
+/ja/austria-visa-for-argentinian-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/austria-visa-for-australian-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/austria-visa-for-brazilian-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/austria-visa-for-canadian-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/austria-visa-for-japanese-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/austria-visa-for-korean-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/austria-visa-for-mexican-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/austria-visa-for-singaporean-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/austria-visa-for-uk-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/austria-visa-for-us-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/belgium-visa-for-argentinian-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/belgium-visa-for-australian-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/belgium-visa-for-brazilian-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/belgium-visa-for-canadian-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/belgium-visa-for-japanese-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/belgium-visa-for-korean-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/belgium-visa-for-mexican-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/belgium-visa-for-singaporean-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/belgium-visa-for-uk-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/belgium-visa-for-us-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/croatia-visa-for-argentinian-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/croatia-visa-for-australian-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/croatia-visa-for-brazilian-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/croatia-visa-for-canadian-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/croatia-visa-for-japanese-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/croatia-visa-for-korean-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/croatia-visa-for-mexican-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/croatia-visa-for-singaporean-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/croatia-visa-for-uk-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/croatia-visa-for-us-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/czech-republic-visa-for-argentinian-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/czech-republic-visa-for-australian-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/czech-republic-visa-for-brazilian-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/czech-republic-visa-for-canadian-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/czech-republic-visa-for-japanese-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/czech-republic-visa-for-korean-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/czech-republic-visa-for-mexican-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/czech-republic-visa-for-singaporean-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/czech-republic-visa-for-uk-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/czech-republic-visa-for-us-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/denmark-visa-for-argentinian-citizens,ja,dom7 x2; reg_ja x1
+/ja/denmark-visa-for-australian-citizens,ja,dom7 x2; reg_ja x1
+/ja/denmark-visa-for-brazilian-citizens,ja,dom7 x2; reg_ja x1
+/ja/denmark-visa-for-canadian-citizens,ja,dom7 x2; reg_ja x1
+/ja/denmark-visa-for-french-citizens,ja,reg_ja2 x1
+/ja/denmark-visa-for-german-citizens,ja,reg_ja2 x1
+/ja/denmark-visa-for-japanese-citizens,ja,dom7 x2; reg_ja x1
+/ja/denmark-visa-for-korean-citizens,ja,dom7 x2; reg_ja x1
+/ja/denmark-visa-for-mexican-citizens,ja,dom7 x2; reg_ja x1
+/ja/denmark-visa-for-singaporean-citizens,ja,dom7 x2; reg_ja x1
+/ja/denmark-visa-for-uk-citizens,ja,dom7 x2; reg_ja x1
+/ja/denmark-visa-for-us-citizens,ja,dom7 x2; reg_ja x1
+/ja/germany-visa-for-australian-citizens,ja,tarif_eur7 x3; dom3 x3
+/ja/germany-visa-for-brazilian-citizens,ja,tarif_eur7 x3; dom3 x3
+/ja/germany-visa-for-canadian-citizens,ja,dom3 x3
+/ja/germany-visa-for-japanese-citizens,ja,tarif_eur7 x3; dom3 x3
+/ja/germany-visa-for-korean-citizens,ja,tarif_eur7 x3; dom3 x3
+/ja/germany-visa-for-singaporean-citizens,ja,tarif_eur7 x3; dom3 x3
+/ja/germany-visa-for-uk-citizens,ja,dom3 x3
+/ja/germany-visa-for-us-citizens,ja,tarif_eur7 x3; dom3 x3
+/ja/hungary-visa-for-argentinian-citizens,ja,tarif_eur7 x5; dom7 x2; reg_ja x1
+/ja/hungary-visa-for-australian-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/hungary-visa-for-brazilian-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/hungary-visa-for-canadian-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/hungary-visa-for-japanese-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/hungary-visa-for-korean-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/hungary-visa-for-mexican-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/hungary-visa-for-singaporean-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/hungary-visa-for-uk-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/hungary-visa-for-us-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/italy-visa-for-argentinian-citizens,ja,dom3 x2
+/ja/italy-visa-for-australian-citizens,ja,dom3 x2
+/ja/italy-visa-for-brazilian-citizens,ja,dom3 x2
+/ja/italy-visa-for-canadian-citizens,ja,dom3 x2
+/ja/italy-visa-for-japanese-citizens,ja,dom3 x2
+/ja/italy-visa-for-korean-citizens,ja,dom3 x2
+/ja/italy-visa-for-mexican-citizens,ja,dom3 x2
+/ja/italy-visa-for-singaporean-citizens,ja,dom3 x2
+/ja/italy-visa-for-uk-citizens,ja,dom3 x2
+/ja/italy-visa-for-us-citizens,ja,dom3 x2
+/ja/netherlands-visa-for-argentinian-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/netherlands-visa-for-australian-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/netherlands-visa-for-brazilian-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/netherlands-visa-for-canadian-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/netherlands-visa-for-japanese-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/netherlands-visa-for-korean-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/netherlands-visa-for-mexican-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/netherlands-visa-for-singaporean-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/netherlands-visa-for-uk-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/netherlands-visa-for-us-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/norway-visa-for-argentinian-citizens,ja,tarif_eur7 x5; dom1 x2; reg_ja x1
+/ja/norway-visa-for-australian-citizens,ja,tarif_eur7 x5; dom1 x2; reg_ja x1
+/ja/norway-visa-for-brazilian-citizens,ja,tarif_eur7 x5; dom1 x2; reg_ja x1
+/ja/norway-visa-for-canadian-citizens,ja,tarif_eur7 x5; dom1 x2; reg_ja x1
+/ja/norway-visa-for-japanese-citizens,ja,tarif_eur7 x5; dom1 x2; reg_ja x1
+/ja/norway-visa-for-korean-citizens,ja,tarif_eur7 x5; dom1 x2; reg_ja x1
+/ja/norway-visa-for-mexican-citizens,ja,tarif_eur7 x5; dom1 x2; reg_ja x1
+/ja/norway-visa-for-singaporean-citizens,ja,tarif_eur7 x5; dom1 x2; reg_ja x1
+/ja/norway-visa-for-uk-citizens,ja,tarif_eur7 x5; dom1 x2; reg_ja x1
+/ja/norway-visa-for-us-citizens,ja,tarif_eur7 x5; dom1 x2; reg_ja x1
+/ja/poland-visa-for-argentinian-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/poland-visa-for-australian-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/poland-visa-for-brazilian-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/poland-visa-for-canadian-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/poland-visa-for-japanese-citizens,ja,tarif_eur7 x5; dom7 x2; reg_ja x1
+/ja/poland-visa-for-korean-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/poland-visa-for-mexican-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/poland-visa-for-singaporean-citizens,ja,tarif_eur7 x5; dom7 x2; reg_ja x1
+/ja/poland-visa-for-uk-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/poland-visa-for-us-citizens,ja,tarif_eur7 x2; dom7 x2; reg_ja x1
+/ja/schengen-visa-guide-2026,ja,dom7 x1
+/ja/spain-visa-for-argentinian-citizens,ja,dom3 x2
+/ja/spain-visa-for-australian-citizens,ja,dom3 x2
+/ja/spain-visa-for-brazilian-citizens,ja,dom3 x2
+/ja/spain-visa-for-canadian-citizens,ja,dom3 x2
+/ja/spain-visa-for-japanese-citizens,ja,dom3 x2
+/ja/spain-visa-for-korean-citizens,ja,dom3 x2
+/ja/spain-visa-for-mexican-citizens,ja,dom3 x2
+/ja/spain-visa-for-singaporean-citizens,ja,dom3 x2
+/ja/spain-visa-for-uk-citizens,ja,dom3 x2
+/ja/spain-visa-for-us-citizens,ja,dom3 x2
+/ja/sweden-visa-for-argentinian-citizens,ja,tarif_eur7 x5; dom1 x2; reg_ja x1
+/ja/sweden-visa-for-australian-citizens,ja,tarif_eur7 x5; dom1 x2; reg_ja x1
+/ja/sweden-visa-for-brazilian-citizens,ja,tarif_eur7 x5; dom1 x2; reg_ja x1
+/ja/sweden-visa-for-canadian-citizens,ja,tarif_eur7 x5; dom1 x2; reg_ja x1
+/ja/sweden-visa-for-japanese-citizens,ja,tarif_eur7 x5; dom1 x2; reg_ja x1
+/ja/sweden-visa-for-korean-citizens,ja,tarif_eur7 x5; dom1 x2; reg_ja x1
+/ja/sweden-visa-for-mexican-citizens,ja,tarif_eur7 x5; dom1 x2; reg_ja x1
+/ja/sweden-visa-for-singaporean-citizens,ja,tarif_eur7 x5; dom1 x2; reg_ja x1
+/ja/sweden-visa-for-uk-citizens,ja,tarif_eur7 x5; dom1 x2; reg_ja x1
+/ja/sweden-visa-for-us-citizens,ja,tarif_eur7 x5; dom1 x2; reg_ja x1
+/ja/switzerland-visa-for-argentinian-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/switzerland-visa-for-australian-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/switzerland-visa-for-brazilian-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/switzerland-visa-for-canadian-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/switzerland-visa-for-japanese-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/switzerland-visa-for-korean-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/switzerland-visa-for-mexican-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/switzerland-visa-for-singaporean-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/switzerland-visa-for-uk-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/switzerland-visa-for-us-citizens,ja,tarif_e7 x1; reg_ja x1
+/ja/visa-austria,ja,date_ja1 x1; date_ja2 x1; date_ja3 x1; date_ja4 x1
+/ja/visa-belgium,ja,date_ja1 x1; date_ja2 x1; date_ja3 x1; date_ja4 x1
+/ja/visa-bulgaria,ja,date_ja1 x1; date_ja2 x1
+/ja/visa-croatia,ja,date_ja1 x1; date_ja2 x1; date_ja3 x1
+/ja/visa-czech-republic,ja,date_ja1 x1; date_ja2 x1; date_ja3 x1
+/ja/visa-denmark,ja,date_ja1 x1; date_ja2 x1; date_ja3 x1
+/ja/visa-finland,ja,date_ja1 x1; date_ja2 x1
+/ja/visa-france,ja,date_ja1 x1; date_ja2 x1; date_ja3 x1; date_ja4 x1
+/ja/visa-free-countries-australia-passport,ja,reg_ja x3
+/ja/visa-free-countries-brazil-passport,ja,reg_ja x5
+/ja/visa-free-countries-canada-passport,ja,tarif_e7 x1; reg_ja x3
+/ja/visa-free-countries-japan-passport,ja,reg_ja x4
+/ja/visa-free-countries-uae-passport,ja,reg_ja x4
+/ja/visa-free-countries-uk-passport,ja,reg_ja x5
+/ja/visa-free-countries-us-passport,ja,reg_ja x5
+/ja/visa-germany,ja,date_ja1 x1; date_ja2 x1; date_ja3 x1; date_ja4 x1
+/ja/visa-greece,ja,date_ja1 x1; date_ja2 x1; date_ja3 x1; date_ja4 x1
+/ja/visa-ireland,ja,tarif_e7 x1
+/ja/visa-luxembourg,ja,date_ja1 x1; date_ja2 x1
+/ja/visa-netherlands,ja,date_ja1 x1; date_ja2 x1; date_ja3 x1; date_ja4 x1
+/ja/visa-norway,ja,date_ja1 x1; date_ja2 x1; date_ja3 x1; date_ja5 x1
+/ja/visa-poland,ja,date_ja1 x1; date_ja2 x1; date_ja3 x1; date_ja5 x1
+/ja/visa-portugal,ja,date_ja1 x1; date_ja2 x1; date_ja3 x1; date_ja4 x1; date_ja5 x1
+/ja/visa-romania,ja,date_ja1 x1; date_ja2 x1; date_ja3 x1
+/ja/visa-slovakia,ja,date_ja1 x1; date_ja2 x1
+/ja/visa-slovenia,ja,date_ja1 x1; date_ja2 x1
+/ja/visa-spain,ja,date_ja1 x1; date_ja2 x1; date_ja3 x1; date_ja4 x1
+/ja/visa-sweden,ja,date_ja1 x1; date_ja2 x1; date_ja3 x1; date_ja5 x1
+/ja/visa-switzerland,ja,date_ja1 x1; date_ja2 x1; date_ja3 x1; date_ja4 x1
+/ko/amsterdam-visa-requirements,ko,tarif_e7 x1
+/ko/austria-visa-for-argentinian-citizens,ko,tarif_e7 x1
+/ko/austria-visa-for-australian-citizens,ko,tarif_e7 x1
+/ko/austria-visa-for-brazilian-citizens,ko,tarif_e7 x1
+/ko/austria-visa-for-canadian-citizens,ko,tarif_e7 x1
+/ko/austria-visa-for-japanese-citizens,ko,tarif_e7 x1
+/ko/austria-visa-for-korean-citizens,ko,tarif_e7 x1
+/ko/austria-visa-for-mexican-citizens,ko,tarif_e7 x1
+/ko/austria-visa-for-singaporean-citizens,ko,tarif_e7 x1
+/ko/austria-visa-for-uk-citizens,ko,tarif_e7 x1
+/ko/austria-visa-for-us-citizens,ko,tarif_e7 x1
+/ko/belgium-visa-for-argentinian-citizens,ko,dom5 x1
+/ko/belgium-visa-for-australian-citizens,ko,dom5 x1
+/ko/belgium-visa-for-brazilian-citizens,ko,dom5 x1
+/ko/belgium-visa-for-canadian-citizens,ko,dom5 x1
+/ko/belgium-visa-for-japanese-citizens,ko,dom5 x1
+/ko/belgium-visa-for-korean-citizens,ko,dom5 x1
+/ko/belgium-visa-for-mexican-citizens,ko,dom5 x1
+/ko/belgium-visa-for-singaporean-citizens,ko,dom5 x1
+/ko/belgium-visa-for-uk-citizens,ko,dom5 x1
+/ko/belgium-visa-for-us-citizens,ko,dom5 x1
+/ko/croatia-visa-for-argentinian-citizens,ko,tarif_e7 x1
+/ko/croatia-visa-for-australian-citizens,ko,tarif_e7 x1
+/ko/croatia-visa-for-brazilian-citizens,ko,tarif_e7 x1
+/ko/croatia-visa-for-canadian-citizens,ko,tarif_e7 x1
+/ko/croatia-visa-for-japanese-citizens,ko,tarif_e7 x1
+/ko/croatia-visa-for-korean-citizens,ko,tarif_e7 x1
+/ko/croatia-visa-for-mexican-citizens,ko,tarif_e7 x1
+/ko/croatia-visa-for-singaporean-citizens,ko,tarif_e7 x1
+/ko/croatia-visa-for-uk-citizens,ko,tarif_e7 x1
+/ko/croatia-visa-for-us-citizens,ko,tarif_e7 x1
+/ko/czech-republic-visa-for-argentinian-citizens,ko,tarif_e7 x1
+/ko/czech-republic-visa-for-australian-citizens,ko,tarif_e7 x1
+/ko/czech-republic-visa-for-brazilian-citizens,ko,tarif_e7 x1
+/ko/czech-republic-visa-for-canadian-citizens,ko,tarif_e7 x1
+/ko/czech-republic-visa-for-japanese-citizens,ko,tarif_e7 x1
+/ko/czech-republic-visa-for-korean-citizens,ko,tarif_e7 x1
+/ko/czech-republic-visa-for-mexican-citizens,ko,tarif_e7 x1
+/ko/czech-republic-visa-for-singaporean-citizens,ko,tarif_e7 x1
+/ko/czech-republic-visa-for-uk-citizens,ko,tarif_e7 x1
+/ko/czech-republic-visa-for-us-citizens,ko,tarif_e7 x1
+/ko/denmark-visa-for-argentinian-citizens,ko,dom5 x2
+/ko/denmark-visa-for-australian-citizens,ko,dom5 x2
+/ko/denmark-visa-for-brazilian-citizens,ko,dom5 x2
+/ko/denmark-visa-for-canadian-citizens,ko,dom5 x2
+/ko/denmark-visa-for-japanese-citizens,ko,dom5 x2
+/ko/denmark-visa-for-korean-citizens,ko,dom5 x2
+/ko/denmark-visa-for-mexican-citizens,ko,dom5 x2
+/ko/denmark-visa-for-singaporean-citizens,ko,dom5 x2
+/ko/denmark-visa-for-uk-citizens,ko,dom5 x2
+/ko/denmark-visa-for-us-citizens,ko,dom5 x2
+/ko/france-visa-for-us-citizens,ko,tarif_e7 x1
+/ko/germany-visa-for-australian-citizens,ko,dom3 x2; dom6 x2
+/ko/germany-visa-for-brazilian-citizens,ko,dom3 x2; dom6 x2
+/ko/germany-visa-for-canadian-citizens,ko,dom3 x2; dom6 x2
+/ko/germany-visa-for-japanese-citizens,ko,dom3 x2; dom6 x2
+/ko/germany-visa-for-korean-citizens,ko,dom3 x2; dom6 x2
+/ko/germany-visa-for-singaporean-citizens,ko,dom3 x2; dom6 x2
+/ko/germany-visa-for-uk-citizens,ko,dom3 x2; dom6 x2
+/ko/germany-visa-for-us-citizens,ko,dom3 x2; dom6 x2
+/ko/hungary-visa-for-argentinian-citizens,ko,tarif_eur7 x1; dom5 x3
+/ko/hungary-visa-for-australian-citizens,ko,tarif_eur7 x1; dom5 x3
+/ko/hungary-visa-for-brazilian-citizens,ko,tarif_eur7 x1; dom5 x3
+/ko/hungary-visa-for-canadian-citizens,ko,tarif_eur7 x1; dom5 x3
+/ko/hungary-visa-for-japanese-citizens,ko,tarif_eur7 x1; dom5 x3
+/ko/hungary-visa-for-korean-citizens,ko,tarif_eur7 x1; dom5 x3
+/ko/hungary-visa-for-mexican-citizens,ko,tarif_eur7 x1; dom5 x3
+/ko/hungary-visa-for-singaporean-citizens,ko,tarif_eur7 x1; dom5 x3
+/ko/hungary-visa-for-uk-citizens,ko,tarif_eur7 x1; dom5 x3
+/ko/hungary-visa-for-us-citizens,ko,tarif_eur7 x1; dom5 x3
+/ko/italy-visa-for-argentinian-citizens,ko,dom3 x1; dom6 x1
+/ko/italy-visa-for-australian-citizens,ko,dom3 x1; dom6 x1
+/ko/italy-visa-for-brazilian-citizens,ko,dom3 x1; dom6 x1
+/ko/italy-visa-for-canadian-citizens,ko,dom3 x1; dom6 x1
+/ko/italy-visa-for-japanese-citizens,ko,dom3 x1; dom6 x1
+/ko/italy-visa-for-korean-citizens,ko,dom3 x1; dom6 x1
+/ko/italy-visa-for-mexican-citizens,ko,dom3 x1; dom6 x1
+/ko/italy-visa-for-singaporean-citizens,ko,dom3 x1; dom6 x1
+/ko/italy-visa-for-uk-citizens,ko,dom3 x1; dom6 x1
+/ko/italy-visa-for-us-citizens,ko,dom3 x1; dom6 x1
+/ko/netherlands-visa-for-argentinian-citizens,ko,dom5 x1
+/ko/netherlands-visa-for-australian-citizens,ko,dom5 x1
+/ko/netherlands-visa-for-brazilian-citizens,ko,dom5 x1
+/ko/netherlands-visa-for-canadian-citizens,ko,dom5 x1
+/ko/netherlands-visa-for-japanese-citizens,ko,dom5 x1
+/ko/netherlands-visa-for-korean-citizens,ko,dom5 x1
+/ko/netherlands-visa-for-mexican-citizens,ko,dom5 x1
+/ko/netherlands-visa-for-singaporean-citizens,ko,dom5 x1
+/ko/netherlands-visa-for-uk-citizens,ko,dom5 x1
+/ko/netherlands-visa-for-us-citizens,ko,dom5 x1
+/ko/poland-visa-for-argentinian-citizens,ko,tarif_eur7 x1; dom5 x3
+/ko/poland-visa-for-australian-citizens,ko,tarif_eur7 x1; dom5 x3
+/ko/poland-visa-for-brazilian-citizens,ko,tarif_eur7 x1; dom5 x3
+/ko/poland-visa-for-canadian-citizens,ko,tarif_eur7 x1; dom5 x3
+/ko/poland-visa-for-japanese-citizens,ko,tarif_eur7 x1; dom5 x3
+/ko/poland-visa-for-korean-citizens,ko,tarif_eur7 x1; dom5 x3
+/ko/poland-visa-for-mexican-citizens,ko,tarif_eur7 x1; dom5 x3
+/ko/poland-visa-for-singaporean-citizens,ko,tarif_eur7 x1; dom5 x3
+/ko/poland-visa-for-uk-citizens,ko,tarif_eur7 x1; dom5 x3
+/ko/poland-visa-for-us-citizens,ko,tarif_eur7 x1; dom5 x3
+/ko/schengen-visa-guide-2026,ko,dom5 x1
+/ko/spain-visa-for-argentinian-citizens,ko,dom3 x1; dom6 x1
+/ko/spain-visa-for-australian-citizens,ko,dom3 x1; dom6 x1
+/ko/spain-visa-for-brazilian-citizens,ko,dom3 x1; dom6 x1
+/ko/spain-visa-for-canadian-citizens,ko,dom3 x1; dom6 x1
+/ko/spain-visa-for-japanese-citizens,ko,dom3 x1; dom6 x1
+/ko/spain-visa-for-korean-citizens,ko,dom3 x1; dom6 x1
+/ko/spain-visa-for-mexican-citizens,ko,dom3 x1; dom6 x1
+/ko/spain-visa-for-singaporean-citizens,ko,dom3 x1; dom6 x1
+/ko/spain-visa-for-uk-citizens,ko,dom3 x1; dom6 x1
+/ko/spain-visa-for-us-citizens,ko,dom3 x1; dom6 x1
+/ko/switzerland-visa-for-argentinian-citizens,ko,tarif_e7 x1
+/ko/switzerland-visa-for-australian-citizens,ko,tarif_e7 x1
+/ko/switzerland-visa-for-brazilian-citizens,ko,tarif_e7 x1
+/ko/switzerland-visa-for-canadian-citizens,ko,tarif_e7 x1
+/ko/switzerland-visa-for-japanese-citizens,ko,tarif_e7 x1
+/ko/switzerland-visa-for-korean-citizens,ko,tarif_e7 x1
+/ko/switzerland-visa-for-mexican-citizens,ko,tarif_e7 x1
+/ko/switzerland-visa-for-singaporean-citizens,ko,tarif_e7 x1
+/ko/switzerland-visa-for-uk-citizens,ko,tarif_e7 x1
+/ko/switzerland-visa-for-us-citizens,ko,tarif_e7 x1
+/ko/visa-austria,ko,date_ko1 x1; date_ko2 x1; date_ko3 x1; date_ko4 x1
+/ko/visa-belgium,ko,date_ko1 x1; date_ko2 x1; date_ko3 x1; date_ko4 x1
+/ko/visa-bulgaria,ko,date_ko1 x1; date_ko2 x1; date_ko3 x1
+/ko/visa-croatia,ko,date_ko1 x1; date_ko2 x1; date_ko3 x1; date_ko4 x1
+/ko/visa-cyprus,ko,date_ko1 x1; date_ko3 x1
+/ko/visa-czech-republic,ko,date_ko1 x1; date_ko2 x1; date_ko3 x1; date_ko4 x1
+/ko/visa-denmark,ko,date_ko1 x1; date_ko2 x1; date_ko3 x1; date_ko4 x1
+/ko/visa-finland,ko,date_ko1 x1; date_ko2 x1; date_ko3 x1
+/ko/visa-france,ko,date_ko1 x1; date_ko2 x1; date_ko3 x1; date_ko4 x1
+/ko/visa-free-countries-australia-passport,ko,reg_ko x3
+/ko/visa-free-countries-brazil-passport,ko,reg_ko x5
+/ko/visa-free-countries-canada-passport,ko,reg_ko x3
+/ko/visa-free-countries-japan-passport,ko,reg_ko x4
+/ko/visa-free-countries-uae-passport,ko,reg_ko x4
+/ko/visa-free-countries-uk-passport,ko,reg_ko x5
+/ko/visa-free-countries-us-passport,ko,reg_ko x5
+/ko/visa-germany,ko,date_ko1 x1; date_ko2 x1; date_ko3 x1; date_ko4 x1
+/ko/visa-greece,ko,date_ko1 x1; date_ko2 x1; date_ko3 x1; date_ko4 x1
+/ko/visa-hungary,ko,date_ko3 x1; date_ko4 x1
+/ko/visa-iceland,ko,date_ko3 x1
+/ko/visa-ireland,ko,tarif_e7 x1
+/ko/visa-italy,ko,date_ko3 x1; date_ko4 x1
+/ko/visa-liechtenstein,ko,date_ko3 x1
+/ko/visa-luxembourg,ko,date_ko3 x1
+/ko/visa-netherlands,ko,date_ko1 x1; date_ko2 x1; date_ko3 x1; date_ko4 x1
+/ko/visa-norway,ko,date_ko1 x1; date_ko2 x1; date_ko3 x1; date_ko4 x1; date_ko5 x1
+/ko/visa-poland,ko,date_ko1 x1; date_ko2 x1; date_ko3 x1; date_ko4 x1; date_ko5 x1
+/ko/visa-portugal,ko,date_ko1 x1; date_ko2 x1; date_ko3 x1; date_ko4 x1; date_ko5 x1
+/ko/visa-romania,ko,date_ko1 x2; date_ko2 x1; date_ko3 x1; date_ko4 x1
+/ko/visa-slovakia,ko,date_ko1 x1; date_ko2 x1; date_ko3 x1
+/ko/visa-slovenia,ko,date_ko1 x1; date_ko2 x1; date_ko3 x1
+/ko/visa-spain,ko,date_ko1 x1; date_ko2 x1; date_ko3 x1; date_ko4 x1
+/ko/visa-sweden,ko,date_ko1 x1; date_ko2 x1; date_ko3 x1; date_ko4 x1; date_ko5 x1
+/ko/visa-switzerland,ko,date_ko1 x1; date_ko2 x1; date_ko3 x1; date_ko4 x1
+/pt/austria-visa-for-argentinian-citizens,pt,reg_pt2 x1
+/pt/austria-visa-for-australian-citizens,pt,reg_pt2 x1
+/pt/austria-visa-for-brazilian-citizens,pt,reg_pt2 x1
+/pt/austria-visa-for-canadian-citizens,pt,reg_pt2 x1
+/pt/austria-visa-for-japanese-citizens,pt,reg_pt2 x1
+/pt/austria-visa-for-korean-citizens,pt,reg_pt2 x1
+/pt/austria-visa-for-mexican-citizens,pt,reg_pt2 x1
+/pt/austria-visa-for-singaporean-citizens,pt,reg_pt2 x1
+/pt/austria-visa-for-uk-citizens,pt,reg_pt2 x1
+/pt/austria-visa-for-us-citizens,pt,reg_pt2 x1
+/pt/croatia-visa-for-argentinian-citizens,pt,reg_pt2 x1
+/pt/croatia-visa-for-australian-citizens,pt,reg_pt2 x1
+/pt/croatia-visa-for-brazilian-citizens,pt,reg_pt2 x1
+/pt/croatia-visa-for-canadian-citizens,pt,reg_pt2 x1
+/pt/croatia-visa-for-japanese-citizens,pt,reg_pt2 x1
+/pt/croatia-visa-for-korean-citizens,pt,reg_pt2 x1
+/pt/croatia-visa-for-mexican-citizens,pt,reg_pt2 x1
+/pt/croatia-visa-for-singaporean-citizens,pt,reg_pt2 x1
+/pt/croatia-visa-for-uk-citizens,pt,reg_pt2 x1
+/pt/croatia-visa-for-us-citizens,pt,reg_pt2 x1
+/pt/czech-republic-visa-for-argentinian-citizens,pt,tarif_e7 x1; reg_pt2 x1
+/pt/czech-republic-visa-for-australian-citizens,pt,tarif_e7 x1; reg_pt2 x1
+/pt/czech-republic-visa-for-brazilian-citizens,pt,tarif_e7 x1; reg_pt2 x1
+/pt/czech-republic-visa-for-canadian-citizens,pt,tarif_e7 x1; reg_pt2 x1
+/pt/czech-republic-visa-for-japanese-citizens,pt,tarif_e7 x1; reg_pt2 x1
+/pt/czech-republic-visa-for-korean-citizens,pt,tarif_e7 x1; reg_pt2 x1
+/pt/czech-republic-visa-for-mexican-citizens,pt,tarif_e7 x1; reg_pt2 x1
+/pt/czech-republic-visa-for-singaporean-citizens,pt,tarif_e7 x1; reg_pt2 x1
+/pt/czech-republic-visa-for-uk-citizens,pt,tarif_e7 x1; reg_pt2 x1
+/pt/czech-republic-visa-for-us-citizens,pt,tarif_e7 x1; reg_pt2 x1
+/pt/denmark-visa-for-argentinian-citizens,pt,tarif_e7 x1
+/pt/denmark-visa-for-australian-citizens,pt,tarif_e7 x1
+/pt/denmark-visa-for-brazilian-citizens,pt,tarif_e7 x1
+/pt/denmark-visa-for-canadian-citizens,pt,tarif_e7 x1
+/pt/denmark-visa-for-japanese-citizens,pt,tarif_e7 x1
+/pt/denmark-visa-for-korean-citizens,pt,tarif_e7 x1
+/pt/denmark-visa-for-mexican-citizens,pt,tarif_e7 x1
+/pt/denmark-visa-for-singaporean-citizens,pt,tarif_e7 x1
+/pt/denmark-visa-for-uk-citizens,pt,tarif_e7 x1
+/pt/denmark-visa-for-us-citizens,pt,tarif_e7 x1
+/pt/france-visa-for-argentinian-citizens,pt,reg_pt2 x1
+/pt/france-visa-for-australian-citizens,pt,reg_pt2 x1
+/pt/france-visa-for-brazilian-citizens,pt,reg_pt2 x1
+/pt/france-visa-for-canadian-citizens,pt,reg_pt2 x1
+/pt/france-visa-for-japanese-citizens,pt,reg_pt2 x1
+/pt/france-visa-for-korean-citizens,pt,reg_pt2 x1
+/pt/france-visa-for-mexican-citizens,pt,reg_pt2 x1
+/pt/france-visa-for-singaporean-citizens,pt,reg_pt2 x1
+/pt/france-visa-for-uk-citizens,pt,reg_pt2 x1
+/pt/france-visa-for-us-citizens,pt,reg_pt2 x1
+/pt/germany-visa-for-australian-citizens,pt,dom2 x1; dom3 x3; date_pt5 x1
+/pt/germany-visa-for-brazilian-citizens,pt,dom2 x1; dom3 x3; date_pt5 x1
+/pt/germany-visa-for-canadian-citizens,pt,dom2 x1; dom3 x3; date_pt5 x1
+/pt/germany-visa-for-japanese-citizens,pt,dom2 x1; dom3 x3; date_pt5 x1
+/pt/germany-visa-for-korean-citizens,pt,dom2 x1; dom3 x3; date_pt5 x1
+/pt/germany-visa-for-singaporean-citizens,pt,dom2 x1; dom3 x3; date_pt5 x1
+/pt/germany-visa-for-uk-citizens,pt,dom2 x1; dom3 x3; date_pt5 x1
+/pt/germany-visa-for-us-citizens,pt,dom2 x1; dom3 x3; date_pt5 x1
+/pt/hungary-visa-for-argentinian-citizens,pt,tarif_eur7 x1; date_pt5 x1
+/pt/hungary-visa-for-australian-citizens,pt,tarif_eur7 x1; date_pt5 x1
+/pt/hungary-visa-for-brazilian-citizens,pt,tarif_eur7 x1; date_pt5 x1
+/pt/hungary-visa-for-canadian-citizens,pt,tarif_eur7 x1; date_pt5 x1
+/pt/hungary-visa-for-japanese-citizens,pt,tarif_eur7 x1; date_pt5 x1
+/pt/hungary-visa-for-korean-citizens,pt,tarif_eur7 x1; date_pt5 x1
+/pt/hungary-visa-for-mexican-citizens,pt,tarif_eur7 x1; date_pt5 x1
+/pt/hungary-visa-for-singaporean-citizens,pt,tarif_eur7 x1; date_pt5 x1
+/pt/hungary-visa-for-uk-citizens,pt,tarif_eur7 x1; date_pt5 x1
+/pt/hungary-visa-for-us-citizens,pt,tarif_eur7 x1; date_pt5 x1
+/pt/italy-visa-for-argentinian-citizens,pt,dom2 x1; dom3 x1; date_pt5 x1
+/pt/italy-visa-for-australian-citizens,pt,dom2 x1; dom3 x1; date_pt5 x1
+/pt/italy-visa-for-brazilian-citizens,pt,dom2 x1; dom3 x1; date_pt5 x1
+/pt/italy-visa-for-canadian-citizens,pt,dom2 x1; dom3 x1; date_pt5 x1
+/pt/italy-visa-for-japanese-citizens,pt,dom2 x1; dom3 x1; date_pt5 x1
+/pt/italy-visa-for-korean-citizens,pt,dom2 x1; dom3 x1; date_pt5 x1
+/pt/italy-visa-for-mexican-citizens,pt,dom2 x1; dom3 x1; date_pt5 x1
+/pt/italy-visa-for-singaporean-citizens,pt,dom2 x1; dom3 x1; date_pt5 x1
+/pt/italy-visa-for-uk-citizens,pt,dom2 x1; dom3 x1; date_pt5 x1
+/pt/italy-visa-for-us-citizens,pt,dom2 x1; dom3 x1; date_pt5 x1
+/pt/norway-visa-for-argentinian-citizens,pt,dom1 x1
+/pt/norway-visa-for-australian-citizens,pt,dom1 x1
+/pt/norway-visa-for-brazilian-citizens,pt,dom1 x1
+/pt/norway-visa-for-canadian-citizens,pt,dom1 x1
+/pt/norway-visa-for-japanese-citizens,pt,dom1 x1
+/pt/norway-visa-for-korean-citizens,pt,dom1 x1
+/pt/norway-visa-for-mexican-citizens,pt,dom1 x1
+/pt/norway-visa-for-singaporean-citizens,pt,dom1 x1
+/pt/norway-visa-for-uk-citizens,pt,dom1 x1
+/pt/norway-visa-for-us-citizens,pt,dom1 x1
+/pt/poland-visa-for-argentinian-citizens,pt,tarif_eur7 x1; date_pt5 x1
+/pt/poland-visa-for-australian-citizens,pt,tarif_eur7 x1; date_pt5 x1
+/pt/poland-visa-for-brazilian-citizens,pt,tarif_eur7 x1; date_pt5 x1
+/pt/poland-visa-for-canadian-citizens,pt,tarif_eur7 x1; date_pt5 x1
+/pt/poland-visa-for-japanese-citizens,pt,tarif_eur7 x1; date_pt5 x1
+/pt/poland-visa-for-korean-citizens,pt,tarif_eur7 x1; date_pt5 x1
+/pt/poland-visa-for-mexican-citizens,pt,tarif_eur7 x1; date_pt5 x1
+/pt/poland-visa-for-singaporean-citizens,pt,tarif_eur7 x1; date_pt5 x1
+/pt/poland-visa-for-uk-citizens,pt,tarif_eur7 x1; date_pt5 x1
+/pt/poland-visa-for-us-citizens,pt,tarif_eur7 x1; date_pt5 x1
+/pt/spain-visa-for-argentinian-citizens,pt,dom2 x1; dom3 x1; date_pt5 x1
+/pt/spain-visa-for-australian-citizens,pt,dom2 x1; dom3 x1; date_pt5 x1
+/pt/spain-visa-for-brazilian-citizens,pt,dom2 x1; dom3 x1; date_pt5 x1
+/pt/spain-visa-for-canadian-citizens,pt,dom2 x1; dom3 x1; date_pt5 x1
+/pt/spain-visa-for-japanese-citizens,pt,dom2 x1; dom3 x1; date_pt5 x1
+/pt/spain-visa-for-korean-citizens,pt,dom2 x1; dom3 x1; date_pt5 x1
+/pt/spain-visa-for-mexican-citizens,pt,dom2 x1; dom3 x1; date_pt5 x1
+/pt/spain-visa-for-singaporean-citizens,pt,dom2 x1; dom3 x1; date_pt5 x1
+/pt/spain-visa-for-uk-citizens,pt,dom2 x1; dom3 x1; date_pt5 x1
+/pt/spain-visa-for-us-citizens,pt,dom2 x1; dom3 x1; date_pt5 x1
+/pt/sweden-visa-for-argentinian-citizens,pt,dom1 x1
+/pt/sweden-visa-for-australian-citizens,pt,dom1 x1
+/pt/sweden-visa-for-brazilian-citizens,pt,dom1 x1
+/pt/sweden-visa-for-canadian-citizens,pt,dom1 x1
+/pt/sweden-visa-for-japanese-citizens,pt,dom1 x1
+/pt/sweden-visa-for-korean-citizens,pt,dom1 x1
+/pt/sweden-visa-for-mexican-citizens,pt,dom1 x1
+/pt/sweden-visa-for-singaporean-citizens,pt,dom1 x1
+/pt/sweden-visa-for-uk-citizens,pt,dom1 x1
+/pt/sweden-visa-for-us-citizens,pt,dom1 x1
+/pt/switzerland-visa-for-argentinian-citizens,pt,reg_pt2 x1
+/pt/switzerland-visa-for-australian-citizens,pt,reg_pt2 x1
+/pt/switzerland-visa-for-brazilian-citizens,pt,reg_pt2 x1
+/pt/switzerland-visa-for-canadian-citizens,pt,reg_pt2 x1
+/pt/switzerland-visa-for-japanese-citizens,pt,reg_pt2 x1
+/pt/switzerland-visa-for-korean-citizens,pt,reg_pt2 x1
+/pt/switzerland-visa-for-mexican-citizens,pt,reg_pt2 x1
+/pt/switzerland-visa-for-singaporean-citizens,pt,reg_pt2 x1
+/pt/switzerland-visa-for-uk-citizens,pt,reg_pt2 x1
+/pt/switzerland-visa-for-us-citizens,pt,reg_pt2 x1
+/pt/visa-austria,pt,date_pt1 x1; date_pt2 x1; date_pt3 x1; date_pt4 x1
+/pt/visa-belgium,pt,date_pt1 x1; date_pt2 x1; date_pt3 x1; date_pt4 x1
+/pt/visa-bulgaria,pt,date_pt1 x1; date_pt2 x1
+/pt/visa-croatia,pt,date_pt1 x1; date_pt2 x1; date_pt3 x1
+/pt/visa-czech-republic,pt,date_pt1 x1; date_pt2 x1; date_pt3 x1
+/pt/visa-denmark,pt,date_pt1 x1; date_pt2 x1; date_pt3 x1
+/pt/visa-finland,pt,date_pt1 x1; date_pt2 x1
+/pt/visa-france,pt,date_pt1 x1; date_pt2 x2; date_pt3 x1; date_pt4 x1
+/pt/visa-free-countries-australia-passport,pt,reg_pt x3
+/pt/visa-free-countries-brazil-passport,pt,reg_pt x5
+/pt/visa-free-countries-canada-passport,pt,reg_pt x3
+/pt/visa-free-countries-japan-passport,pt,reg_pt x4
+/pt/visa-free-countries-uae-passport,pt,reg_pt x4
+/pt/visa-free-countries-uk-passport,pt,reg_pt x5
+/pt/visa-free-countries-us-passport,pt,reg_pt x5
+/pt/visa-germany,pt,date_pt1 x1; date_pt2 x1; date_pt3 x1; date_pt4 x1
+/pt/visa-hungary,pt,date_pt1 x1; date_pt2 x1; date_pt3 x1
+/pt/visa-iceland,pt,date_pt1 x1; date_pt2 x1
+/pt/visa-italy,pt,date_pt1 x1; date_pt2 x1; date_pt3 x1; date_pt4 x1
+/pt/visa-liechtenstein,pt,date_pt1 x1; date_pt2 x1
+/pt/visa-luxembourg,pt,date_pt1 x1; date_pt2 x1
+/pt/visa-netherlands,pt,date_pt1 x1; date_pt2 x1; date_pt3 x1; date_pt4 x1
+/pt/visa-norway,pt,date_pt1 x1; date_pt2 x1; date_pt3 x1
+/pt/visa-poland,pt,date_pt1 x1; date_pt2 x1; date_pt3 x1
+/pt/visa-portugal,pt,date_pt1 x1; date_pt2 x1; date_pt3 x1; date_pt4 x1
+/pt/visa-slovakia,pt,date_pt1 x1; date_pt2 x1
+/pt/visa-slovenia,pt,date_pt1 x1; date_pt2 x1
+/pt/visa-sweden,pt,date_pt1 x1; date_pt2 x1; date_pt3 x1
+/pt/visa-switzerland,pt,date_pt1 x1; date_pt2 x1; date_pt3 x1; date_pt4 x1
+/ru/germany-visa-for-australian-citizens,ru,dom3 x2
+/ru/germany-visa-for-brazilian-citizens,ru,dom3 x2
+/ru/germany-visa-for-canadian-citizens,ru,dom3 x2
+/ru/germany-visa-for-japanese-citizens,ru,dom3 x2
+/ru/germany-visa-for-korean-citizens,ru,dom3 x2
+/ru/germany-visa-for-singaporean-citizens,ru,dom3 x2
+/ru/germany-visa-for-uk-citizens,ru,dom3 x2
+/ru/germany-visa-for-us-citizens,ru,dom3 x2
+/ru/italy-visa-for-argentinian-citizens,ru,dom2 x1; dom3 x3
+/ru/italy-visa-for-australian-citizens,ru,dom2 x1; dom3 x3
+/ru/italy-visa-for-brazilian-citizens,ru,dom2 x1; dom3 x3
+/ru/italy-visa-for-canadian-citizens,ru,dom2 x1; dom3 x3
+/ru/italy-visa-for-japanese-citizens,ru,dom2 x1; dom3 x3
+/ru/italy-visa-for-korean-citizens,ru,dom2 x1; dom3 x3
+/ru/italy-visa-for-mexican-citizens,ru,dom2 x1; dom3 x3
+/ru/italy-visa-for-singaporean-citizens,ru,dom2 x1; dom3 x3
+/ru/italy-visa-for-uk-citizens,ru,dom2 x1; dom3 x3
+/ru/italy-visa-for-us-citizens,ru,dom2 x1; dom3 x3
+/ru/norway-visa-for-argentinian-citizens,ru,dom1 x1
+/ru/norway-visa-for-australian-citizens,ru,dom1 x1
+/ru/norway-visa-for-brazilian-citizens,ru,dom1 x1
+/ru/norway-visa-for-canadian-citizens,ru,dom1 x1
+/ru/norway-visa-for-japanese-citizens,ru,dom1 x1
+/ru/norway-visa-for-korean-citizens,ru,dom1 x1
+/ru/norway-visa-for-mexican-citizens,ru,dom1 x1
+/ru/norway-visa-for-singaporean-citizens,ru,dom1 x1
+/ru/norway-visa-for-uk-citizens,ru,dom1 x1
+/ru/norway-visa-for-us-citizens,ru,dom1 x1
+/ru/spain-visa-for-argentinian-citizens,ru,dom2 x1; dom3 x3
+/ru/spain-visa-for-australian-citizens,ru,dom2 x1; dom3 x3
+/ru/spain-visa-for-brazilian-citizens,ru,dom2 x1; dom3 x3
+/ru/spain-visa-for-canadian-citizens,ru,dom2 x1; dom3 x3
+/ru/spain-visa-for-japanese-citizens,ru,dom2 x1; dom3 x3
+/ru/spain-visa-for-korean-citizens,ru,dom2 x1; dom3 x3
+/ru/spain-visa-for-mexican-citizens,ru,dom2 x1; dom3 x3
+/ru/spain-visa-for-singaporean-citizens,ru,dom2 x1; dom3 x3
+/ru/spain-visa-for-uk-citizens,ru,dom2 x1; dom3 x3
+/ru/spain-visa-for-us-citizens,ru,dom2 x1; dom3 x3
+/ru/sweden-visa-for-argentinian-citizens,ru,dom1 x1
+/ru/sweden-visa-for-australian-citizens,ru,dom1 x1
+/ru/sweden-visa-for-brazilian-citizens,ru,dom1 x1
+/ru/sweden-visa-for-canadian-citizens,ru,dom1 x1
+/ru/sweden-visa-for-japanese-citizens,ru,dom1 x1
+/ru/sweden-visa-for-korean-citizens,ru,dom1 x1
+/ru/sweden-visa-for-mexican-citizens,ru,dom1 x1
+/ru/sweden-visa-for-singaporean-citizens,ru,dom1 x1
+/ru/sweden-visa-for-uk-citizens,ru,dom1 x1
+/ru/sweden-visa-for-us-citizens,ru,dom1 x1
+/ru/visa-austria,ru,date_ru2 x1
+/ru/visa-belgium,ru,date_ru2 x1
+/ru/visa-bulgaria,ru,date_ru2 x1
+/ru/visa-croatia,ru,date_ru2 x1
+/ru/visa-czech-republic,ru,date_ru2 x1
+/ru/visa-denmark,ru,date_ru2 x1
+/ru/visa-finland,ru,date_ru2 x1
+/ru/visa-france,ru,date_ru2 x1
+/ru/visa-free-countries-australia-passport,ru,reg_ru x3
+/ru/visa-free-countries-brazil-passport,ru,reg_ru x5
+/ru/visa-free-countries-canada-passport,ru,reg_ru x3
+/ru/visa-free-countries-japan-passport,ru,reg_ru x4
+/ru/visa-free-countries-uae-passport,ru,reg_ru x4
+/ru/visa-free-countries-uk-passport,ru,reg_ru x5
+/ru/visa-free-countries-us-passport,ru,reg_ru x5
+/ru/visa-germany,ru,date_ru2 x1
+/ru/visa-greece,ru,date_ru1 x1; date_ru3 x1
+/ru/visa-liechtenstein,ru,date_ru1 x1
+/ru/visa-luxembourg,ru,date_ru1 x1
+/ru/visa-netherlands,ru,date_ru1 x1; date_ru3 x1
+/ru/visa-norway,ru,date_ru1 x1; date_ru3 x1
+/ru/visa-poland,ru,date_ru1 x1; date_ru3 x1
+/ru/visa-portugal,ru,date_ru1 x1; date_ru3 x1
+/ru/visa-romania,ru,date_ru1 x1; date_ru3 x1
+/ru/visa-slovakia,ru,date_ru1 x1
+/ru/visa-slovenia,ru,date_ru1 x1
+/ru/visa-spain,ru,date_ru1 x1; date_ru3 x1
+/ru/visa-sweden,ru,date_ru1 x1; date_ru3 x1
+/ru/visa-switzerland,ru,date_ru1 x1; date_ru3 x1
+/th/belgium-visa-for-french-citizens,th,reg_th x1
+/th/belgium-visa-for-german-citizens,th,reg_th x1
+/th/germany-visa-for-australian-citizens,th,dom9 x1
+/th/germany-visa-for-brazilian-citizens,th,dom9 x1
+/th/germany-visa-for-canadian-citizens,th,dom9 x1
+/th/germany-visa-for-japanese-citizens,th,dom9 x1
+/th/germany-visa-for-korean-citizens,th,dom9 x1
+/th/germany-visa-for-singaporean-citizens,th,dom9 x1
+/th/germany-visa-for-uk-citizens,th,dom9 x1
+/th/germany-visa-for-us-citizens,th,dom9 x1
+/th/hungary-visa-for-argentinian-citizens,th,tarif_eur7 x1
+/th/hungary-visa-for-australian-citizens,th,tarif_eur7 x1
+/th/hungary-visa-for-brazilian-citizens,th,tarif_eur7 x1
+/th/hungary-visa-for-canadian-citizens,th,tarif_eur7 x1
+/th/hungary-visa-for-french-citizens,th,reg_th x1
+/th/hungary-visa-for-german-citizens,th,reg_th x1
+/th/hungary-visa-for-japanese-citizens,th,tarif_eur7 x1
+/th/hungary-visa-for-korean-citizens,th,tarif_eur7 x1
+/th/hungary-visa-for-mexican-citizens,th,tarif_eur7 x1
+/th/hungary-visa-for-singaporean-citizens,th,tarif_eur7 x1
+/th/hungary-visa-for-uk-citizens,th,tarif_eur7 x1
+/th/hungary-visa-for-us-citizens,th,tarif_eur7 x1
+/th/italy-visa-for-argentinian-citizens,th,dom9 x1
+/th/italy-visa-for-australian-citizens,th,dom9 x1
+/th/italy-visa-for-brazilian-citizens,th,dom9 x1
+/th/italy-visa-for-canadian-citizens,th,dom9 x1
+/th/italy-visa-for-japanese-citizens,th,dom9 x1
+/th/italy-visa-for-korean-citizens,th,dom9 x1
+/th/italy-visa-for-mexican-citizens,th,dom9 x1
+/th/italy-visa-for-singaporean-citizens,th,dom9 x1
+/th/italy-visa-for-uk-citizens,th,dom9 x1
+/th/italy-visa-for-us-citizens,th,dom9 x1
+/th/netherlands-visa-for-french-citizens,th,reg_th x1
+/th/netherlands-visa-for-german-citizens,th,reg_th x1
+/th/norway-visa-for-argentinian-citizens,th,dom1 x1
+/th/norway-visa-for-australian-citizens,th,dom1 x1
+/th/norway-visa-for-brazilian-citizens,th,dom1 x1
+/th/norway-visa-for-canadian-citizens,th,dom1 x1
+/th/norway-visa-for-french-citizens,th,reg_th x1
+/th/norway-visa-for-german-citizens,th,reg_th x1
+/th/norway-visa-for-japanese-citizens,th,dom1 x1
+/th/norway-visa-for-korean-citizens,th,dom1 x1
+/th/norway-visa-for-mexican-citizens,th,dom1 x1
+/th/norway-visa-for-singaporean-citizens,th,dom1 x1
+/th/norway-visa-for-uk-citizens,th,dom1 x1
+/th/norway-visa-for-us-citizens,th,dom1 x1
+/th/poland-visa-for-argentinian-citizens,th,tarif_eur7 x1
+/th/poland-visa-for-australian-citizens,th,tarif_eur7 x1
+/th/poland-visa-for-brazilian-citizens,th,tarif_eur7 x1
+/th/poland-visa-for-canadian-citizens,th,tarif_eur7 x1
+/th/poland-visa-for-french-citizens,th,reg_th x1
+/th/poland-visa-for-german-citizens,th,reg_th x1
+/th/poland-visa-for-japanese-citizens,th,tarif_eur7 x1
+/th/poland-visa-for-korean-citizens,th,tarif_eur7 x1
+/th/poland-visa-for-mexican-citizens,th,tarif_eur7 x1
+/th/poland-visa-for-singaporean-citizens,th,tarif_eur7 x1
+/th/poland-visa-for-uk-citizens,th,tarif_eur7 x1
+/th/poland-visa-for-us-citizens,th,tarif_eur7 x1
+/th/spain-visa-for-argentinian-citizens,th,dom9 x1
+/th/spain-visa-for-australian-citizens,th,dom9 x1
+/th/spain-visa-for-brazilian-citizens,th,dom9 x1
+/th/spain-visa-for-canadian-citizens,th,dom9 x1
+/th/spain-visa-for-japanese-citizens,th,dom9 x1
+/th/spain-visa-for-korean-citizens,th,dom9 x1
+/th/spain-visa-for-mexican-citizens,th,dom9 x1
+/th/spain-visa-for-singaporean-citizens,th,dom9 x1
+/th/spain-visa-for-uk-citizens,th,dom9 x1
+/th/spain-visa-for-us-citizens,th,dom9 x1
+/th/sweden-visa-for-argentinian-citizens,th,dom1 x1
+/th/sweden-visa-for-australian-citizens,th,dom1 x1
+/th/sweden-visa-for-brazilian-citizens,th,dom1 x1
+/th/sweden-visa-for-canadian-citizens,th,dom1 x1
+/th/sweden-visa-for-french-citizens,th,reg_th x1
+/th/sweden-visa-for-german-citizens,th,reg_th x1
+/th/sweden-visa-for-japanese-citizens,th,dom1 x1
+/th/sweden-visa-for-korean-citizens,th,dom1 x1
+/th/sweden-visa-for-mexican-citizens,th,dom1 x1
+/th/sweden-visa-for-singaporean-citizens,th,dom1 x1
+/th/sweden-visa-for-uk-citizens,th,dom1 x1
+/th/sweden-visa-for-us-citizens,th,dom1 x1
+/th/visa-austria,th,date_th1 x1; date_th2 x1; date_th3 x1
+/th/visa-belgium,th,date_th1 x1; date_th2 x1; date_th3 x1
+/th/visa-bulgaria,th,date_th1 x1; date_th2 x1; date_th3 x1
+/th/visa-croatia,th,date_th1 x1; date_th2 x1; date_th3 x1
+/th/visa-cyprus,th,date_th1 x1; date_th2 x1
+/th/visa-czech-republic,th,date_th1 x1; date_th2 x1; date_th3 x1
+/th/visa-denmark,th,date_th1 x1; date_th2 x1; date_th3 x1
+/th/visa-finland,th,date_th1 x1; date_th2 x1; date_th3 x1
+/th/visa-france,th,date_th1 x1; date_th2 x1; date_th3 x1
+/th/visa-free-countries-australia-passport,th,reg_th x3
+/th/visa-free-countries-brazil-passport,th,reg_th x5
+/th/visa-free-countries-canada-passport,th,reg_th x3
+/th/visa-free-countries-japan-passport,th,reg_th x4
+/th/visa-free-countries-uae-passport,th,reg_th x4
+/th/visa-free-countries-uk-passport,th,reg_th x5
+/th/visa-free-countries-us-passport,th,reg_th x5
+/th/visa-germany,th,date_th1 x1; date_th2 x1; date_th3 x1
+/th/visa-greece,th,date_th1 x1; date_th2 x1; date_th3 x1
+/th/visa-hungary,th,date_th2 x1
+/th/visa-iceland,th,date_th2 x1
+/th/visa-liechtenstein,th,date_th2 x1
+/th/visa-luxembourg,th,date_th2 x1
+/th/visa-netherlands,th,date_th2 x1
+/th/visa-norway,th,date_th2 x1
+/th/visa-poland,th,date_th2 x1
+/th/visa-portugal,th,date_th2 x1
+/th/visa-romania,th,date_th2 x1
+/th/visa-slovakia,th,date_th2 x1
+/th/visa-slovenia,th,date_th2 x1
+/th/visa-spain,th,date_th2 x1
+/zh/austria-visa-for-argentinian-citizens,zh,reg_zh x1
+/zh/austria-visa-for-australian-citizens,zh,reg_zh x1
+/zh/austria-visa-for-brazilian-citizens,zh,reg_zh x1
+/zh/austria-visa-for-canadian-citizens,zh,reg_zh x1
+/zh/austria-visa-for-japanese-citizens,zh,reg_zh x1
+/zh/austria-visa-for-korean-citizens,zh,reg_zh x1
+/zh/austria-visa-for-mexican-citizens,zh,reg_zh x1
+/zh/austria-visa-for-singaporean-citizens,zh,reg_zh x1
+/zh/austria-visa-for-uk-citizens,zh,reg_zh x1
+/zh/austria-visa-for-us-citizens,zh,reg_zh x1
+/zh/belgium-visa-for-argentinian-citizens,zh,dom8 x2; reg_zh x1
+/zh/belgium-visa-for-australian-citizens,zh,dom8 x2; reg_zh x1
+/zh/belgium-visa-for-brazilian-citizens,zh,dom8 x2; reg_zh x1
+/zh/belgium-visa-for-canadian-citizens,zh,dom8 x2; reg_zh x1
+/zh/belgium-visa-for-japanese-citizens,zh,dom8 x2; reg_zh x1
+/zh/belgium-visa-for-korean-citizens,zh,dom8 x2; reg_zh x1
+/zh/belgium-visa-for-mexican-citizens,zh,dom8 x2; reg_zh x1
+/zh/belgium-visa-for-singaporean-citizens,zh,dom8 x2; reg_zh x1
+/zh/belgium-visa-for-uk-citizens,zh,dom8 x2; reg_zh x1
+/zh/belgium-visa-for-us-citizens,zh,dom8 x2; reg_zh x1
+/zh/denmark-visa-for-argentinian-citizens,zh,dom8 x2; reg_zh x1
+/zh/denmark-visa-for-australian-citizens,zh,dom8 x2; reg_zh x1
+/zh/denmark-visa-for-brazilian-citizens,zh,dom8 x2; reg_zh x1
+/zh/denmark-visa-for-canadian-citizens,zh,dom8 x2; reg_zh x1
+/zh/denmark-visa-for-japanese-citizens,zh,dom8 x2; reg_zh x1
+/zh/denmark-visa-for-korean-citizens,zh,dom8 x2; reg_zh x1
+/zh/denmark-visa-for-mexican-citizens,zh,dom8 x2; reg_zh x1
+/zh/denmark-visa-for-singaporean-citizens,zh,dom8 x2; reg_zh x1
+/zh/denmark-visa-for-uk-citizens,zh,dom8 x2; reg_zh x1
+/zh/denmark-visa-for-us-citizens,zh,dom8 x2; reg_zh x1
+/zh/germany-visa-for-australian-citizens,zh,tarif_eur7 x3
+/zh/germany-visa-for-brazilian-citizens,zh,tarif_eur7 x3
+/zh/germany-visa-for-canadian-citizens,zh,tarif_eur7 x3
+/zh/germany-visa-for-japanese-citizens,zh,tarif_eur7 x3
+/zh/hungary-visa-for-argentinian-citizens,zh,dom8 x2
+/zh/hungary-visa-for-australian-citizens,zh,dom8 x2
+/zh/hungary-visa-for-brazilian-citizens,zh,dom8 x2
+/zh/hungary-visa-for-canadian-citizens,zh,dom8 x2
+/zh/hungary-visa-for-japanese-citizens,zh,dom8 x2
+/zh/hungary-visa-for-korean-citizens,zh,dom8 x2
+/zh/hungary-visa-for-mexican-citizens,zh,dom8 x2
+/zh/hungary-visa-for-singaporean-citizens,zh,dom8 x2
+/zh/hungary-visa-for-uk-citizens,zh,dom8 x2
+/zh/hungary-visa-for-us-citizens,zh,dom8 x2
+/zh/italy-visa-for-argentinian-citizens,zh,tarif_eur7 x3
+/zh/italy-visa-for-australian-citizens,zh,tarif_eur7 x3
+/zh/italy-visa-for-brazilian-citizens,zh,tarif_eur7 x3
+/zh/italy-visa-for-canadian-citizens,zh,tarif_eur7 x3
+/zh/italy-visa-for-japanese-citizens,zh,tarif_eur7 x3
+/zh/italy-visa-for-korean-citizens,zh,tarif_eur7 x3
+/zh/italy-visa-for-mexican-citizens,zh,tarif_eur7 x3
+/zh/italy-visa-for-singaporean-citizens,zh,tarif_eur7 x3
+/zh/italy-visa-for-uk-citizens,zh,tarif_eur7 x3
+/zh/italy-visa-for-us-citizens,zh,tarif_eur7 x3
+/zh/netherlands-visa-for-argentinian-citizens,zh,dom8 x1; reg_zh x1
+/zh/netherlands-visa-for-australian-citizens,zh,dom8 x1; reg_zh x1
+/zh/netherlands-visa-for-brazilian-citizens,zh,dom8 x1; reg_zh x1
+/zh/netherlands-visa-for-canadian-citizens,zh,dom8 x1; reg_zh x1
+/zh/netherlands-visa-for-japanese-citizens,zh,dom8 x1; reg_zh x1
+/zh/netherlands-visa-for-korean-citizens,zh,dom8 x1; reg_zh x1
+/zh/netherlands-visa-for-mexican-citizens,zh,dom8 x1; reg_zh x1
+/zh/netherlands-visa-for-singaporean-citizens,zh,dom8 x1; reg_zh x1
+/zh/netherlands-visa-for-uk-citizens,zh,dom8 x1; reg_zh x1
+/zh/netherlands-visa-for-us-citizens,zh,dom8 x1; reg_zh x1
+/zh/poland-visa-for-argentinian-citizens,zh,dom8 x2
+/zh/poland-visa-for-australian-citizens,zh,dom8 x2
+/zh/poland-visa-for-brazilian-citizens,zh,dom8 x2
+/zh/poland-visa-for-canadian-citizens,zh,dom8 x2
+/zh/poland-visa-for-japanese-citizens,zh,dom8 x2
+/zh/poland-visa-for-korean-citizens,zh,dom8 x2
+/zh/poland-visa-for-mexican-citizens,zh,dom8 x2
+/zh/poland-visa-for-singaporean-citizens,zh,dom8 x2
+/zh/poland-visa-for-uk-citizens,zh,dom8 x2
+/zh/poland-visa-for-us-citizens,zh,dom8 x2
+/zh/schengen-visa-guide-2026,zh,dom8 x1
+/zh/spain-visa-for-argentinian-citizens,zh,tarif_eur7 x3
+/zh/spain-visa-for-australian-citizens,zh,tarif_eur7 x3
+/zh/spain-visa-for-brazilian-citizens,zh,tarif_eur7 x3
+/zh/spain-visa-for-canadian-citizens,zh,tarif_eur7 x3
+/zh/spain-visa-for-japanese-citizens,zh,tarif_eur7 x3
+/zh/spain-visa-for-korean-citizens,zh,tarif_eur7 x3
+/zh/spain-visa-for-mexican-citizens,zh,tarif_eur7 x3
+/zh/spain-visa-for-singaporean-citizens,zh,tarif_eur7 x3
+/zh/spain-visa-for-uk-citizens,zh,tarif_eur7 x3
+/zh/spain-visa-for-us-citizens,zh,tarif_eur7 x3
+/zh/switzerland-visa-for-argentinian-citizens,zh,reg_zh x1
+/zh/switzerland-visa-for-australian-citizens,zh,reg_zh x1
+/zh/switzerland-visa-for-brazilian-citizens,zh,reg_zh x1
+/zh/switzerland-visa-for-canadian-citizens,zh,reg_zh x1
+/zh/switzerland-visa-for-japanese-citizens,zh,reg_zh x1
+/zh/switzerland-visa-for-korean-citizens,zh,reg_zh x1
+/zh/switzerland-visa-for-mexican-citizens,zh,reg_zh x1
+/zh/switzerland-visa-for-singaporean-citizens,zh,reg_zh x1
+/zh/switzerland-visa-for-uk-citizens,zh,reg_zh x1
+/zh/switzerland-visa-for-us-citizens,zh,reg_zh x1
+/zh/visa-austria,zh,date_zh4 x1
+/zh/visa-belgium,zh,date_zh1 x1; date_zh2 x1; date_zh3 x1; date_zh4 x1
+/zh/visa-bulgaria,zh,date_zh1 x1; date_zh2 x1; date_zh3 x1
+/zh/visa-croatia,zh,date_zh1 x1; date_zh2 x1; date_zh3 x1; date_zh4 x1
+/zh/visa-cyprus,zh,date_zh1 x1
+/zh/visa-czech-republic,zh,date_zh1 x1; date_zh2 x1; date_zh3 x1; date_zh4 x1
+/zh/visa-denmark,zh,date_zh1 x1; date_zh2 x1; date_zh3 x1; date_zh4 x1
+/zh/visa-finland,zh,date_zh1 x1; date_zh2 x1; date_zh3 x1
+/zh/visa-france,zh,date_zh1 x1; date_zh2 x1; date_zh3 x1; date_zh4 x1
+/zh/visa-free-countries-australia-passport,zh,reg_zh x3
+/zh/visa-free-countries-brazil-passport,zh,reg_zh x5
+/zh/visa-free-countries-canada-passport,zh,reg_zh x3
+/zh/visa-free-countries-japan-passport,zh,reg_zh x4
+/zh/visa-free-countries-uae-passport,zh,reg_zh x4
+/zh/visa-free-countries-uk-passport,zh,reg_zh x5
+/zh/visa-free-countries-us-passport,zh,reg_zh x5
+/zh/visa-germany,zh,date_zh1 x1; date_zh2 x1; date_zh3 x1; date_zh4 x1
+/zh/visa-greece,zh,date_zh1 x1; date_zh2 x1; date_zh3 x1; date_zh4 x1
+/zh/visa-hungary,zh,date_zh4 x1
+/zh/visa-italy,zh,date_zh4 x1
+/zh/visa-norway,zh,date_zh1 x1; date_zh2 x1; date_zh3 x1; date_zh4 x1
+/zh/visa-poland,zh,date_zh1 x1; date_zh2 x1; date_zh3 x1; date_zh4 x1
+/zh/visa-portugal,zh,date_zh1 x1; date_zh2 x1; date_zh3 x1; date_zh4 x1
+/zh/visa-romania,zh,date_zh1 x1; date_zh2 x1; date_zh3 x1; date_zh4 x1
+/zh/visa-slovakia,zh,date_zh1 x1; date_zh2 x1; date_zh3 x1
+/zh/visa-slovenia,zh,date_zh1 x1; date_zh2 x1; date_zh3 x1
+/zh/visa-spain,zh,date_zh1 x1; date_zh2 x1; date_zh3 x1; date_zh4 x1
+/zh/visa-sweden,zh,date_zh1 x1; date_zh2 x1; date_zh3 x1; date_zh4 x1
+/zh/visa-switzerland,zh,date_zh1 x1; date_zh2 x1; date_zh3 x1; date_zh4 x1

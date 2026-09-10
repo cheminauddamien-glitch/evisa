@@ -1,0 +1,94 @@
+===========================================================================
+LOT C1 — RAPPORT DE DÉCISION AVANT MODIFICATION
+Famille <destination>-visa-for-<nationalite>-citizens
+Établi le 10/09/2026
+===========================================================================
+
+OBJET
+Première tranche de consolidation de la famille visa-for, conformément à la
+priorité 6 du brief : traiter d abord 10 à 15 % des pages, produire un rapport
+avant modification, ne lancer le lot suivant qu après mesure de celui-ci.
+
+PÉRIMÈTRE RETENU
+  1 107 pages, soit 11,4 % des 9 680 pages de la famille
+                et  9,2 % des 12 062 pages du site
+  17 destinations concernées, 10 langues, 81 pages de destination en cible
+
+CRITÈRES CUMULATIFS DE SÉLECTION
+Une page n entre dans le lot que si les cinq conditions sont réunies :
+  1. 0 clic Search Console
+  2. unicité de contenu <= 15 % par rapport au consensus de son groupe
+     (groupe = même destination, même langue)
+  3. aucune règle de visa propre à la nationalité, mesurée par comparaison
+     du régime détecté (exemption, eVisa, ETA, visa à l arrivée, visa requis)
+     avec le régime majoritaire du groupe
+  4. page indexable
+  5. hub de destination existant sur disque dans la même langue
+
+RÉPARTITION PAR DESTINATION
+  india          179     jordan         150     maldives       179
+  nepal          176     sri-lanka      124     turkey          82
+  cambodia        66     thailand        43     indonesia       29
+  portugal        18     norway          15     greece          14
+  vietnam         13     uae              8     sweden           7
+  china            3     singapore        1
+
+RÉPARTITION PAR LANGUE
+  fr 192   en 144   es 140   pt 131   ru  94
+  th  90   zh  83   ar  83   ko  79   ja  71
+
+VOLUMÉTRIE DE CONTENU
+  longueur du texte principal : minimum 89 mots, médiane 393, maximum 625
+  unicité de contenu : maximum 15,0 % par construction
+
+ÉQUIVALENCE D INTENTION VÉRIFIÉE
+Contrôle sur le groupe cambodgien, le plus lisible :
+  page supprimée  /en/cambodia-visa-for-french-citizens   22 413 octets
+                  sections : eVisa Key Details, How to Apply, Required Documents
+  page cible      /en/visa-cambodia                       41 684 octets
+                  sections : Tourist Visa eVisa & Visa on Arrival, Business
+                  E-visa, Work & Long-Stay, Student Visa, Airport Transit,
+                  Required Documents, et la suite
+La cible est un sur-ensemble strict de la page supprimée. Même contrôle
+concluant sur india et maldives. La redirection est donc légitime au sens de
+la priorité 7 du brief.
+
+POURQUOI CES PAGES ET PAS D AUTRES
+Les nationalités regroupées ici partagent exactement le même régime pour la
+destination. Pour le Cambodge, l eVisa s applique de la même manière aux
+ressortissants argentins, brésiliens, canadiens, français et allemands : les
+cinq pages font 371 mots et se ressemblent à 88 %. Le seul élément variable
+est le nom de la nationalité. C est la définition même du contenu matriciel
+que le brief demande de réduire.
+
+CE QUI EST EXCLU DU LOT
+  2 664 pages KEEP_REWRITE : un régime propre à la nationalité a été détecté,
+        elles ont donc une raison d exister et relèvent de l enrichissement,
+        pas de la suppression
+    424 pages KEEP : au moins un clic mesuré, 1 945 clics au total
+  5 039 pages HUMAN_REVIEW : unicité trop élevée pour conclure, ou absence de
+        donnée Search Console exploitable
+    446 pages MERGE_301 au-delà du seuil de 15 % d unicité : elles seront
+        réexaminées au lot C2, après mesure de l effet du lot C1
+
+RÉSERVE IMPORTANTE SUR LES DONNÉES SEARCH CONSOLE
+L export disponible ne couvre que 879 URL du site, celles qui ont reçu au
+moins un clic. Pour les 12 493 autres, la colonne impressions vaut zéro par
+absence de donnée, et non par mesure. Le critère « 0 clic » est donc fiable,
+le critère « peu d impressions » ne l est pas.
+C est la raison pour laquelle le seuil d unicité a été fixé à 15 % et non à
+20 %, ce qui aurait porté le lot à 16,7 %, au-delà de la fourchette demandée.
+Avant le lot C2, il faut un export Search Console complet du rapport Pages sur
+90 jours, impressions comprises. Sans lui, aucune page supplémentaire ne
+devrait être supprimée sur le seul critère de similarité.
+
+MÉCANIQUE DE REDIRECTION
+Une règle unique et conditionnelle dans .htaccess, sur le modèle validé au
+lot B : la 301 ne se déclenche que si le fichier n existe plus sur disque.
+Les 8 573 pages de la famille conservées continuent donc d être servies
+normalement, sans exception à maintenir et sans risque de redirection
+accidentelle.
+
+RÉVERSIBILITÉ
+L opération est faite sur la branche seo/recovery-consolidation-sept2026 et
+reste annulable par git tant qu elle n a pas été envoyée en FTP.

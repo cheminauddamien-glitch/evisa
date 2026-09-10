@@ -1,0 +1,172 @@
+===========================================================================
+SEO_RECOVERY_NEXT_PHASE_REPORT
+evisa-card.com — phase suivante de la récupération SEO
+Exécutée le 10/09/2026 sur la branche seo/recovery-consolidation-sept2026
+===========================================================================
+
+BEFORE
+  HTML total                                      12 062
+  sitemap URLs                                    12 047
+  visa-for total                                   9 680
+  visa fees/requirements/processing total            215
+  expat guides total                                 320   (32 destinations x 10 langues)
+  broken internal links                                0   (18 268 annoncés, mesure : 0)
+  broken hreflang                                      0
+  ETIAS suspect pages                              1 384   dont 234 avec date inventée
+
+ACTIONS
+  liens internes corrigés                              0   rien à corriger, voir plus bas
+  fichiers modifiés                                3 380
+  fichiers supprimés                               1 107
+  pages visa-for analysées                         9 680
+    KEEP                                             424
+    KEEP_REWRITE                                   2 664
+    MERGE_301                                      1 553   dont 1 107 exécutées au lot C1
+    REMOVE_410                                         0
+    HUMAN_REVIEW                                   5 039
+  pages ETIAS corrigées                            1 744   passes 1 à 3 et reprise manuelle
+
+AFTER
+  HTML total                                      10 955   -9,2 %
+  sitemap URLs                                    10 940   -9,2 %
+  visa-for total                                   8 573   -11,4 %
+  visa fees/requirements/processing total            215   inchangé
+  expat guides total                                 320   inchangé, conformément au brief
+  broken internal links                                0
+  broken hreflang                                      0
+  ETIAS suspect pages                                  0
+
+REDIRECTS
+  301                                              2 415   1 308 lot B + 1 107 lot C1
+  410 / 404                                            2   pages de démonstration Colorlib
+  chaînes détectées                                    0
+  Toutes les cibles de 301 existent sur disque et répondent 200.
+  Aucune URL supprimée ne subsiste au sitemap ni dans un lien interne.
+
+  Mécanique : une règle unique et conditionnelle par famille dans .htaccess,
+  la 301 ne se déclenchant que si le fichier n existe plus. Les pages
+  conservées restent servies normalement sans exception à maintenir, et les
+  lots suivants n exigeront aucune ligne supplémentaire.
+
+CONTENT QUALITY
+  pages réécrites                                  1 744   corrections ETIAS uniquement
+  similarité avant / après                                 inchangée : aucune réécriture
+                                                           éditoriale n a été engagée
+  sources officielles utilisées
+    travel-europe.europa.eu/etias/what-etias_en, consulté le 10/09/2026,
+    seule source des faits ETIAS retenus : système non opérationnel, date de
+    lancement non publiée, tarif de 20 EUR.
+  Aucun synonym spinning n a été produit, conformément à la priorité 5 : les
+  pages sans différence substantielle ont été consolidées, jamais réécrites
+  artificiellement.
+
+LANGUAGES
+  loc  urls  sitemap  clics  impressions  pos   p.clics  résidu_en  recommandation
+  en   1082     1081   2201       523902  12,2      302          -  KEEP_FULL
+  fr   1011     1009    542        36341  11,9      125          2  KEEP_NO_EXPANSION
+  es   1063     1061    159        18129  13,5       52        360  KEEP_NO_EXPANSION
+  pt   1066     1064    126         8072  11,2       42          2  KEEP_NO_EXPANSION
+  zh   1122     1121    240        18815  15,9       73          2  KEEP_NO_EXPANSION
+  th   1110     1109     88         8985  16,4       30         28  HUMAN_REVIEW
+  ru   1107     1106    275        23820  12,3       78          2  KEEP_NO_EXPANSION
+  ar   1112     1111    134        14215  10,5       44         99  KEEP_NO_EXPANSION
+  ja   1142     1141    217        10841  11,5       57          2  KEEP_NO_EXPANSION
+  ko   1134     1133    287        17617  11,2       76         34  KEEP_NO_EXPANSION
+
+  L anglais reste le corpus maître : il porte 2 201 des 4 269 clics et 523 902
+  des 680 737 impressions, soit plus des trois quarts de la visibilité.
+  Aucune langue n est supprimée. Le thaï passe en revue humaine : c est la
+  langue au plus faible rendement et la seule dont la qualité de traduction
+  reste signalée comme insuffisante depuis l audit du 03/09.
+  Le résidu anglais mesuré en espagnol, 360 pages, est le principal défaut de
+  traduction restant ; l arabe en compte 99, le coréen 34, le thaï 28.
+  Détail complet dans LANGUAGE_PERFORMANCE_REPORT.csv.
+
+HUMAN REVIEW — DÉCISIONS INCERTAINES
+
+  1. 5 039 pages visa-for en HUMAN_REVIEW dans VISA_FOR_DECISION_MATRIX.csv.
+     Unicité de contenu trop élevée pour conclure à un doublon, ou absence de
+     donnée Search Console. Aucune ne doit être supprimée en l état.
+
+  2. 446 pages classées MERGE_301 mais au-delà du seuil d unicité de 15 %
+     retenu pour le lot C1. Candidates naturelles au lot C2, après mesure.
+
+  3. 2 664 pages KEEP_REWRITE. Un régime propre à la nationalité y a été
+     détecté. Elles justifient leur existence mais leur contenu reste proche
+     du groupe. Elles relèvent de l enrichissement décrit en priorité 4, pas
+     de la suppression, et cet enrichissement n a pas été engagé ici.
+
+  4. 48 pages de destination isolée du lot B, dans HUMAN_REVIEW_LOTB.csv.
+     Amsterdam, Patagonie, Taipei, Cappadoce, Machu Picchu, Californie,
+     Galápagos, Santorin. Leurs versions anglaises sont les plus gros
+     générateurs d impressions du site. Toujours en attente d arbitrage.
+
+  5. 360 pages espagnoles avec résidu anglais dans le corps de texte.
+
+  6. Le thaï, 88 clics pour 1 110 URL, qualité de traduction insuffisante.
+
+RÉSERVE MAJEURE SUR LES DONNÉES SEARCH CONSOLE
+  L export disponible ne couvre que 879 URL, celles ayant reçu au moins un
+  clic sur 90 jours. Pour les 12 493 autres, la colonne impressions vaut zéro
+  par absence de donnée, non par mesure.
+  Le critère « 0 clic » est donc fiable. Le critère « peu d impressions »
+  demandé par le brief ne l est pas, et n a servi à aucune décision.
+  C est la raison du choix d un seuil d unicité de 15 % pour le lot C1 : il
+  cadre le lot à 11,4 % de la famille, dans la fourchette de 10 à 15 %
+  demandée, là où un seuil de 20 % aurait porté le lot à 16,7 %.
+  AVANT LE LOT C2, il faut un export complet du rapport Pages de Search
+  Console sur 90 jours, impressions comprises. Sans lui, aucune suppression
+  supplémentaire ne devrait être décidée sur le seul critère de similarité.
+
+CE QUI N A PAS ÉTÉ FAIT, ET POURQUOI
+  Priorité 8, renforcement des hubs de destination, et priorité 9,
+  enrichissement des 320 guides d expatriation : ces deux chantiers sont de
+  la production éditoriale, sourcée gouvernement par gouvernement. Ils ne
+  figurent pas dans l ordre d exécution obligatoire du brief, qui s arrête au
+  rapport final, et la priorité 12 interdit d ouvrir un chantier de contenu
+  tant que la phase de récupération n est pas validée. Ils sont donc laissés
+  intacts et prêts à être engagés une fois l effet du lot C1 mesuré.
+
+PROCHAINES ÉTAPES DANS L ORDRE
+  1. Envoi FTP complet de www2, .htaccess inclus, AVEC suppression côté
+     serveur des 1 107 fichiers retirés : sans cela les anciennes pages
+     continueront d être servies et la fusion n aura aucun effet.
+     Liste exacte dans LOT_C1_URLS.csv.
+  2. Vérification de déploiement par la sonde lot-c1-probe-20260910, qui doit
+     répondre 410. Si seule lot-a-probe-v2-exact répond, le fichier en ligne
+     est celui du lot B.
+  3. Soumission du sitemap à jour dans Search Console.
+  4. Attente de la mesure hebdomadaire, ligne à ajouter dans
+     WEEKLY_BASELINE.csv.
+  5. Export Search Console complet, impressions comprises.
+  6. Lot C2 seulement ensuite.
+
+===========================================================================
+QA APRÈS LOT C1 — LISTE DE LA PRIORITÉ 14
+===========================================================================
+[x] 0 broken internal link                 755 834 liens vérifiés
+[x] 0 broken hreflang                      116 036 balises vérifiées
+[x] 0 canonical vers page supprimée         10 953 canonical vérifiés
+[x] 0 URL supprimée dans le sitemap
+[x] 0 redirect chain
+[x] 0 page conservée orpheline              2 pages rattachées, voir ci-dessous
+[x] 0 placeholder                           2 129 alertes, toutes fausses :
+                                            le motif TODO captait le mot
+                                            espagnol « todo »
+[ ] 0 English residue anormal               360 pages espagnoles, 99 arabes,
+                                            34 coréennes, 28 thaïes : mesuré,
+                                            non corrigé, mis en revue humaine
+[x] 0 ancienne information ETIAS incorrecte
+[ ] statut HTTP correct pour chaque URL     non vérifiable avant l envoi FTP
+[x] /url.html -> URL propre en une seule redirection, règle déjà en place
+
+DEUX PAGES RATTACHÉES
+  /en/bermuda-visa-requirements et /ko/laos-visa-requirements étaient
+  conservées mais avaient perdu tout lien entrant : le bloc Related de leur
+  hub avait été retiré au lot B parce qu il était devenu vide. Le bloc a été
+  rétabli sur /en/visa-bermuda et /ko/visa-laos, avec le markup repris à
+  l identique d un hub intact.
+
+SEULES LES DEUX LIGNES NON COCHÉES RESTENT OUVERTES
+  Le résidu anglais relève de la traduction, pas de cette phase.
+  Le contrôle des statuts HTTP se fera après l envoi FTP, avec la sonde.

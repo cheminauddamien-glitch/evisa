@@ -1,3 +1,4 @@
 date,html_pages,sitemap_urls,indexed_pages,google_chose_other_canonical,crawled_not_indexed,clicks_7d,impressions_7d,avg_position_7d,crawl_requests_7d,notes
 2026-09-07,13370,13355,11500,4088,2189,,,62,,"Lot A: suppression blog.html + blog-single.html (demo Colorlib), 410 posees"
 2026-09-09,12062,12047,,,,,,,,"Lot B: 1308 pages fusionnees en 301 vers le hub destination; 48 pages destination isolees exclues"
+2026-09-10,10955,10940,,,,,,,,"Lot C1: 1107 pages visa-for fusionnees en 301 vers le hub destination (11,4 % de la famille); corrections ETIAS sur 1744 pages; sonde lot-c1-probe-20260910"

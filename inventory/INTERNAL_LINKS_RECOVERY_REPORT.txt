@@ -1,0 +1,71 @@
+===========================================================================
+INTERNAL_LINKS_RECOVERY_REPORT
+Priorité 1 du brief — liens internes vers les sous-pages supprimées
+Établi le 10/09/2026
+===========================================================================
+
+RÉSULTAT PRINCIPAL
+Aucun lien à corriger. Le maillage était déjà propre avant cette phase.
+
+Le brief annonçait 18 268 liens internes pointant encore vers des pages
+fees / requirements / processing-time supprimées, passant donc par une 301.
+Mesure sur le dossier de production www2 : zéro.
+
+MÉTHODE DE VÉRIFICATION
+Scan exhaustif des 12 062 fichiers HTML, de toutes les balises <a href> et
+<link href>, avec ou sans le domaine, avec ou sans extension .html. Chaque
+cible a été confrontée à l inventaire réel des fichiers sur disque.
+
+  liens internes analysés            837 337
+  liens externes ignorés              26 470
+  cibles mortes                            0
+  chaînes de redirection                   0
+  hreflang cassés                          0
+  canonical vers page supprimée            0
+
+DÉTAIL DE LA FAMILLE CONCERNÉE
+  références href vers la famille     54 082  toutes vivantes
+  balises hreflang vers la famille     1 067  toutes vivantes
+  canonical vers la famille              215  auto-références des pages restantes
+  cibles distinctes                      215  soit exactement les pages encore
+                                              présentes sur disque
+
+CONTRÔLE SUR LES EXEMPLES DU BRIEF
+  /en/denmark-visa-requirements     page supprimée, 0 référence restante
+  /fr/denmark-visa-fees             page supprimée, 0 référence restante
+  /en/argentina-visa-fees           page supprimée, 0 référence restante
+  /es/china-visa-processing-time    page CONSERVÉE, 23 références légitimes
+
+D OÙ VIENT L ÉCART DE 18 268
+Le comptage du brief traite manifestement toute la famille comme supprimée.
+Or 215 pages de cette famille existent toujours : 167 conservées pour leur
+trafic mesuré et 48 pages de destination isolée volontairement exclues de la
+fusion. Les liens qui les visent sont des liens normaux vers des pages en 200,
+pas des redirections. Les cinq destinations à dix langues qui concentrent le
+plus de liens entrants (Amsterdam, Patagonie, Taipei, Cappadoce, Machu Picchu)
+sont référencées depuis le bloc destinations du pied de page, présent sur la
+quasi-totalité du site : à elles seules elles expliquent l ordre de grandeur.
+
+POURQUOI IL N Y AVAIT RIEN À CORRIGER
+Le nettoyage avait été fait dans le même mouvement que la fusion du lot B, le
+09/09 : 28 825 ancres retirées dans 10 818 fichiers, 1 271 balises hreflang
+retirées, puis une seconde passe pour 1 190 entrées de sélecteur de langue qui
+échappaient au premier motif parce qu elles contenaient un drapeau imbriqué.
+
+ÉTAT APRÈS LE LOT C1
+Le même scan a été relancé après la consolidation de 1 107 pages visa-for :
+
+  liens internes analysés            755 834
+  cibles mortes                            0
+  chaînes de redirection                   0
+  hreflang cassés                          0
+  canonical vers page supprimée            0
+
+LIENS CASSÉS RESTANTS
+Aucun.
+
+RÈGLE DE TRAVAIL RETENUE
+Les 301 du .htaccess restent en place pour les URL externes et pour Google,
+conformément au brief. Elles ne servent jamais de maillage interne : à chaque
+lot, les liens internes sont réécrits ou retirés dans les fichiers eux-mêmes,
+dans la même opération que la suppression.

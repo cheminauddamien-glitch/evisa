@@ -1,0 +1,121 @@
+===========================================================================
+ETIAS_FINAL_AUDIT
+Priorité 2 du brief — ETIAS ne doit jamais être présenté comme déjà obligatoire
+Établi le 10/09/2026
+===========================================================================
+
+SOURCE OFFICIELLE UTILISÉE
+  https://travel-europe.europa.eu/etias/what-etias_en
+  Portail officiel de l Union européenne, consulté le 10/09/2026.
+  Trois faits en ont été retenus, et rien d autre :
+    1. « ETIAS is currently not in operation and no applications for travel
+       authorisations are collected at this point. »
+    2. « The European Union will inform about the specific date for the start
+       of ETIAS several months prior to its launch. »
+    3. Le tarif officiel est de 20 EUR.
+  Aucune date de lancement n a été écrite nulle part, puisque l Union
+  européenne n en publie aucune.
+
+VOLUMÉTRIE
+  pages contenant le mot ETIAS, avant        2 786
+  pages portant au moins un marqueur suspect 1 384
+  pages corrigées                            1 300  passe 1
+                                               234  passe 2
+                                               202  passe 3
+                                                 8  correction manuelle
+  pages contenant le mot ETIAS, après        2 732
+  Les 54 pages en moins sont des pages visa-for supprimées par le lot C1.
+
+FICHIERS TROUVÉS ET CORRIGÉS — DÉTAIL PAR NATURE DU DÉFAUT
+
+1. TARIF ERRONÉ  — 668 occurrences
+   « EUR 7 », « €7 », « 7 € » présentés comme le tarif ETIAS.
+   Le tarif officiel est de 20 EUR. Corrigé partout où le contexte était bien
+   celui d ETIAS.
+   Incident traité : la première règle a aussi touché quatre montants à
+   séparateur de milliers sans rapport avec ETIAS, « €7,000/an » de ressources
+   exigées pour un visa étudiant, devenus « €20,000 ». Détecté au contrôle du
+   diff et restauré dans visa-ireland pour les quatre langues concernées.
+   Vérification finale : plus aucun montant altéré.
+
+2. DATE DE LANCEMENT INVENTÉE — 667 occurrences, environ 250 pages
+   Formulations du type « lancement prévu au 4e trimestre 2026 », « obligatoire
+   vers 2027 », « obligatoire à partir d avril 2027 », « après une période de
+   transition de 6 mois ». Aucune de ces dates n est publiée par l Union
+   européenne.
+   Traitement retenu, sans jamais inventer de formulation :
+     - les parenthèses datées ont été supprimées (285 occurrences) ;
+     - les phrases datées ont été remplacées par la formulation officielle
+       DÉJÀ présente sur le site dans la même langue (302 occurrences) ;
+     - les fragments trop courts pour une phrase, en cellule de tableau, ont
+       reçu un marqueur neutre du type « date de lancement non annoncée »
+       (212 occurrences).
+   Les formulations de remplacement ne sont pas nouvelles : ce sont celles
+   ajoutées lors de la correction du 04/09, elles-mêmes calquées sur le texte
+   officiel de l Union européenne.
+
+3. ETIAS PRÉSENTÉ COMME DÉJÀ OBLIGATOIRE — 594 occurrences
+   Cellules de régime et de délai indiquant une obligation active :
+     en  « ETIAS required »                 -> « ETIAS not yet in operation »
+     fr  « ETIAS requis »                   -> « ETIAS pas encore en service »
+     fr  « Instantané (ETIAS en ligne) »    -> « ETIAS pas encore en service »
+     es  « ETIAS requeridas / necesaria »   -> « ETIAS aún no está operativo »
+     pt  « ETIAS exigida »                  -> « ETIAS ainda não está operacional »
+     pt  « Instantânea (ETIAS online) »     -> idem
+     pt  « ETIAS Obrigatória (a partir de 2025) » -> idem
+     ru  « ETIAS требуется / Требуемый »    -> « ETIAS пока не действует »
+     ja  « ETIAS 必須 »                     -> « ETIASはまだ運用開始前 »
+     ko  « ETIAS 필요 / 필수 »              -> « ETIAS는 아직 운영 전 »
+     th  « ต้องการ ETIAS »                  -> « ETIAS ยังไม่เปิดใช้งาน »
+     zh  « 所需ETIAS / 需要的ETIAS »        -> « ETIAS 尚未启用 »
+     ar  « مطلوب من شركة ETIAS »            -> « ETIAS لم يبدأ العمل به بعد »
+   Chaque libellé de remplacement est repris tel quel d une formulation déjà
+   employée ailleurs sur le site dans la même langue.
+
+4. ADRESSE OFFICIELLE FAUSSE OU TRADUITE — 998 occurrences
+   travel-europe.eu/etias, travel.ec.europa.eu, voyage.ec.europa.eu,
+   유럽.europa.eu, 旅行ヨーロッパ.europa.eu, 欧元.europa.eu/etis, et une adresse
+   thaïe entièrement désarticulée. Toutes ramenées à
+   travel-europe.europa.eu/etias_en.
+
+5. TRADUCTION INVERSÉE — 2 occurrences
+   ja « 事前の承認、ビザ、またはETIASが必要 » sur des pages destinées aux
+   ressortissants de l Union, à qui rien de tout cela n est demandé. La
+   négation avait sauté à la traduction. Rétabli.
+
+OCCURRENCES CONSERVÉES ET JUSTIFICATION
+
+  276 occurrences de « ETIAS required » et équivalents ont été VOLONTAIREMENT
+  laissées en place : 56 en anglais, 70 en français, 12 en espagnol, 138 en
+  russe. Elles sont précédées d une négation et disent donc l inverse de ce
+  que le motif laisse croire. Exemple : « EU/Schengen free movement, no visa
+  or ETIAS required » est une phrase exacte pour un ressortissant de l Union.
+  Un garde-fou de négation a été ajouté au correcteur pour les épargner.
+
+  « ETIAS required once launched » et « ETIAS required once live » ont aussi
+  été conservées : la condition est explicite, l obligation n est pas
+  présentée comme active.
+
+  « ETIAS : up to 4 days (usually minutes) » a été conservée. Le brief vise
+  les affirmations d obligation, pas la description de la procédure, et ce
+  délai correspond au texte officiel de l Union européenne.
+
+  Les mentions de 2027 sans rapport avec ETIAS ont été conservées : le régime
+  d essai ouvert jusqu au 31 juillet 2027 pour la Thaïlande, Brunei, les
+  Philippines et Oman, et le système thaïlandais ETAS, qui n est pas ETIAS.
+
+ÉTAT FINAL VÉRIFIÉ
+  pages présentant ETIAS comme actuellement obligatoire            0
+  pages annonçant une date de lancement ETIAS                      0
+  occurrences du tarif erroné de 7 EUR en contexte ETIAS           0
+  adresses officielles fausses ou traduites                        0
+  montants sans rapport altérés par les corrections                0
+
+  Objectif du brief atteint : plus aucune page ne présente ETIAS comme une
+  obligation actuellement active.
+
+DATE DE VÉRIFICATION
+  10/09/2026, source officielle consultée le même jour.
+  À revérifier dès que l Union européenne annoncera la date de mise en
+  service : les formulations « pas encore en service » devront alors être
+  remplacées, et c est le seul moment où une date pourra être écrite.

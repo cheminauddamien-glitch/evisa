@@ -29,11 +29,26 @@ RewriteRule ^lot-a-probe-v2-exact$ - [G,L]
 # Lot B — consolidation fees / requirements / processing-time vers le hub
 # destination (1 308 pages, 09/09/2026). Regle unique et conditionnelle plutot
 # que 1 308 lignes : la 301 ne se declenche QUE si le fichier n existe plus.
-# Les 167 pages de la meme famille conservees pour leur trafic existent
-# toujours sur disque et continuent donc d etre servies normalement.
+# Les pages de cette famille encore presentes sur disque restent servies
+# normalement : aucun nombre fixe n est ecrit ici, il varie a chaque lot.
 # Pas de quantificateur /? : ce serveur ne les applique pas (cf. lot A).
 RewriteCond %{REQUEST_FILENAME}.html !-f
 RewriteRule ^(en|fr|es|pt|zh|th|ru|ar|ja|ko)/([a-z0-9-]+)-visa-(fees|requirements|processing-time)$ https://www.evisa-card.com/$1/visa-$2 [R=301,L]
+
+# Lot C1 — consolidation de la famille <destination>-visa-for-<nationalite>-citizens
+# vers le hub destination (1 107 pages, 10/09/2026). Meme mecanique
+# conditionnelle que le lot B : la 301 ne se declenche QUE si le fichier
+# n existe plus. Les pages de la famille encore presentes sur disque, qui
+# portent une regle propre a la nationalite ou du trafic mesure, continuent
+# donc d etre servies normalement. La regle vaut aussi pour les lots suivants,
+# il n y aura pas de ligne a ajouter a chaque tranche.
+RewriteCond %{REQUEST_FILENAME}.html !-f
+RewriteRule ^(en|fr|es|pt|zh|th|ru|ar|ja|ko)/([a-z0-9-]+)-visa-for-[a-z0-9-]+-citizens$ https://www.evisa-card.com/$1/visa-$2 [R=301,L]
+
+# Sonde de deploiement, v3 : la chaine change a chaque version pour rester
+# discriminante. Si lot-a-probe-v2-exact repond encore 410 et pas celle-ci,
+# le fichier en ligne est perime.
+RewriteRule ^lot-c1-probe-20260910$ - [G,L]
 
 # /en/index would need two hops via the generic index rule (→ /en/ → /) —
 # short-circuit it to the root in ONE hop.
