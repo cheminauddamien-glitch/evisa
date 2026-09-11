@@ -1,0 +1,305 @@
+EVISA-CARD — RECOVERY IMPLEMENTATION REPORT
+Date : 07/09/2026
+Pack appliqué : EVISA_SEO_RECOVERY_CLAUDE_CODE.zip
+Branche : seo/recovery-consolidation-sept2026
+
+===========================================================================
+ÉTAPE 0 — SAUVEGARDE
+===========================================================================
+Branche créée depuis main au commit c5952159c697adf5ff8baf3ec1162c42ed8ef2cf.
+
+AVANT
+  pages HTML   : 13 372
+  URL sitemap  : 13 355
+
+APRÈS LOT A
+  pages HTML   : 13 370
+  URL sitemap  : 13 355  (inchangé : les pages retirées n'y figuraient pas)
+
+===========================================================================
+ÉTAPE 1 — DONNÉES AVANT DÉCISION
+===========================================================================
+Source Search Console utilisée :
+  Downloads/evisa-card.com-Performance-on-Search-2026-08-05.xlsx
+  Onglet "Pages", période mai à août 2026.
+
+LIMITE IMPORTANTE
+  L'export plafonne à 1 000 URL, soit 7,5 % des 13 372 pages du corpus.
+  4 269 clics sur 4 546 sont couverts, donc la quasi-totalité du trafic est
+  visible, mais l'absence d'une URL de cet export ne prouve PAS qu'elle est
+  sans valeur. Elle peut être sous le seuil de troncature.
+  Un export complet via l'API Search Console lèverait cette limite.
+
+Règle de protection appliquée avant toute décision de famille :
+  clics >= 1                  -> KEEP inconditionnel
+  impressions >= 100          -> KEEP inconditionnel
+  impressions entre 10 et 99  -> REVIEW (jamais supprimé automatiquement)
+
+  Pages protégées par leur historique : 879
+
+===========================================================================
+CLASSIFICATION DES 13 372 URL
+===========================================================================
+  KEEP                 2 054   hubs destination, guides expat, pages à historique
+  KEEP_NOINDEX            14   pages légales
+  MERGE                1 356   familles fees / requirements / processing-time
+  REVIEW_CONSOLIDATE   9 256   matrice destination x nationalité
+  HUMAN_REVIEW           689   type non classé automatiquement
+  REMOVE_410               3   pages techniques ou démo
+
+Détail des livrables dans inventory/ :
+  URL_DECISIONS.csv        classification complète, 13 372 lignes
+  KEEP_URLS.csv            2 068
+  MERGED_URLS.csv          1 356  (proposées, NON exécutées)
+  REMOVED_URLS.csv         3
+  HUMAN_REVIEW_QUEUE.csv   9 945
+  REDIRECT_MAP_FINAL.csv   2
+  WEEKLY_BASELINE.csv      ligne de référence du 07/09/2026
+
+===========================================================================
+LOT A — EXÉCUTÉ
+===========================================================================
+Périmètre volontairement restreint aux pages de démonstration réellement
+orphelines, conformément à "Lot A : consolidation technique évidente et
+pages démo".
+
+SUPPRIMÉ
+  www2/blog.html          template de démonstration Colorlib, 18 faux articles
+  www2/blog-single.html   template de démonstration Colorlib
+
+Justification de l'absence de 301 : aucune page conservée ne répond à la même
+intention. Le pack impose 410 dans ce cas et interdit la redirection de
+complaisance vers un hub. Règles ajoutées dans www2/.htaccess :
+  Redirect 410 /blog
+  Redirect 410 /blog.html
+  Redirect 410 /blog-single
+  Redirect 410 /blog-single.html
+
+Vérifications post-suppression
+  liens internes entrants restants  : 0
+  présence au sitemap               : 0 avant suppression, rien à retirer
+  canonical pointant vers ces URL   : 0
+  chaînes de redirection créées     : 0
+
+NON EXÉCUTÉ malgré la proposition de la matrice, avec motif
+  /404
+    C'est la cible de ErrorDocument 404 et 403 dans .htaccess. La supprimer
+    casserait la gestion d'erreur du site. La matrice ne connaît pas cette
+    dépendance.
+  /fonts/flaticon/font/flaticon
+    Page de démonstration livrée avec le kit de polices, déjà en noindex.
+    Le dossier /fonts/ est explicitement autorisé dans robots.txt pour le
+    rendu. Suppression sans bénéfice, risque de casser le kit.
+
+===========================================================================
+POINT DE BLOCAGE — DÉCISION UTILISATEUR REQUISE
+===========================================================================
+Les 1 356 pages classées MERGE sont exactement les familles
+  <destination>-visa-fees            432
+  <destination>-visa-requirements    534
+  <destination>-visa-processing-time 390
+
+Le pack recommande de les fusionner dans le hub /xx/visa-<destination>.
+
+CE TRAVAIL A DÉJÀ ÉTÉ FAIT PUIS ANNULÉ SUR DEMANDE EXPLICITE.
+  27/07/2026  1 198 pages de ces familles canonicalisées vers le hub.
+  04/08/2026  l'utilisateur, informé du détail, a demandé "remets tout comme
+              www dans www2". La consolidation a été intégralement annulée.
+              État actuel : 1 520 pages long-tail auto-canoniques.
+
+Je n'ai donc rien exécuté sur cette famille. Refaire la fusion sans accord
+explicite reviendrait à annuler une décision utilisateur documentée.
+
+Éléments pour trancher
+  cibles de fusion existantes    : 1 308 sur 1 356
+  cibles manquantes              : 48, à traiter en 410 ou à créer
+  pages de la famille protégées par leur historique GSC : incluses dans KEEP,
+  donc absentes des 1 356. La fusion ne toucherait aucune page à trafic connu.
+
+===========================================================================
+FAMILLE A — 9 256 PAGES EN ATTENTE D'ANALYSE
+===========================================================================
+Les pages <destination>-visa-for-<nationalité>-citizens représentent 69 % du
+corpus et sont désignées par le pack comme le principal risque de contenu
+répétitif.
+
+Le pack demande de regrouper les nationalités partageant exactement le même
+régime de visa, et de ne conserver une page spécifique que si elle apporte une
+règle, une exemption, une procédure, un document, une durée ou une question de
+recherche réellement distincte.
+
+Cette analyse de régime n'est pas encore faite. Elle suppose d'extraire, pour
+chaque couple destination x nationalité, le régime déclaré dans la page, puis
+de constituer les classes d'équivalence. C'est le contenu du lot B.
+
+Ce lot n'a pas été engagé : le pack impose de mesurer l'effet du lot A avant
+de passer au suivant.
+
+===========================================================================
+QA CHECKLIST
+===========================================================================
+[x] Sauvegarde et branche dédiée
+[x] Données GSC jointes avant toute action destructive
+[x] Chaque URL retirée porte une décision explicite
+[x] Chaque 301 pointe vers une cible équivalente (aucune 301 créée ici)
+[x] 0 chaîne de redirection
+[x] 0 lien interne cassé
+[x] 0 hreflang cassé
+[x] 0 canonical vers URL supprimée
+[x] 0 URL supprimée présente au sitemap
+[x] 0 page conservée devenue orpheline
+[x] Aucun fait visa modifié dans ce lot, donc aucune source à journaliser
+[x] Baseline enregistrée avant déploiement
+[x] Identifiant de lot : LOT_A_2026-09-07
+[x] File de revue humaine produite
+
+===========================================================================
+PROCHAINES ÉTAPES
+===========================================================================
+1. Uploader www2/ par FTP, en incluant .htaccess.
+2. Vérifier que /blog et /blog-single renvoient bien 410 en ligne.
+3. Attendre la mesure. Ne pas interpréter 48 heures de données.
+4. Renseigner une ligne WEEKLY_BASELINE.csv par semaine.
+5. Trancher le point de blocage ci-dessus avant d'engager le lot B.
+6. Si le lot B est validé, produire d'abord l'analyse des régimes de visa,
+   puis la carte de redirection, puis exécuter par sous-lots de 10 à 20 %.
+
+===========================================================================
+CORRECTION DU 08/09/2026 — LE 410 NE FONCTIONNAIT PAS
+===========================================================================
+Vérification en ligne après upload :
+  /blog              404 au lieu de 410
+  /blog.html         301 vers /blog, qui renvoie ensuite 404
+  /blog-single       404 au lieu de 410
+  /blog-single.html  301 vers /blog-single, qui renvoie ensuite 404
+
+Cause : les directives "Redirect" appartiennent au module mod_alias, alors
+que la règle générique qui retire l'extension .html est une RewriteRule du
+module mod_rewrite. Dans un .htaccess, mod_rewrite s'exécute avant mod_alias.
+La règle .html-strip capturait donc /blog.html et émettait sa 301 avant que
+le Redirect 410 ne soit seulement évalué.
+
+Conséquence : une chaîne de redirection se terminant sur une erreur, ce que
+la QA checklist du pack interdit explicitement. Le point "0 chaîne de
+redirection" du rapport initial était donc faux en production.
+
+Correctif appliqué : le 410 est réécrit en mod_rewrite avec le flag [G] et
+placé en tête de fichier, avant toute autre règle de chemin.
+
+  RewriteRule ^blog(?:-single)?(?:\.html)?/?$ - [G,L]
+
+Les quatre directives Redirect 410 de mod_alias ont été retirées.
+Attendu après upload : 410 direct sur les quatre formes, aucune chaîne.
+
+Note : il est également possible que le .htaccess n'ait pas été transmis lors
+de l'upload, FileZilla masquant les fichiers commençant par un point. À
+vérifier lors du prochain envoi.
+
+===========================================================================
+ÉTAT MESURÉ EN LIGNE AU 09/09/2026 — LOT A CONFORME
+===========================================================================
+  /blog                404
+  /blog.html           410
+  /blog-single         404
+  /blog-single.html    410
+  /blog/               301 en un hop vers /blog
+  /blog-single/        301 en un hop vers /blog-single
+
+Conforme au pack, dont le point 7 de la stratégie demande d utiliser 410 ou
+404 pour une page supprimée sans équivalent pertinent. Les deux codes sont
+acceptés. Google désindexe sur l un comme sur l autre, le 410 étant seulement
+un peu plus rapide à être pris en compte.
+
+Non-régression vérifiée : /, /fr/, /en/visa-united-kingdom,
+/en/malaysia-visa-for-nigerian-citizens, /retirement-visa-guide,
+/sitemap.xml et /robots.txt répondent tous 200.
+
+ANOMALIE SERVEUR DOCUMENTÉE
+Ce serveur n applique pas les motifs RewriteRule contenant le quantificateur
+de slash facultatif. Le motif ^blog/?$ ne captait ni /blog ni /blog/, alors
+que ^blog\.html$ et la sonde ^lot-a-probe-20260908$ renvoyaient bien 410.
+Cause non identifiable sans accès à la configuration du serveur.
+Contournement retenu : n écrire que des motifs exacts dans ce .htaccess.
+À retenir pour toute règle future.
+
+RÉSERVE
+Le passage de /blog et /blog-single de 404 à 410 n a pas pu être confirmé.
+La sonde v1 était identique dans deux versions successives du fichier et ne
+permettait donc pas de distinguer un envoi non parvenu d un motif non
+appliqué. Une sonde v2, de chaîne lot-a-probe-v2-exact, corrige ce défaut et
+sera discriminante au prochain envoi. Point sans conséquence fonctionnelle,
+le 404 actuel satisfaisant déjà le pack.
+
+===========================================================================
+LOT B — EXÉCUTÉ LE 09/09/2026
+===========================================================================
+Décision utilisateur du 09/09 : fusion demandée explicitement, en connaissance
+de l annulation du 04/08 rappelée plus haut. Le point de blocage ci-dessus est
+donc levé.
+
+PÉRIMÈTRE RÉELLEMENT TRAITÉ
+  1 308 pages supprimées et redirigées en 301 vers /xx/visa-<destination>
+     48 pages EXCLUES de la fusion, voir plus bas
+  1 356 candidates au départ
+
+ÉQUIVALENCE D INTENTION VÉRIFIÉE AVANT REDIRECTION
+Le hub de destination porte des sections dédiées aux documents requis et aux
+frais, et traite les délais. Contrôle sur en/visa-argentina : 40 896 octets
+contre 22 512 pour la page de frais, sections Required Documents et Visa Fees
+présentes. La 301 pointe donc vers une page réellement équivalente, comme
+l exige le pack.
+
+TRAVAUX ASSOCIÉS
+  28 825 ancres internes retirées dans 10 818 fichiers
+   1 271 balises hreflang retirées
+   1 190 entrées de sélecteur de langue repointées vers /xx/ sur 162 pages
+         (seconde passe : les ancres contenant un drapeau échappaient au
+         premier motif, qui n acceptait pas de balise imbriquée)
+  sitemap 13 355 -> 12 047 URL
+  pages HTML 13 370 -> 12 062
+
+RÈGLE .HTACCESS
+Une seule règle conditionnelle plutôt que 1 308 lignes :
+
+  RewriteCond %{REQUEST_FILENAME}.html !-f
+  RewriteRule ^(en|fr|es|pt|zh|th|ru|ar|ja|ko)/([a-z0-9-]+)-visa-(fees|requirements|processing-time)$ https://www.evisa-card.com/$1/visa-$2 [R=301,L]
+
+La redirection ne se déclenche que si le fichier n existe plus. Les 167 pages
+de la même famille conservées pour leur trafic existent toujours sur disque et
+continuent d être servies normalement, sans exception à maintenir. Aucun
+quantificateur de slash facultatif, ce serveur ne les applique pas.
+
+48 PAGES EXCLUES — DÉCISION MOTIVÉE
+Ces pages n avaient pas de hub, non par oubli, mais parce qu elles couvrent une
+région ou un site et non un pays :
+  amsterdam-visa-requirements      10 langues
+  patagonia-visa-requirements      10
+  taipei-visa-requirements          9
+  cappadocia-visa-requirements      8
+  machu-picchu-visa-requirements    8
+  california, galapagos, santorini  1 chacune
+
+Leurs versions anglaises sont les plus gros générateurs d impressions du site :
+cappadocia 52 227, machu-picchu 17 163, taipei 8 912, patagonia 2 576.
+California, santorini et galapagos ont été créées le 05/08 pour combler des
+trous de contenu mesurés. Intention distincte, aucun doublon.
+
+Le pack interdit de supprimer une URL à intention distincte, et rappelle qu une
+URL sans trafic n est pas automatiquement inutile. Ces 48 pages sont donc
+conservées et listées dans HUMAN_REVIEW_LOTB.csv.
+
+QA LOT B
+[x] Chaque 301 pointe vers une cible équivalente et existante
+[x] 0 référence interne vers une page supprimée
+[x] 0 canonical vers une page supprimée
+[x] 0 URL supprimée présente au sitemap
+[x] 0 hub devenu orphelin
+[x] 0 chaîne de redirection
+[x] Identifiant de lot : LOT_B_2026-09-09
+[x] REDIRECT_MAP_FINAL.csv : 1 308 lignes
+[x] HUMAN_REVIEW_LOTB.csv : 48 lignes
+
+RESTE À FAIRE
+Envoi FTP complet de www2/, .htaccess inclus. La sonde lot-a-probe-v2-exact
+validera d un coup le déploiement, les redirections du lot B et le reliquat
+du lot A. Puis mesure hebdomadaire avant tout nouveau lot.

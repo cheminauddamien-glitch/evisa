@@ -9,6 +9,47 @@ RewriteCond %{HTTP_HOST} !^www\. [NC]
 RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\s([^?\s]+)
 RewriteRule ^ https://www.evisa-card.com%1 [L,R=301]
 
+# 410 Gone — pages de demonstration Colorlib supprimees (lot A recovery, 07/09/2026)
+# En mod_rewrite et place ICI : la regle generique .html-strip plus bas est
+# elle aussi du mod_rewrite et s executerait avant un Redirect mod_alias,
+# transformant /blog.html en 301 vers /blog puis 404.
+# Motifs EXACTS, sans quantificateur : teste en ligne le 09/09/2026, ce serveur
+# n applique pas les motifs contenant /? (^blog/?$ ne matchait ni blog ni blog/),
+# alors que les motifs exacts fonctionnent. Les formes /blog/ et /blog-single/
+# sont couvertes par la regle de suppression du slash final, plus bas.
+RewriteRule ^blog$ - [G,L]
+RewriteRule ^blog\.html$ - [G,L]
+RewriteRule ^blog-single$ - [G,L]
+RewriteRule ^blog-single\.html$ - [G,L]
+# Sonde de deploiement, v2 : la chaine change a chaque version pour rester
+# discriminante. Ancienne sonde lot-a-probe-20260908 retiree volontairement :
+# si elle repond encore 410, le fichier en ligne est perime.
+RewriteRule ^lot-a-probe-v2-exact$ - [G,L]
+
+# Lot B — consolidation fees / requirements / processing-time vers le hub
+# destination (1 308 pages, 09/09/2026). Regle unique et conditionnelle plutot
+# que 1 308 lignes : la 301 ne se declenche QUE si le fichier n existe plus.
+# Les pages de cette famille encore presentes sur disque restent servies
+# normalement : aucun nombre fixe n est ecrit ici, il varie a chaque lot.
+# Pas de quantificateur /? : ce serveur ne les applique pas (cf. lot A).
+RewriteCond %{REQUEST_FILENAME}.html !-f
+RewriteRule ^(en|fr|es|pt|zh|th|ru|ar|ja|ko)/([a-z0-9-]+)-visa-(fees|requirements|processing-time)$ https://www.evisa-card.com/$1/visa-$2 [R=301,L]
+
+# Lot C1 — consolidation de la famille <destination>-visa-for-<nationalite>-citizens
+# vers le hub destination (1 107 pages, 10/09/2026). Meme mecanique
+# conditionnelle que le lot B : la 301 ne se declenche QUE si le fichier
+# n existe plus. Les pages de la famille encore presentes sur disque, qui
+# portent une regle propre a la nationalite ou du trafic mesure, continuent
+# donc d etre servies normalement. La regle vaut aussi pour les lots suivants,
+# il n y aura pas de ligne a ajouter a chaque tranche.
+RewriteCond %{REQUEST_FILENAME}.html !-f
+RewriteRule ^(en|fr|es|pt|zh|th|ru|ar|ja|ko)/([a-z0-9-]+)-visa-for-[a-z0-9-]+-citizens$ https://www.evisa-card.com/$1/visa-$2 [R=301,L]
+
+# Sonde de deploiement, v3 : la chaine change a chaque version pour rester
+# discriminante. Si lot-a-probe-v2-exact repond encore 410 et pas celle-ci,
+# le fichier en ligne est perime.
+RewriteRule ^lot-c1-probe-20260910$ - [G,L]
+
 # /en/index would need two hops via the generic index rule (→ /en/ → /) —
 # short-circuit it to the root in ONE hop.
 RewriteRule ^en/index(?:\.html)?/?$ https://www.evisa-card.com/ [R=301,L]
@@ -77,6 +118,7 @@ RewriteRule ^(en|fr|es|pt|zh|th|ru|ar|ja|ko)/(.+?)/?$ /$1/$2.html [L]
 # 301 Redirects — old URLs / restructuration
 Redirect 301 /retirement-visa-guide /en/retirement-visa-guide
 # Si tu renommes une page, ajoute ici : Redirect 301 /old-url /new-url
+
 
 # Anciens slugs racine : couverts par la RewriteRule ^visa-([a-z0-9-]+?) ci-dessus
 # (l ancien bloc mod_alias ne matchait jamais — la regle .html-strip passait avant).

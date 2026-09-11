@@ -1,0 +1,4 @@
+clean_url,locale,file,gsc_clicks,gsc_impressions,gsc_position,reason,status
+/404,root,www2/404.html,0,0,0,Page technique/demo non destinee a la recherche,NOT_EXECUTED
+/blog-single,root,www2/blog-single.html,0,0,0,Page technique/demo non destinee a la recherche,EXECUTED
+/fonts/flaticon/font/flaticon,root,www2/fonts/flaticon/font/flaticon.html,0,0,0,Page technique/demo non destinee a la recherche,NOT_EXECUTED
