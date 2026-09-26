@@ -277,3 +277,12 @@ Mesure : attendre 4-6 semaines après la réduction pour lire « explorée non i
 | 2f | 10 images les plus lourdes recompressées (5,1 Mo → 2,6 Mo) | 10 fichiers |
 
 Non fait, volontairement : suppression des CSS/JS Colorlib (encore utilisés par `contact.html`, ancien gabarit) ; 597 titres > 65 car. sans séparateur exploitable ; libellés des pastilles réécrites vers le hub (ex. « Denmark Requirements » → hub Danemark). Corrigé aussi : le fil d’Ariane de `th/visa-thailand` affichait « จีน » (Chine) au lieu de Thaïlande.
+
+## 12. Lot 4 appliqué le 26/09/2026 (option A partielle)
+
+- 7 677 pages citizens supprimées dans les 9 langues hors EN (fr es pt zh th ru ar ja ko). La 301 vers `/<langue>/visa-<destination>` est assurée par la règle conditionnelle du lot C1 déjà présente dans `.htaccess` (aucune ligne ajoutée).
+- 72 pages citizens Schengen gardées (8 par langue) : il n'existe pas de hub `visa-schengen`, la 301 aurait mené à une 404.
+- Blocs « par nationalité » retirés de 430 hubs non EN ; 7 106 hreflang retirés des pages citizens EN (il reste en + x-default) ; sélecteur de langue des pages citizens EN réécrit vers le hub de chaque langue.
+- `sitemap-citizens.xml` : 8 573 → 896 URL.
+- Validation : 0 JSON-LD invalide, 0 lien mort, 0 hreflang vers fichier absent, 0 titre dupliqué.
+- Pages citizens EN (824) : non touchées, en attente de l'export GSC Pages 16 mois pour trier celles sans impression.
